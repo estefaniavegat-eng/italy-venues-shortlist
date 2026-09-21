@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Estefania & James · Italy Venues",
-    "subtitle": "Our Italy shortlist for Fall 2027",
+    "title": "LaRosa 2027 Wedding",
+    "subtitle": "Estefania and James",
     "couple": [
       "Estefania",
       "James"
@@ -597,7 +597,8 @@
         "assets/galleries/villa-paola/06.jpg",
         "assets/galleries/villa-paola/07.jpg",
         "assets/galleries/villa-paola/08.jpg"
-      ]
+      ],
+      "brochureUrl": "https://media.blastness.info/964/VP_Wedding_ENG_25_V_mail.pdf"
     },
     {
       "id": "hotel-bellevue-syrene",
@@ -769,8 +770,8 @@
       "confidence": "High on €280 pp package; medium-low on all-in lodging",
       "sourceNotes": "Italian Venues AI Summary package text (NEW) + hotelparcoprincipi.com",
       "correctedLocation": "",
-      "image": "",
-      "imageCredit": "Photo TBD — official site blocked",
+      "image": "assets/galleries/parco-dei-principi-di-sorrento/01.jpg",
+      "imageCredit": "Official site",
       "monogram": "PP",
       "allIn60": "€63k–€85k",
       "allIn60Low": 63206,
@@ -863,7 +864,17 @@
         "rentalTotalHigh": null,
         "rentalLow": null
       },
-      "gallery": []
+      "gallery": [
+        "assets/galleries/parco-dei-principi-di-sorrento/01.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/02.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/03.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/04.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/05.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/06.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/07.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/08.jpg"
+      ],
+      "brochureUrl": "https://www.hotelparcoprincipi.com/en/events.html"
     },
     {
       "id": "castello-di-spessa",
@@ -1007,7 +1018,8 @@
         "assets/galleries/castello-di-spessa/06.jpg",
         "assets/galleries/castello-di-spessa/07.jpg",
         "assets/galleries/castello-di-spessa/08.jpg"
-      ]
+      ],
+      "brochureUrl": "https://www.castellodispessa.it/en/weddings/"
     },
     {
       "id": "villa-catignano",
@@ -1163,7 +1175,8 @@
         "assets/galleries/villa-catignano/06.jpg",
         "assets/galleries/villa-catignano/07.jpg",
         "assets/galleries/villa-catignano/08.jpg"
-      ]
+      ],
+      "brochureUrl": "https://www.villacatignano.it/weddings-events.html"
     },
     {
       "id": "borgo-castelvecchi",
@@ -1438,7 +1451,8 @@
       },
       "gallery": [
         "assets/galleries/casale-de-pasquinelli/01.jpg"
-      ]
+      ],
+      "brochureUrl": "https://www.casaledepasquinelli.it/brochure"
     },
     {
       "id": "antico-borgo-san-lorenzo",
@@ -1869,7 +1883,8 @@
       },
       "gallery": [
         "assets/galleries/villa-poggio-bartoli/01.jpg"
-      ]
+      ],
+      "brochureUrl": "https://drive.google.com/file/d/1Rd4FVVDcd_xfatT-1fbamnJc86YWYM-S/view?usp=drive_link"
     },
     {
       "id": "spao-borgo-san-pietro",
@@ -2154,7 +2169,8 @@
         "rentalTotalHigh": null,
         "rentalLow": null
       },
-      "gallery": []
+      "gallery": [],
+      "brochureUrl": "https://monasterosantamargherita.com/gli-spazi/"
     },
     {
       "id": "villa-arvedi",
@@ -2298,7 +2314,8 @@
         "assets/galleries/villa-arvedi/06.jpg",
         "assets/galleries/villa-arvedi/07.jpg",
         "assets/galleries/villa-arvedi/08.jpg"
-      ]
+      ],
+      "brochureUrl": "https://www.villarvedi.it/i-matrimoni/"
     }
   ]
 }
