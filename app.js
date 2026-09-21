@@ -910,7 +910,7 @@
       renderChips();
       renderCards();
     } catch (err) {
-      els.cards.innerHTML = `<p style="color:#8f3f22">Could not load venue data. Open this site via a local server or host so <code>data/venues.json</code> can load.</p>`;
+      els.cards.innerHTML = `<p style="color:#c9654a">Could not load venue data. Open this site via a local server or host so <code>data/venues.json</code> can load.</p>`;
       console.error(err);
     }
   }

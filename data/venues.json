@@ -15,7 +15,8 @@
       "guestPayPerNight": 0,
       "minGuests": 20,
       "maxGuests": 150
-    }
+    },
+    "themeColor": "#faf6f1"
   },
   "venues": [
     {
