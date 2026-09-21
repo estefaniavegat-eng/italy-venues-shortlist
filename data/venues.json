@@ -2069,8 +2069,8 @@
       "confidence": "Medium-high on structure; medium on total",
       "sourceNotes": "Merged LaRosa Modest (TODI, UMBRIA) + Italian Venues AI Summary",
       "correctedLocation": "Todi, Umbria — NOT Tuscany",
-      "image": "",
-      "imageCredit": "Photo TBD — official site blocked",
+      "image": "assets/galleries/monastero-santa-margherita/01.jpg",
+      "imageCredit": "Official site",
       "monogram": "MS",
       "allIn60": "€32k–€45k",
       "allIn60Low": 31844,
@@ -2169,7 +2169,9 @@
         "rentalTotalHigh": null,
         "rentalLow": null
       },
-      "gallery": [],
+      "gallery": [
+        "assets/galleries/monastero-santa-margherita/01.jpg"
+      ],
       "brochureUrl": "https://monasterosantamargherita.com/gli-spazi/"
     },
     {
@@ -2310,10 +2312,7 @@
         "assets/galleries/villa-arvedi/02.jpg",
         "assets/galleries/villa-arvedi/03.jpg",
         "assets/galleries/villa-arvedi/04.jpg",
-        "assets/galleries/villa-arvedi/05.jpg",
-        "assets/galleries/villa-arvedi/06.jpg",
-        "assets/galleries/villa-arvedi/07.jpg",
-        "assets/galleries/villa-arvedi/08.jpg"
+        "assets/galleries/villa-arvedi/05.jpg"
       ],
       "brochureUrl": "https://www.villarvedi.it/i-matrimoni/"
     }

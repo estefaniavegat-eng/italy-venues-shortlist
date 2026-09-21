@@ -879,3 +879,156 @@ body.drawer-open { overflow: hidden; }
   color: var(--ink-soft);
 }
 
+
+/* —— Gallery carousel —— */
+.drawer-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #2a241c;
+}
+
+.drawer-gallery .drawer-hero {
+  aspect-ratio: 16 / 10;
+  max-height: 280px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.55rem 0.65rem 0.7rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  background: rgba(42, 36, 28, 0.92);
+}
+
+.gallery-thumb {
+  appearance: none;
+  border: 2px solid transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 4.4rem;
+  height: 3.1rem;
+  cursor: pointer;
+  background: #5c5348;
+  opacity: 0.72;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-thumb.is-active,
+.gallery-thumb:hover {
+  opacity: 1;
+  border-color: var(--gold);
+}
+
+@media (max-width: 560px) {
+  .drawer-gallery .drawer-hero { max-height: 220px; }
+  .gallery-thumb { width: 3.8rem; height: 2.7rem; }
+}
+
+/* —— Links / brochure —— */
+.links-section .links-actions {
+  margin-bottom: 0.5rem;
+}
+
+.btn-brochure {
+  background: rgba(196, 165, 116, 0.22);
+  border-color: rgba(196, 165, 116, 0.55);
+  color: var(--ink);
+}
+
+.btn-brochure:hover {
+  background: rgba(196, 165, 116, 0.35);
+}
+
+.brochure-text {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  white-space: pre-wrap;
+}
+
+.brochure-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+/* —— Notes —— */
+.notes-section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.85rem 1rem 1rem;
+  margin: 0 0 1.1rem;
+}
+
+.notes-section h3 { margin-top: 0; }
+
+.notes-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-bottom: 0.4rem;
+}
+
+.venue-notes {
+  width: 100%;
+  min-height: 6.5rem;
+  resize: vertical;
+  font: inherit;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  box-sizing: border-box;
+}
+
+.venue-notes:focus {
+  outline: 2px solid rgba(184, 92, 56, 0.35);
+  border-color: rgba(184, 92, 56, 0.45);
+}
+
+.notes-hint {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.notes-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--sage);
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(42,36,28,0.18);
+  pointer-events: none;
+}
+
+.card { position: relative; }

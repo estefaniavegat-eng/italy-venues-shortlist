@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f1e8" />
   <title>LaRosa 2027 Wedding</title>
-  <meta name="description" content="Private Italy wedding venue shortlist for Estefania & James — Fall 2027." />
+  <meta name="description" content="LaRosa 2027 Wedding — Italy venue shortlist for Estefania and James." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -108,10 +108,11 @@ body {
 
 .tagline {
   margin: 0.4rem 0 0;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.15rem;
   color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
 
 .tabs {
@@ -891,6 +892,159 @@ body.drawer-open { overflow: hidden; }
 }
 
 
+/* —— Gallery carousel —— */
+.drawer-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #2a241c;
+}
+
+.drawer-gallery .drawer-hero {
+  aspect-ratio: 16 / 10;
+  max-height: 280px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.55rem 0.65rem 0.7rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  background: rgba(42, 36, 28, 0.92);
+}
+
+.gallery-thumb {
+  appearance: none;
+  border: 2px solid transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 4.4rem;
+  height: 3.1rem;
+  cursor: pointer;
+  background: #5c5348;
+  opacity: 0.72;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-thumb.is-active,
+.gallery-thumb:hover {
+  opacity: 1;
+  border-color: var(--gold);
+}
+
+@media (max-width: 560px) {
+  .drawer-gallery .drawer-hero { max-height: 220px; }
+  .gallery-thumb { width: 3.8rem; height: 2.7rem; }
+}
+
+/* —— Links / brochure —— */
+.links-section .links-actions {
+  margin-bottom: 0.5rem;
+}
+
+.btn-brochure {
+  background: rgba(196, 165, 116, 0.22);
+  border-color: rgba(196, 165, 116, 0.55);
+  color: var(--ink);
+}
+
+.btn-brochure:hover {
+  background: rgba(196, 165, 116, 0.35);
+}
+
+.brochure-text {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  white-space: pre-wrap;
+}
+
+.brochure-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+/* —— Notes —— */
+.notes-section {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.85rem 1rem 1rem;
+  margin: 0 0 1.1rem;
+}
+
+.notes-section h3 { margin-top: 0; }
+
+.notes-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-bottom: 0.4rem;
+}
+
+.venue-notes {
+  width: 100%;
+  min-height: 6.5rem;
+  resize: vertical;
+  font: inherit;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  box-sizing: border-box;
+}
+
+.venue-notes:focus {
+  outline: 2px solid rgba(184, 92, 56, 0.35);
+  border-color: rgba(184, 92, 56, 0.45);
+}
+
+.notes-hint {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.notes-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--sage);
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(42,36,28,0.18);
+  pointer-events: none;
+}
+
+.card { position: relative; }
+
 </style>
 </head>
 <body>
@@ -944,7 +1098,7 @@ body.drawer-open { overflow: hidden; }
   </main>
 
   <footer class="site-footer">
-    <p>Private picker for Estefania &amp; James · Facts from the LaRosa-format Italy shortlist · Photos from official venue sites (local covers) · interactive cost calculator</p>
+    <p>LaRosa 2027 Wedding · Estefania and James · Italy venue shortlist · Photos from official venue sites · interactive cost calculator</p>
   </footer>
 
   <!-- Detail slide-over -->
@@ -957,8 +1111,8 @@ body.drawer-open { overflow: hidden; }
   <script>
 window.__EJ_VENUES__ = {
   "meta": {
-    "title": "Estefania & James · Italy Venues",
-    "subtitle": "Estefania and James for Fall 2027",
+    "title": "LaRosa 2027 Wedding",
+    "subtitle": "Estefania and James",
     "couple": [
       "Estefania",
       "James"
@@ -1008,7 +1162,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Low-medium",
       "sourceNotes": "Italian Venues 2027 email rate preferred over LaRosa €19,490/night",
       "correctedLocation": "",
-      "image": "assets/covers/villa-pozzolo.jpg",
+      "image": "assets/galleries/villa-pozzolo/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VP",
       "allIn60": "€128k–€163k",
@@ -1125,7 +1279,17 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-pozzolo/01.jpg",
+        "assets/galleries/villa-pozzolo/02.jpg",
+        "assets/galleries/villa-pozzolo/03.jpg",
+        "assets/galleries/villa-pozzolo/04.jpg",
+        "assets/galleries/villa-pozzolo/05.jpg",
+        "assets/galleries/villa-pozzolo/06.jpg",
+        "assets/galleries/villa-pozzolo/07.jpg",
+        "assets/galleries/villa-pozzolo/08.jpg"
+      ]
     },
     {
       "id": "villa-lena",
@@ -1160,7 +1324,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium (strong quoted rental; F&B still estimate)",
       "sourceNotes": "Quoted rates sheet IDs 7–10 + Italian Venues email notes preferred over LaRosa Large older high-season ranges",
       "correctedLocation": "",
-      "image": "assets/covers/villa-lena.webp",
+      "image": "assets/galleries/villa-lena/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VL",
       "allIn60": "€103k–€126k",
@@ -1253,7 +1417,17 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": 1.5,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-lena/01.jpg",
+        "assets/galleries/villa-lena/02.jpg",
+        "assets/galleries/villa-lena/03.jpg",
+        "assets/galleries/villa-lena/04.jpg",
+        "assets/galleries/villa-lena/05.jpg",
+        "assets/galleries/villa-lena/06.jpg",
+        "assets/galleries/villa-lena/07.jpg",
+        "assets/galleries/villa-lena/08.jpg"
+      ]
     },
     {
       "id": "castello-di-gargonza",
@@ -1288,7 +1462,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium-low",
       "sourceNotes": "Merged LaRosa Large Budget row + Italian Venues AI Summary",
       "correctedLocation": "",
-      "image": "assets/covers/castello-di-gargonza.jpg",
+      "image": "assets/galleries/castello-di-gargonza/01.jpg",
       "imageCredit": "Official site",
       "monogram": "CG",
       "allIn60": "€73k–€88k",
@@ -1381,7 +1555,10 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/castello-di-gargonza/01.jpg"
+      ]
     },
     {
       "id": "villa-paola",
@@ -1416,7 +1593,7 @@ window.__EJ_VENUES__ = {
       "confidence": "High on venue terms; medium on all-in",
       "sourceNotes": "Italian Venues AI Summary + public brochure PDF",
       "correctedLocation": "",
-      "image": "assets/covers/villa-paola.jpg",
+      "image": "assets/galleries/villa-paola/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VP",
       "allIn60": "€59k–€96k",
@@ -1521,7 +1698,18 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": 24000,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-paola/01.jpg",
+        "assets/galleries/villa-paola/02.jpg",
+        "assets/galleries/villa-paola/03.jpg",
+        "assets/galleries/villa-paola/04.jpg",
+        "assets/galleries/villa-paola/05.jpg",
+        "assets/galleries/villa-paola/06.jpg",
+        "assets/galleries/villa-paola/07.jpg",
+        "assets/galleries/villa-paola/08.jpg"
+      ],
+      "brochureUrl": "https://media.blastness.info/964/VP_Wedding_ENG_25_V_mail.pdf"
     },
     {
       "id": "hotel-bellevue-syrene",
@@ -1556,7 +1744,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium-high",
       "sourceNotes": "Italian Venues AI Summary + bellevue.it",
       "correctedLocation": "",
-      "image": "assets/covers/hotel-bellevue-syrene.jpg",
+      "image": "assets/galleries/hotel-bellevue-syrene/01.jpg",
       "imageCredit": "Official site",
       "monogram": "HB",
       "allIn60": "€64k–€88k",
@@ -1655,7 +1843,10 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/hotel-bellevue-syrene/01.jpg"
+      ]
     },
     {
       "id": "parco-dei-principi-di-sorrento",
@@ -1690,8 +1881,8 @@ window.__EJ_VENUES__ = {
       "confidence": "High on €280 pp package; medium-low on all-in lodging",
       "sourceNotes": "Italian Venues AI Summary package text (NEW) + hotelparcoprincipi.com",
       "correctedLocation": "",
-      "image": "",
-      "imageCredit": "Photo TBD — official site blocked",
+      "image": "assets/galleries/parco-dei-principi-di-sorrento/01.jpg",
+      "imageCredit": "Official site",
       "monogram": "PP",
       "allIn60": "€63k–€85k",
       "allIn60Low": 63206,
@@ -1783,7 +1974,18 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/parco-dei-principi-di-sorrento/01.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/02.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/03.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/04.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/05.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/06.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/07.jpg",
+        "assets/galleries/parco-dei-principi-di-sorrento/08.jpg"
+      ],
+      "brochureUrl": "https://www.hotelparcoprincipi.com/en/events.html"
     },
     {
       "id": "castello-di-spessa",
@@ -1818,7 +2020,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Low",
       "sourceNotes": "Italian Venues correspondence + castellodispessa.it public pages; no invent prices",
       "correctedLocation": "Collio / Capriva del Friuli, Friuli — NOT Tuscany",
-      "image": "assets/covers/castello-di-spessa.jpg",
+      "image": "assets/galleries/castello-di-spessa/01.jpg",
       "imageCredit": "Official site",
       "monogram": "CS",
       "allIn60": "€49k–€74k",
@@ -1917,7 +2119,18 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/castello-di-spessa/01.jpg",
+        "assets/galleries/castello-di-spessa/02.jpg",
+        "assets/galleries/castello-di-spessa/03.jpg",
+        "assets/galleries/castello-di-spessa/04.jpg",
+        "assets/galleries/castello-di-spessa/05.jpg",
+        "assets/galleries/castello-di-spessa/06.jpg",
+        "assets/galleries/castello-di-spessa/07.jpg",
+        "assets/galleries/castello-di-spessa/08.jpg"
+      ],
+      "brochureUrl": "https://www.castellodispessa.it/en/weddings/"
     },
     {
       "id": "villa-catignano",
@@ -1952,7 +2165,7 @@ window.__EJ_VENUES__ = {
       "confidence": "High on lodging/hall quotes; medium on all-in (F&B TBD)",
       "sourceNotes": "Italian Venues AI Summary detailed 2027 pricing (NEW); website filled via public search",
       "correctedLocation": "",
-      "image": "assets/covers/villa-catignano.jpg",
+      "image": "assets/galleries/villa-catignano/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VC",
       "allIn60": "€65k–€94k",
@@ -2063,7 +2276,18 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-catignano/01.jpg",
+        "assets/galleries/villa-catignano/02.jpg",
+        "assets/galleries/villa-catignano/03.jpg",
+        "assets/galleries/villa-catignano/04.jpg",
+        "assets/galleries/villa-catignano/05.jpg",
+        "assets/galleries/villa-catignano/06.jpg",
+        "assets/galleries/villa-catignano/07.jpg",
+        "assets/galleries/villa-catignano/08.jpg"
+      ],
+      "brochureUrl": "https://www.villacatignano.it/weddings-events.html"
     },
     {
       "id": "borgo-castelvecchi",
@@ -2098,7 +2322,7 @@ window.__EJ_VENUES__ = {
       "confidence": "High on base pricing; medium on all-in",
       "sourceNotes": "Italian Venues AI Summary + LaRosa Modest Budget row",
       "correctedLocation": "",
-      "image": "assets/covers/borgo-castelvecchi.jpg",
+      "image": "assets/galleries/borgo-castelvecchi/01.jpg",
       "imageCredit": "Official site",
       "monogram": "BC",
       "allIn60": "€49k–€62k",
@@ -2191,7 +2415,17 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/borgo-castelvecchi/01.jpg",
+        "assets/galleries/borgo-castelvecchi/02.jpg",
+        "assets/galleries/borgo-castelvecchi/03.jpg",
+        "assets/galleries/borgo-castelvecchi/04.jpg",
+        "assets/galleries/borgo-castelvecchi/05.jpg",
+        "assets/galleries/borgo-castelvecchi/06.jpg",
+        "assets/galleries/borgo-castelvecchi/07.jpg",
+        "assets/galleries/borgo-castelvecchi/08.jpg"
+      ]
     },
     {
       "id": "casale-de-pasquinelli",
@@ -2226,7 +2460,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium",
       "sourceNotes": "Merged LaRosa Medium + Italian Venues AI Summary",
       "correctedLocation": "",
-      "image": "assets/covers/casale-de-pasquinelli.jpg",
+      "image": "assets/galleries/casale-de-pasquinelli/01.jpg",
       "imageCredit": "Official site (via web-agency portfolio)",
       "monogram": "CP",
       "allIn60": "€62k–€87k",
@@ -2325,7 +2559,11 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": 21500,
         "rentalLow": 13300
-      }
+      },
+      "gallery": [
+        "assets/galleries/casale-de-pasquinelli/01.jpg"
+      ],
+      "brochureUrl": "https://www.casaledepasquinelli.it/brochure"
     },
     {
       "id": "antico-borgo-san-lorenzo",
@@ -2360,7 +2598,7 @@ window.__EJ_VENUES__ = {
       "confidence": "High-medium",
       "sourceNotes": "Merged LaRosa Modest + Italian Venues (listed as Borgo San Lorenzo)",
       "correctedLocation": "",
-      "image": "assets/covers/antico-borgo-san-lorenzo.jpg",
+      "image": "assets/galleries/antico-borgo-san-lorenzo/01.jpg",
       "imageCredit": "Official site",
       "monogram": "AB",
       "allIn60": "€48k–€68k",
@@ -2459,7 +2697,17 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/antico-borgo-san-lorenzo/01.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/02.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/03.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/04.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/05.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/06.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/07.jpg",
+        "assets/galleries/antico-borgo-san-lorenzo/08.jpg"
+      ]
     },
     {
       "id": "villa-sermolli",
@@ -2494,7 +2742,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium–high on rental; medium on all-in DIY",
       "sourceNotes": "LaRosa_Italy_Venue_Comparison quoted rates preferred over shortlist sheet name “Sermoli”",
       "correctedLocation": "",
-      "image": "assets/covers/villa-sermolli.jpg",
+      "image": "assets/galleries/villa-sermolli/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VS",
       "allIn60": "€51k–€67k",
@@ -2599,7 +2847,17 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-sermolli/01.jpg",
+        "assets/galleries/villa-sermolli/02.jpg",
+        "assets/galleries/villa-sermolli/03.jpg",
+        "assets/galleries/villa-sermolli/04.jpg",
+        "assets/galleries/villa-sermolli/05.jpg",
+        "assets/galleries/villa-sermolli/06.jpg",
+        "assets/galleries/villa-sermolli/07.jpg",
+        "assets/galleries/villa-sermolli/08.jpg"
+      ]
     },
     {
       "id": "villa-poggio-bartoli",
@@ -2634,7 +2892,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium-low",
       "sourceNotes": "Italian Venues AI Summary + LaRosa_Italy_Venue_Comparison quoted rates (prefer €13k/3n over sheet “13+”)",
       "correctedLocation": "",
-      "image": "assets/covers/villa-poggio-bartoli.jpg",
+      "image": "assets/galleries/villa-poggio-bartoli/01.jpg",
       "imageCredit": "Official site (archived asset)",
       "monogram": "VP",
       "allIn60": "€55k–€76k",
@@ -2733,7 +2991,11 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-poggio-bartoli/01.jpg"
+      ],
+      "brochureUrl": "https://drive.google.com/file/d/1Rd4FVVDcd_xfatT-1fbamnJc86YWYM-S/view?usp=drive_link"
     },
     {
       "id": "spao-borgo-san-pietro",
@@ -2768,7 +3030,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Low-medium",
       "sourceNotes": "Italian Venues shortlist only; do not confuse with Borgo Santo Pietro",
       "correctedLocation": "Near Allerona (Umbria border) — not Borgo Santo Pietro / Palazzetto",
-      "image": "assets/covers/spao-borgo-san-pietro.jpg",
+      "image": "assets/galleries/spao-borgo-san-pietro/01.jpg",
       "imageCredit": "Official site",
       "monogram": "SB",
       "allIn60": "€60k–€83k",
@@ -2873,7 +3135,17 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/spao-borgo-san-pietro/01.jpg",
+        "assets/galleries/spao-borgo-san-pietro/02.jpg",
+        "assets/galleries/spao-borgo-san-pietro/03.jpg",
+        "assets/galleries/spao-borgo-san-pietro/04.jpg",
+        "assets/galleries/spao-borgo-san-pietro/05.jpg",
+        "assets/galleries/spao-borgo-san-pietro/06.jpg",
+        "assets/galleries/spao-borgo-san-pietro/07.jpg",
+        "assets/galleries/spao-borgo-san-pietro/08.jpg"
+      ]
     },
     {
       "id": "monastero-santa-margherita",
@@ -2908,8 +3180,8 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium-high on structure; medium on total",
       "sourceNotes": "Merged LaRosa Modest (TODI, UMBRIA) + Italian Venues AI Summary",
       "correctedLocation": "Todi, Umbria — NOT Tuscany",
-      "image": "",
-      "imageCredit": "Photo TBD — official site blocked",
+      "image": "assets/galleries/monastero-santa-margherita/01.jpg",
+      "imageCredit": "Official site",
       "monogram": "MS",
       "allIn60": "€32k–€45k",
       "allIn60Low": 31844,
@@ -3007,7 +3279,11 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/monastero-santa-margherita/01.jpg"
+      ],
+      "brochureUrl": "https://monasterosantamargherita.com/gli-spazi/"
     },
     {
       "id": "villa-arvedi",
@@ -3042,7 +3318,7 @@ window.__EJ_VENUES__ = {
       "confidence": "Medium-low",
       "sourceNotes": "Italian Venues AI Summary + public villarvedi.it; location corrected",
       "correctedLocation": "Grezzana near Verona, Veneto — NOT Prosecco",
-      "image": "assets/covers/villa-arvedi.jpg",
+      "image": "assets/galleries/villa-arvedi/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VA",
       "allIn60": "€46k–€70k",
@@ -3141,7 +3417,15 @@ window.__EJ_VENUES__ = {
         "touristTaxPerNight": null,
         "rentalTotalHigh": null,
         "rentalLow": null
-      }
+      },
+      "gallery": [
+        "assets/galleries/villa-arvedi/01.jpg",
+        "assets/galleries/villa-arvedi/02.jpg",
+        "assets/galleries/villa-arvedi/03.jpg",
+        "assets/galleries/villa-arvedi/04.jpg",
+        "assets/galleries/villa-arvedi/05.jpg"
+      ],
+      "brochureUrl": "https://www.villarvedi.it/i-matrimoni/"
     }
   ]
 }
@@ -3149,6 +3433,7 @@ window.__EJ_VENUES__ = {
 (() => {
   const STORAGE_KEY = "ej-italy-shortlist-v1";
   const CALC_KEY = "ej-italy-calc-defaults-v1";
+  const NOTES_KEY = "ej-italy-venue-notes-v1";
 
   const heartSvg = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.716-4.35-9.428-7.062C.86 12.226.5 10.2.5 8.75.5 5.962 2.762 3.7 5.55 3.7c1.54 0 3.02.72 4 1.86A5.18 5.18 0 0 1 13.55 3.7c2.788 0 5.05 2.262 5.05 5.05 0 1.45-.36 3.476-2.072 5.188C18.716 16.65 12 21 12 21z"/></svg>`;
   const iconPeople = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm-8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.67 0-8 1.34-8 4v2h10v-2c0-1.5.7-2.7 1.8-3.6C10.5 13.1 9.2 13 8 13zm8 0c-.3 0-.63.02-.97.05A4.86 4.86 0 0 1 17 17v2h7v-2c0-2.66-5.33-4-8-4z"/></svg>`;
@@ -3178,8 +3463,11 @@ window.__EJ_VENUES__ = {
     band: "all",
     query: "",
     shortlist: loadShortlist(),
+    notes: loadNotes(),
     activeId: null,
     calcDefaults: loadCalcDefaults(),
+    galleryIndex: 0,
+    notesTimer: null,
   };
 
   const els = {
@@ -3207,6 +3495,41 @@ window.__EJ_VENUES__ = {
     } catch {
       return new Set();
     }
+  }
+
+  function loadNotes() {
+    try {
+      const raw = localStorage.getItem(NOTES_KEY);
+      const obj = raw ? JSON.parse(raw) : {};
+      return obj && typeof obj === "object" && !Array.isArray(obj) ? obj : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveNotes() {
+    localStorage.setItem(NOTES_KEY, JSON.stringify(state.notes));
+  }
+
+  function venueHasNotes(id) {
+    const t = (state.notes[id] || "").trim();
+    return t.length > 0;
+  }
+
+  function galleryFor(v) {
+    const g = Array.isArray(v.gallery) ? v.gallery.filter(Boolean) : [];
+    if (g.length) return g;
+    if (v.image) return [v.image];
+    return [];
+  }
+
+  function resolveBrochureUrl(v) {
+    if (v.brochureUrl && /^https?:\/\//i.test(v.brochureUrl)) return v.brochureUrl;
+    const b = clean(v.brochure);
+    if (b && /^https?:\/\//i.test(b)) return b;
+    const m = String(v.brochure || "").match(/https?:\/\/[^\s)\"\'<>]+/);
+    if (m && !/mail\.google\.com/i.test(m[0])) return m[0].replace(/[.,);]+$/, "");
+    return "";
   }
 
   function loadCalcDefaults() {
@@ -3303,15 +3626,72 @@ window.__EJ_VENUES__ = {
 
   function mediaBlock(v, className) {
     const credit = v.imageCredit ? `<span class="credit">${esc(v.imageCredit)}</span>` : "";
-    if (v.image) {
+    const src = (galleryFor(v)[0] || v.image || "");
+    if (src) {
       return `<div class="${className}">
-        <img src="${esc(v.image)}" alt="${esc(v.name)}" loading="lazy" decoding="async"
+        <img src="${esc(src)}" alt="${esc(v.name)}" loading="lazy" decoding="async"
           onerror="this.style.display='none'; this.parentElement.querySelector('.monogram').hidden=false;" />
         <div class="monogram" hidden>${esc(v.monogram || "IT")}</div>
         ${credit}
       </div>`;
     }
     return `<div class="${className}"><div class="monogram">${esc(v.monogram || "IT")}</div>${credit}</div>`;
+  }
+
+  function drawerGallery(v) {
+    const imgs = galleryFor(v);
+    const credit = v.imageCredit ? `<span class="credit">${esc(v.imageCredit)}</span>` : "";
+    if (!imgs.length) {
+      return `<div class="drawer-hero"><div class="monogram">${esc(v.monogram || "IT")}</div>${credit}</div>`;
+    }
+    const main = imgs[0];
+    const thumbs = imgs.length > 1
+      ? `<div class="gallery-thumbs" role="list" aria-label="Photo gallery">
+          ${imgs.map((src, i) => `<button type="button" class="gallery-thumb${i === 0 ? " is-active" : ""}" data-gallery-idx="${i}" role="listitem" aria-label="Photo ${i + 1}">
+            <img src="${esc(src)}" alt="" loading="lazy" decoding="async" />
+          </button>`).join("")}
+        </div>`
+      : "";
+    return `<div class="drawer-gallery">
+      <div class="drawer-hero">
+        <img class="gallery-main" src="${esc(main)}" alt="${esc(v.name)}" decoding="async"
+          onerror="this.style.display='none'; this.parentElement.querySelector('.monogram').hidden=false;" />
+        <div class="monogram" hidden>${esc(v.monogram || "IT")}</div>
+        ${credit}
+      </div>
+      ${thumbs}
+    </div>`;
+  }
+
+  function renderLinks(v) {
+    const website = clean(v.website);
+    const brochureUrl = resolveBrochureUrl(v);
+    const brochureLabel = clean(v.brochure) || "Brochure";
+    const parts = [];
+    if (website) {
+      parts.push(`<a class="btn btn-primary" href="${esc(website)}" target="_blank" rel="noopener noreferrer">Visit website</a>`);
+    }
+    if (brochureUrl) {
+      parts.push(`<a class="btn btn-brochure" href="${esc(brochureUrl)}" target="_blank" rel="noopener noreferrer">Open brochure</a>`);
+    } else if (brochureLabel && !/^tbd/i.test(brochureLabel)) {
+      parts.push(`<p class="brochure-text"><span class="brochure-label">Brochure</span> ${esc(brochureLabel)}</p>`);
+    }
+    if (!parts.length) return "";
+    return `<div class="section links-section">
+      <h3>Links</h3>
+      <div class="drawer-actions links-actions">${parts.filter((p) => p.startsWith("<a")).join("")}</div>
+      ${parts.filter((p) => p.startsWith("<p")).join("")}
+    </div>`;
+  }
+
+  function renderNotes(v) {
+    const val = state.notes[v.id] || "";
+    return `<div class="section notes-section">
+      <h3>Our notes</h3>
+      <label class="notes-label" for="venue-notes">Our notes (Estefania &amp; James)</label>
+      <textarea id="venue-notes" class="venue-notes" data-notes-for="${esc(v.id)}" rows="4" placeholder="Thoughts, questions for the venue, what we loved…">${esc(val)}</textarea>
+      <p class="notes-hint">Autosaved on this device</p>
+    </div>`;
   }
 
   function filteredVenues() {
@@ -3373,9 +3753,11 @@ window.__EJ_VENUES__ = {
         const overnightLabel = overnight != null ? String(overnight) : "—";
         const nights = nightsDisplay(v);
         const cost = cardCostLabel(v);
+        const hasNotes = venueHasNotes(v.id);
         return `<article class="card" data-id="${esc(v.id)}" tabindex="0" role="button" aria-label="Open ${esc(v.name)}">
           ${mediaBlock(v, "card-media")}
           <button type="button" class="heart${on ? " is-on" : ""}" data-heart="${esc(v.id)}" aria-label="${on ? "Remove from shortlist" : "Add to shortlist"}" aria-pressed="${on}">${heartSvg}</button>
+          ${hasNotes ? `<span class="notes-badge" title="Has notes">Notes</span>` : ""}
           <div class="card-body">
             <p class="card-region">${esc(v.region)}</p>
             <h3>${esc(v.name)}</h3>
@@ -3769,19 +4151,20 @@ window.__EJ_VENUES__ = {
     const v = state.venues.find((x) => x.id === id);
     if (!v) return;
     state.activeId = id;
+    state.galleryIndex = 0;
     const on = state.shortlist.has(v.id);
-    const website = clean(v.website);
 
     els.drawerContent.innerHTML = `
-      ${mediaBlock(v, "drawer-hero")}
+      ${drawerGallery(v)}
       <div class="drawer-body">
         <p class="drawer-kicker">${esc(v.region)} · ${esc(v.budgetBand)} band</p>
         <h2 id="drawer-title">${esc(v.name)}</h2>
         <p class="drawer-sub">${esc(v.location)}${v.correctedLocation ? ` · <em>${esc(clean(v.correctedLocation).split("—")[0].trim())}</em>` : ""}</p>
         <div class="drawer-actions">
           <button type="button" class="btn btn-heart${on ? " is-on" : ""}" data-heart="${esc(v.id)}">${heartSvg} ${on ? "Saved" : "Save to shortlist"}</button>
-          ${website ? `<a class="btn btn-primary" href="${esc(website)}" target="_blank" rel="noopener noreferrer">Visit website</a>` : ""}
         </div>
+        ${renderLinks(v)}
+        ${renderNotes(v)}
         ${renderCalculator(v)}
         ${renderAllIn60Static(v)}
         ${clean(v.confidence) ? `<p><span class="confidence">Confidence: ${esc(v.confidence)}</span></p>` : ""}
@@ -3809,14 +4192,11 @@ window.__EJ_VENUES__ = {
         ${section("Min / max numbers", v.minMaxNumbers)}
         ${section("Cake", v.cake)}
         ${section("Source notes", v.sourceNotes)}
-        ${
-          clean(v.brochure) && clean(v.brochure).startsWith("http")
-            ? `<div class="section"><h3>Brochure</h3><p><a href="${esc(v.brochure)}" target="_blank" rel="noopener noreferrer">Open brochure link</a></p></div>`
-            : ""
-        }
       </div>`;
 
     bindCalculator(v);
+    bindGallery(v);
+    bindNotes(v);
 
     els.overlay.hidden = false;
     requestAnimationFrame(() => {
@@ -3824,6 +4204,50 @@ window.__EJ_VENUES__ = {
       els.drawer.classList.add("is-open");
       els.drawer.setAttribute("aria-hidden", "false");
       document.body.classList.add("drawer-open");
+    });
+  }
+
+  function bindGallery(v) {
+    const imgs = galleryFor(v);
+    const main = els.drawerContent.querySelector(".gallery-main");
+    const thumbs = els.drawerContent.querySelectorAll("[data-gallery-idx]");
+    if (!main || !thumbs.length) return;
+    thumbs.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx = Number(btn.dataset.galleryIdx);
+        if (!imgs[idx]) return;
+        state.galleryIndex = idx;
+        main.src = imgs[idx];
+        thumbs.forEach((t) => t.classList.toggle("is-active", Number(t.dataset.galleryIdx) === idx));
+      });
+    });
+  }
+
+  function bindNotes(v) {
+    const ta = els.drawerContent.querySelector("[data-notes-for]");
+    if (!ta) return;
+    ta.addEventListener("input", () => {
+      const id = ta.dataset.notesFor;
+      state.notes[id] = ta.value;
+      if (state.notesTimer) clearTimeout(state.notesTimer);
+      state.notesTimer = setTimeout(() => {
+        saveNotes();
+        // refresh card badge without closing drawer
+        const card = els.cards.querySelector(`.card[data-id="${id}"]`);
+        if (card) {
+          const existing = card.querySelector(".notes-badge");
+          const has = venueHasNotes(id);
+          if (has && !existing) {
+            const badge = document.createElement("span");
+            badge.className = "notes-badge";
+            badge.title = "Has notes";
+            badge.textContent = "Notes";
+            card.appendChild(badge);
+          } else if (!has && existing) {
+            existing.remove();
+          }
+        }
+      }, 350);
     });
   }
 
@@ -3902,7 +4326,13 @@ window.__EJ_VENUES__ = {
 
   async function init() {
     try {
-      const data = window.__EJ_VENUES__;
+      let data;
+      if (window.__EJ_VENUES__) {
+        data = window.__EJ_VENUES__;
+      } else {
+        const res = await fetch("data/venues.json");
+        data = await res.json();
+      }
       state.venues = data.venues || [];
       state.meta = data.meta || {};
       if (data.meta && data.meta.calculatorDefaults) {

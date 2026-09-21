@@ -1,6 +1,7 @@
 (() => {
   const STORAGE_KEY = "ej-italy-shortlist-v1";
   const CALC_KEY = "ej-italy-calc-defaults-v1";
+  const NOTES_KEY = "ej-italy-venue-notes-v1";
 
   const heartSvg = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.716-4.35-9.428-7.062C.86 12.226.5 10.2.5 8.75.5 5.962 2.762 3.7 5.55 3.7c1.54 0 3.02.72 4 1.86A5.18 5.18 0 0 1 13.55 3.7c2.788 0 5.05 2.262 5.05 5.05 0 1.45-.36 3.476-2.072 5.188C18.716 16.65 12 21 12 21z"/></svg>`;
   const iconPeople = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm-8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.67 0-8 1.34-8 4v2h10v-2c0-1.5.7-2.7 1.8-3.6C10.5 13.1 9.2 13 8 13zm8 0c-.3 0-.63.02-.97.05A4.86 4.86 0 0 1 17 17v2h7v-2c0-2.66-5.33-4-8-4z"/></svg>`;
@@ -30,8 +31,11 @@
     band: "all",
     query: "",
     shortlist: loadShortlist(),
+    notes: loadNotes(),
     activeId: null,
     calcDefaults: loadCalcDefaults(),
+    galleryIndex: 0,
+    notesTimer: null,
   };
 
   const els = {
@@ -59,6 +63,41 @@
     } catch {
       return new Set();
     }
+  }
+
+  function loadNotes() {
+    try {
+      const raw = localStorage.getItem(NOTES_KEY);
+      const obj = raw ? JSON.parse(raw) : {};
+      return obj && typeof obj === "object" && !Array.isArray(obj) ? obj : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveNotes() {
+    localStorage.setItem(NOTES_KEY, JSON.stringify(state.notes));
+  }
+
+  function venueHasNotes(id) {
+    const t = (state.notes[id] || "").trim();
+    return t.length > 0;
+  }
+
+  function galleryFor(v) {
+    const g = Array.isArray(v.gallery) ? v.gallery.filter(Boolean) : [];
+    if (g.length) return g;
+    if (v.image) return [v.image];
+    return [];
+  }
+
+  function resolveBrochureUrl(v) {
+    if (v.brochureUrl && /^https?:\/\//i.test(v.brochureUrl)) return v.brochureUrl;
+    const b = clean(v.brochure);
+    if (b && /^https?:\/\//i.test(b)) return b;
+    const m = String(v.brochure || "").match(/https?:\/\/[^\s)\"\'<>]+/);
+    if (m && !/mail\.google\.com/i.test(m[0])) return m[0].replace(/[.,);]+$/, "");
+    return "";
   }
 
   function loadCalcDefaults() {
@@ -155,15 +194,72 @@
 
   function mediaBlock(v, className) {
     const credit = v.imageCredit ? `<span class="credit">${esc(v.imageCredit)}</span>` : "";
-    if (v.image) {
+    const src = (galleryFor(v)[0] || v.image || "");
+    if (src) {
       return `<div class="${className}">
-        <img src="${esc(v.image)}" alt="${esc(v.name)}" loading="lazy" decoding="async"
+        <img src="${esc(src)}" alt="${esc(v.name)}" loading="lazy" decoding="async"
           onerror="this.style.display='none'; this.parentElement.querySelector('.monogram').hidden=false;" />
         <div class="monogram" hidden>${esc(v.monogram || "IT")}</div>
         ${credit}
       </div>`;
     }
     return `<div class="${className}"><div class="monogram">${esc(v.monogram || "IT")}</div>${credit}</div>`;
+  }
+
+  function drawerGallery(v) {
+    const imgs = galleryFor(v);
+    const credit = v.imageCredit ? `<span class="credit">${esc(v.imageCredit)}</span>` : "";
+    if (!imgs.length) {
+      return `<div class="drawer-hero"><div class="monogram">${esc(v.monogram || "IT")}</div>${credit}</div>`;
+    }
+    const main = imgs[0];
+    const thumbs = imgs.length > 1
+      ? `<div class="gallery-thumbs" role="list" aria-label="Photo gallery">
+          ${imgs.map((src, i) => `<button type="button" class="gallery-thumb${i === 0 ? " is-active" : ""}" data-gallery-idx="${i}" role="listitem" aria-label="Photo ${i + 1}">
+            <img src="${esc(src)}" alt="" loading="lazy" decoding="async" />
+          </button>`).join("")}
+        </div>`
+      : "";
+    return `<div class="drawer-gallery">
+      <div class="drawer-hero">
+        <img class="gallery-main" src="${esc(main)}" alt="${esc(v.name)}" decoding="async"
+          onerror="this.style.display='none'; this.parentElement.querySelector('.monogram').hidden=false;" />
+        <div class="monogram" hidden>${esc(v.monogram || "IT")}</div>
+        ${credit}
+      </div>
+      ${thumbs}
+    </div>`;
+  }
+
+  function renderLinks(v) {
+    const website = clean(v.website);
+    const brochureUrl = resolveBrochureUrl(v);
+    const brochureLabel = clean(v.brochure) || "Brochure";
+    const parts = [];
+    if (website) {
+      parts.push(`<a class="btn btn-primary" href="${esc(website)}" target="_blank" rel="noopener noreferrer">Visit website</a>`);
+    }
+    if (brochureUrl) {
+      parts.push(`<a class="btn btn-brochure" href="${esc(brochureUrl)}" target="_blank" rel="noopener noreferrer">Open brochure</a>`);
+    } else if (brochureLabel && !/^tbd/i.test(brochureLabel)) {
+      parts.push(`<p class="brochure-text"><span class="brochure-label">Brochure</span> ${esc(brochureLabel)}</p>`);
+    }
+    if (!parts.length) return "";
+    return `<div class="section links-section">
+      <h3>Links</h3>
+      <div class="drawer-actions links-actions">${parts.filter((p) => p.startsWith("<a")).join("")}</div>
+      ${parts.filter((p) => p.startsWith("<p")).join("")}
+    </div>`;
+  }
+
+  function renderNotes(v) {
+    const val = state.notes[v.id] || "";
+    return `<div class="section notes-section">
+      <h3>Our notes</h3>
+      <label class="notes-label" for="venue-notes">Our notes (Estefania &amp; James)</label>
+      <textarea id="venue-notes" class="venue-notes" data-notes-for="${esc(v.id)}" rows="4" placeholder="Thoughts, questions for the venue, what we loved…">${esc(val)}</textarea>
+      <p class="notes-hint">Autosaved on this device</p>
+    </div>`;
   }
 
   function filteredVenues() {
@@ -225,9 +321,11 @@
         const overnightLabel = overnight != null ? String(overnight) : "—";
         const nights = nightsDisplay(v);
         const cost = cardCostLabel(v);
+        const hasNotes = venueHasNotes(v.id);
         return `<article class="card" data-id="${esc(v.id)}" tabindex="0" role="button" aria-label="Open ${esc(v.name)}">
           ${mediaBlock(v, "card-media")}
           <button type="button" class="heart${on ? " is-on" : ""}" data-heart="${esc(v.id)}" aria-label="${on ? "Remove from shortlist" : "Add to shortlist"}" aria-pressed="${on}">${heartSvg}</button>
+          ${hasNotes ? `<span class="notes-badge" title="Has notes">Notes</span>` : ""}
           <div class="card-body">
             <p class="card-region">${esc(v.region)}</p>
             <h3>${esc(v.name)}</h3>
@@ -621,19 +719,20 @@
     const v = state.venues.find((x) => x.id === id);
     if (!v) return;
     state.activeId = id;
+    state.galleryIndex = 0;
     const on = state.shortlist.has(v.id);
-    const website = clean(v.website);
 
     els.drawerContent.innerHTML = `
-      ${mediaBlock(v, "drawer-hero")}
+      ${drawerGallery(v)}
       <div class="drawer-body">
         <p class="drawer-kicker">${esc(v.region)} · ${esc(v.budgetBand)} band</p>
         <h2 id="drawer-title">${esc(v.name)}</h2>
         <p class="drawer-sub">${esc(v.location)}${v.correctedLocation ? ` · <em>${esc(clean(v.correctedLocation).split("—")[0].trim())}</em>` : ""}</p>
         <div class="drawer-actions">
           <button type="button" class="btn btn-heart${on ? " is-on" : ""}" data-heart="${esc(v.id)}">${heartSvg} ${on ? "Saved" : "Save to shortlist"}</button>
-          ${website ? `<a class="btn btn-primary" href="${esc(website)}" target="_blank" rel="noopener noreferrer">Visit website</a>` : ""}
         </div>
+        ${renderLinks(v)}
+        ${renderNotes(v)}
         ${renderCalculator(v)}
         ${renderAllIn60Static(v)}
         ${clean(v.confidence) ? `<p><span class="confidence">Confidence: ${esc(v.confidence)}</span></p>` : ""}
@@ -661,14 +760,11 @@
         ${section("Min / max numbers", v.minMaxNumbers)}
         ${section("Cake", v.cake)}
         ${section("Source notes", v.sourceNotes)}
-        ${
-          clean(v.brochure) && clean(v.brochure).startsWith("http")
-            ? `<div class="section"><h3>Brochure</h3><p><a href="${esc(v.brochure)}" target="_blank" rel="noopener noreferrer">Open brochure link</a></p></div>`
-            : ""
-        }
       </div>`;
 
     bindCalculator(v);
+    bindGallery(v);
+    bindNotes(v);
 
     els.overlay.hidden = false;
     requestAnimationFrame(() => {
@@ -676,6 +772,50 @@
       els.drawer.classList.add("is-open");
       els.drawer.setAttribute("aria-hidden", "false");
       document.body.classList.add("drawer-open");
+    });
+  }
+
+  function bindGallery(v) {
+    const imgs = galleryFor(v);
+    const main = els.drawerContent.querySelector(".gallery-main");
+    const thumbs = els.drawerContent.querySelectorAll("[data-gallery-idx]");
+    if (!main || !thumbs.length) return;
+    thumbs.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx = Number(btn.dataset.galleryIdx);
+        if (!imgs[idx]) return;
+        state.galleryIndex = idx;
+        main.src = imgs[idx];
+        thumbs.forEach((t) => t.classList.toggle("is-active", Number(t.dataset.galleryIdx) === idx));
+      });
+    });
+  }
+
+  function bindNotes(v) {
+    const ta = els.drawerContent.querySelector("[data-notes-for]");
+    if (!ta) return;
+    ta.addEventListener("input", () => {
+      const id = ta.dataset.notesFor;
+      state.notes[id] = ta.value;
+      if (state.notesTimer) clearTimeout(state.notesTimer);
+      state.notesTimer = setTimeout(() => {
+        saveNotes();
+        // refresh card badge without closing drawer
+        const card = els.cards.querySelector(`.card[data-id="${id}"]`);
+        if (card) {
+          const existing = card.querySelector(".notes-badge");
+          const has = venueHasNotes(id);
+          if (has && !existing) {
+            const badge = document.createElement("span");
+            badge.className = "notes-badge";
+            badge.title = "Has notes";
+            badge.textContent = "Notes";
+            card.appendChild(badge);
+          } else if (!has && existing) {
+            existing.remove();
+          }
+        }
+      }, 350);
     });
   }
 
@@ -754,8 +894,13 @@
 
   async function init() {
     try {
-      const res = await fetch("data/venues.json");
-      const data = await res.json();
+      let data;
+      if (window.__EJ_VENUES__) {
+        data = window.__EJ_VENUES__;
+      } else {
+        const res = await fetch("data/venues.json");
+        data = await res.json();
+      }
       state.venues = data.venues || [];
       state.meta = data.meta || {};
       if (data.meta && data.meta.calculatorDefaults) {
