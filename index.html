@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f1e8" />
+  <title>Estefania &amp; James · Italy Venues</title>
+  <meta name="description" content="Private Italy wedding venue shortlist for Estefania & James — Fall 2027." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <p class="eyebrow">Fall 2027 · Italy</p>
+      <h1>Estefania <span class="amp">&amp;</span> James</h1>
+      <p class="tagline">Our Italy shortlist</p>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button class="tab is-active" data-view="all" role="tab" aria-selected="true">All venues</button>
+      <button class="tab" data-view="shortlist" role="tab" aria-selected="false">
+        Shortlist <span class="badge" id="shortlist-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero-strip" id="hero-strip">
+    <p class="hero-copy">Handpicked villas, borghi, and hotels across Italy — filter by region, heart your favorites, and compare the facts from your shortlist workbook.</p>
+  </section>
+
+  <div class="toolbar" id="toolbar">
+    <div class="chips" id="region-chips" aria-label="Filter by region"></div>
+    <div class="toolbar-right">
+      <label class="search-wrap">
+        <span class="sr-only">Search venues</span>
+        <input type="search" id="search" placeholder="Search name or city…" autocomplete="off" />
+      </label>
+      <select id="band-filter" aria-label="Budget band">
+        <option value="all">All budgets</option>
+        <option value="Large">Large (&gt; €60k)</option>
+        <option value="Medium">Medium (€30–60k)</option>
+        <option value="Modest">Modest (&lt; €30k)</option>
+      </select>
+    </div>
+  </div>
+
+  <main class="layout">
+    <section class="directory" aria-live="polite">
+      <div class="dir-meta">
+        <h2 id="view-title">All venues</h2>
+        <p id="result-count"></p>
+      </div>
+      <div class="cards" id="cards"></div>
+      <div class="empty" id="empty" hidden>
+        <p class="empty-title">No venues here yet</p>
+        <p class="empty-body">Tap the heart on any card to save it to your shortlist. Favorites stay on this phone via local storage.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Private picker for Estefania &amp; James · Facts from the LaRosa-format Italy shortlist · Photos from official venue sites (local covers) · interactive cost calculator</p>
+  </footer>
+
+  <!-- Detail slide-over -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <button class="drawer-close" id="drawer-close" aria-label="Close details">&times;</button>
+    <div class="drawer-scroll" id="drawer-content"></div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

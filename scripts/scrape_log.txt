@@ -1,0 +1,214 @@
+
+=== villa-pozzolo ===
+  [villa-pozzolo] fail https://villapozzolo.com/gallery/ -> 404
+  [villa-pozzolo] https://villapozzolo.com/weddings/ -> 30 imgs (status 200)
+    saved 01 (converted .webp) http://static1.squarespace.com/static/63fc8970832cf56c5aeb1f0f/t/646c5ea12ec1ab34c7ca1b52/1684823713
+    saved 02 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/2916a44f-7fd8-40d0-931a-64876
+    saved 03 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/ab4105fb-0d4f-4fcb-9462-65ffe
+    saved 04 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/fab4d500-ff69-460f-8919-65ff0
+    saved 05 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/64214b20-4ea0-4d06-95da-f77b3
+    saved 06 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/db041dfd-665e-459b-af81-12216
+    saved 07 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/ab16dcb8-6453-41db-b3e6-07eaf
+    saved 08 (converted .webp) https://images.squarespace-cdn.com/content/v1/63fc8970832cf56c5aeb1f0f/c97a4f11-cf49-4a78-94c3-3e590
+  TOTAL 8 images
+
+=== villa-lena ===
+  [villa-lena] https://www.villa-lena.it/celebrate-with-us/weddings/ -> 40 imgs (status 200)
+    saved 01 (converted .webp) https://www.villa-lena.it/wp-content/uploads/2026/08/g74pVe6A-1.jpg
+    saved 02 (converted .webp) https://www.villa-lena.it/wp-content/uploads/2026/08/Angela-James.jpg
+    saved 03 (ok) https://www.villa-lena.it/wp-content/uploads/2026/08/Valeriya-Mathias-2-1.jpg
+    saved 04 (ok) https://www.villa-lena.it/wp-content/uploads/2026/08/Katzi-and-Felix-2.jpg
+    saved 05 (ok) https://www.villa-lena.it/wp-content/uploads/2026/08/The-Morrisons-1-copy-1.jpg
+    saved 06 (ok) https://www.villa-lena.it/wp-content/uploads/2026/08/Valeriya-Mathias-copy-1.jpg
+    saved 07 (ok) https://www.villa-lena.it/wp-content/uploads/2026/08/Valeriya-Mathias-3.jpg
+    saved 08 (ok) https://www.villa-lena.it/wp-content/uploads/2026/08/Kyra-Mischa-1.jpg
+  TOTAL 8 images
+
+=== castello-di-gargonza ===
+  [castello-di-gargonza] fail https://gargonza.it/en/weddings-in-tuscany/ -> HTTPSConnectionPool(host='gargonza.it', port=443): Max retries exceeded with url: /en/weddings-in-tuscany/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+  [castello-di-gargonza] fail https://gargonza.it/weddings/ -> HTTPSConnectionPool(host='gargonza.it', port=443): Max retries exceeded with url: /weddings/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+  [castello-di-gargonza] fail https://gargonza.it/en/ -> HTTPSConnectionPool(host='gargonza.it', port=443): Max retries exceeded with url: /en/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+  [castello-di-gargonza] fail https://gargonza.it/ -> HTTPSConnectionPool(host='gargonza.it', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+    fallback cover -> 01.jpg
+  TOTAL 1 images
+
+=== villa-paola ===
+  [villa-paola] https://www.villapaolatropea.it/en/weddings/ -> 85 imgs (status 200)
+    saved 01 (ok) https://cdn.blastness.biz/media/964/gallery/thumbs/medium/1024-celebrate-L1100498.jpg
+    saved 02 (ok) https://cdn.blastness.biz/media/964/gallery/thumbs/full/1024-celebrate-L1100498.jpg
+    saved 03 (ok) https://cdn.blastness.biz/media/964/gallery/thumbs/full/1024-struttura-L1090901.jpg
+    saved 04 (ok) https://cdn.blastness.biz/media/964/gallery/thumbs/full/1024-suite-DSC_6696.jpg
+    saved 05 (ok) https://cdn.blastness.biz/media/964/gallery/thumbs/full/1024-struttura-L1090909.jpg
+    saved 06 (ok) https://cdn.blastness.biz/media/964/gallery/thumbs/full/1024-cena-de-minimi-L1090916.jpg
+    saved 07 (ok) https://cdn.blastness.biz/media/964/esperienze/thumbs/full/1920-MerryMe-17.jpg
+    skip (status 404) https://cdn.blastness.biz/media/964//var/www/vhosts/cube.blastness.info/httpdocs/media/thumbs/full/9
+    saved 08 (ok) https://cdn.blastness.biz/media/964/top/thumbs/full/1600-A7R01016.jpg
+  TOTAL 8 images
+
+=== hotel-bellevue-syrene ===
+  [hotel-bellevue-syrene] https://www.bellevue.it/en/weddings-in-sorrento -> 0 imgs (status 202)
+  [hotel-bellevue-syrene] https://www.bellevue.it/en/weddings-sorrento -> 0 imgs (status 202)
+  [hotel-bellevue-syrene] https://www.bellevue.it/en/gallery-hotel-sorrento -> 0 imgs (status 202)
+  [hotel-bellevue-syrene] https://www.bellevue.it/en/ -> 0 imgs (status 202)
+    fallback cover -> 01.jpg
+  TOTAL 1 images
+
+=== parco-dei-principi-di-sorrento ===
+  [parco-dei-principi-di-sorrento] https://www.hotelparcoprincipi.com/en/events.html -> 0 imgs (status 202)
+  [parco-dei-principi-di-sorrento] https://www.hotelparcoprincipi.com/en/gallery.html -> 0 imgs (status 202)
+  [parco-dei-principi-di-sorrento] https://www.hotelparcoprincipi.com/en/hotel.html -> 0 imgs (status 202)
+  [parco-dei-principi-di-sorrento] https://www.hotelparcoprincipi.com/en/ -> 0 imgs (status 202)
+  [parco-dei-principi-di-sorrento] https://www.hotelparcoprincipi.com/ -> 0 imgs (status 202)
+  TOTAL 0 images
+
+=== castello-di-spessa ===
+  [castello-di-spessa] https://www.castellodispessa.it/en/weddings/ -> 1 imgs (status 200)
+  [castello-di-spessa] https://castellodispessa.it/en/weddings/ -> 1 imgs (status 200)
+  [castello-di-spessa] fail https://www.castellodispessa.it/en/photo-gallery/ -> 404
+  [castello-di-spessa] https://www.castellodispessa.it/ -> 7 imgs (status 200)
+    saved 01 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/Z6D_6892_1.jpg
+    saved 02 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/castello-di-spessa-sorvolo-low.jpg
+    saved 03 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/loretto-pali1920x1280.jpg
+    saved 04 (ok) https://castellodispessa.it/wp-content/uploads/2026/09/vigneti-spessa.jpg
+    saved 05 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/vigneti-15.jpg
+    saved 06 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/Castello-di-spessa-da-lontano-2.jpg
+    saved 07 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/vini-spumante-1.jpg
+    saved 08 (ok) https://castellodispessa.it/wp-content/uploads/2026/07/casello-di-spessa-foto-aerea-low.jpg
+  TOTAL 8 images
+
+=== villa-catignano ===
+  [villa-catignano] https://www.villacatignano.it/weddings-events.html -> 18 imgs (status 200)
+  [villa-catignano] fail https://www.villacatignano.it/photo-gallery.html -> 404
+  [villa-catignano] https://www.villacatignano.it/gallery.html -> 14 imgs (status 200)
+    skip (too small 7597) https://www.villacatignano.it/inc/img/villa-catignano.png
+    skip (too small 4622) https://www.villacatignano.it/inc/img/slogan.png
+    saved 01 (ok) https://www.villacatignano.it/images/h-home10.jpg
+    saved 02 (ok) https://www.villacatignano.it/images/weddings-tuscany-catignano-1.jpg
+    saved 03 (ok) https://www.villacatignano.it/images/weddings-tuscany-catignano-2.jpg
+    saved 04 (ok) https://www.villacatignano.it/images/weddings-tuscany-catignano-3.jpg
+    saved 05 (ok) https://www.villacatignano.it/images/weddings-tuscany-catignano-4.jpg
+    saved 06 (ok) https://www.villacatignano.it/images/f-weddings.jpg
+    skip (too small 718) https://www.villacatignano.it/inc/img/contact.png
+    skip (too small 796) https://www.villacatignano.it/inc/img/contact-05.png
+    skip (too small 2865) https://www.villacatignano.it/inc/img/contact-06.png
+    skip (too small 844) https://www.villacatignano.it/inc/img/contact-02.png
+    skip (too small 2625) https://www.villacatignano.it/inc/img/contact-07.png
+    skip (too small 1871) https://www.villacatignano.it/inc/img/contact-04.png
+    saved 07 (ok) https://www.villacatignano.it/images/weddings-tuscany-catignano-big-1.jpg
+    saved 08 (ok) https://www.villacatignano.it/images/weddings-tuscany-catignano-big-2.jpg
+  TOTAL 8 images
+
+=== borgo-castelvecchi ===
+  [borgo-castelvecchi] https://www.castelvecchi.com/ -> 17 imgs (status 200)
+  [borgo-castelvecchi] fail https://www.castelvecchi.com/en/ -> 404
+  [borgo-castelvecchi] fail https://www.castelvecchi.com/language/en/home-page-english/ -> 404
+    saved 01 (ok) https://www.castelvecchi.com/wp-content/uploads/2023/02/foto-89.jpg
+    skip (too small 68) https://www.castelvecchi.com/wp-content/plugins/revslider/public/assets/assets/dummy.png
+    saved 02 (ok) https://www.castelvecchi.com/wp-content/uploads/2023/02/castelvecchi_chianti_hotel_bb_gallery_004.jp
+    saved 03 (ok) https://www.castelvecchi.com/wp-content/uploads/2023/02/castelvecchi_chianti_hotel_bb_gallery_0014.j
+    saved 04 (ok) https://www.castelvecchi.com/wp-content/uploads/2024/04/castelvecchi_piscina2.jpg
+    skip (too small 4117) https://www.castelvecchi.com/wp-content/uploads/2025/05/new.jpg
+    saved 05 (ok) https://www.castelvecchi.com/wp-content/uploads/2025/05/pacchetto_speciale1.jpg
+    saved 06 (ok) https://www.castelvecchi.com/wp-content/uploads/2025/05/pacchetto_speciale2.jpg
+    saved 07 (ok) https://www.castelvecchi.com/wp-content/uploads/2023/02/slider-2.jpg
+    saved 08 (ok) https://www.castelvecchi.com/wp-content/uploads/2024/11/image6.jpg
+  TOTAL 8 images
+
+=== casale-de-pasquinelli ===
+  [casale-de-pasquinelli] https://www.casaledepasquinelli.it/weddings -> 0 imgs (status 200)
+  [casale-de-pasquinelli] https://www.casaledepasquinelli.it/gallery -> 0 imgs (status 200)
+  [casale-de-pasquinelli] https://www.casaledepasquinelli.it/the-estate -> 0 imgs (status 200)
+  [casale-de-pasquinelli] https://www.casaledepasquinelli.it/ -> 0 imgs (status 200)
+    fallback cover -> 01.jpg
+  TOTAL 1 images
+
+=== antico-borgo-san-lorenzo ===
+  [antico-borgo-san-lorenzo] fail https://www.anticoborgosanlorenzo.it/en/weddings/ -> 404
+  [antico-borgo-san-lorenzo] fail https://www.anticoborgosanlorenzo.it/en/gallery/ -> 404
+  [antico-borgo-san-lorenzo] fail https://www.anticoborgosanlorenzo.it/en/the-borgo/ -> 404
+  [antico-borgo-san-lorenzo] https://www.anticoborgosanlorenzo.it/en/ -> 12 imgs (status 200)
+    saved 01 (converted .webp) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/MATRIMONI-2.jpg
+    saved 02 (ok) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/MATRIMONI-3.jpg
+    saved 03 (converted .webp) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/MATRIMONI-1.jpg
+    saved 04 (ok) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/ANTICO-BORGO-1.jpg
+    saved 05 (ok) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/ANTICO-BORGO-3.jpg
+    saved 06 (ok) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/ANTICO-BORGO-2.jpg
+    saved 07 (ok) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2021/06/siena.jpg
+    saved 08 (converted .webp) https://www.anticoborgosanlorenzo.it/wp-content/uploads/2025/03/CHIANTI.jpg
+  TOTAL 8 images
+
+=== villa-sermolli ===
+  [villa-sermolli] https://villa-sermolli.com/weddings/ -> 1 imgs (status 200)
+  [villa-sermolli] https://villa-sermolli.com/gallery/ -> 194 imgs (status 200)
+    saved 01 (ok) https://villa-sermolli.com/wp-content/uploads/2026/01/Wedding-image.jpg
+    saved 02 (ok) https://villa-sermolli.com/wp-content/uploads/2026/01/Sermolli-1162-scaled.jpg
+    saved 03 (ok) https://villa-sermolli.com/wp-content/uploads/2026/01/42.jpg
+    saved 04 (ok) https://villa-sermolli.com/wp-content/uploads/2026/01/Lobby-_-library7.jpg
+    saved 05 (converted .webp) https://villa-sermolli.com/wp-content/uploads/2025/12/1-scaled.webp
+    saved 06 (ok) https://villa-sermolli.com/wp-content/uploads/2025/12/19-min-scaled.jpg
+    saved 07 (ok) https://villa-sermolli.com/wp-content/uploads/2026/01/45.jpg
+    saved 08 (ok) https://villa-sermolli.com/wp-content/uploads/2026/01/44.jpg
+  TOTAL 8 images
+
+=== villa-poggio-bartoli ===
+  [villa-poggio-bartoli] fail https://www.villapoggiobartoli.it/en/weddings/ -> HTTPSConnectionPool(host='www.villapoggiobartoli.it', port=443): Max retries exceeded with url: /en/weddings/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+  [villa-poggio-bartoli] fail https://www.villapoggiobartoli.it/en/gallery/ -> HTTPSConnectionPool(host='www.villapoggiobartoli.it', port=443): Max retries exceeded with url: /en/gallery/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+  [villa-poggio-bartoli] fail https://www.villapoggiobartoli.it/en/the-villa/ -> HTTPSConnectionPool(host='www.villapoggiobartoli.it', port=443): Max retries exceeded with url: /en/the-villa/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+  [villa-poggio-bartoli] fail https://www.villapoggiobartoli.it/en/home-eng/ -> HTTPSConnectionPool(host='www.villapoggiobartoli.it', port=443): Max retries exceeded with url: /en/home-eng/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))
+    fallback cover -> 01.jpg
+  TOTAL 1 images
+
+=== spao-borgo-san-pietro ===
+  [spao-borgo-san-pietro] fail https://www.spao.it/weddings -> 404
+  [spao-borgo-san-pietro] https://www.spao.it/gallery -> 321 imgs (status 200)
+    saved 01 (converted .png) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2023/06/Screenshot-2023-06-26-
+    saved 02 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/weddings-borgo-san-pie
+    saved 03 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/weddings-borgo-san-pie
+    saved 04 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/weddings-borgo-san-pie
+    saved 05 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/borgo-san-pietro-acqua
+    saved 06 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/matrimonio-san-pietro-
+    saved 07 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/san-pietro-aquaeortus.
+    saved 08 (ok) https://sanpietro-aquaeortus.ms3.decms.eu/wp-content/uploads/sites/40/2025/12/camera-san-pietro-aqua
+  TOTAL 8 images
+
+=== monastero-santa-margherita ===
+  [monastero-santa-margherita] https://monasterosantamargherita.com/matrimoni/ -> 0 imgs (status 200)
+  [monastero-santa-margherita] https://monasterosantamargherita.com/weddings/ -> 0 imgs (status 200)
+  [monastero-santa-margherita] https://monasterosantamargherita.com/gli-spazi/ -> 0 imgs (status 200)
+  [monastero-santa-margherita] https://monasterosantamargherita.com/gallery/ -> 0 imgs (status 200)
+  [monastero-santa-margherita] https://monasterosantamargherita.com/ -> 0 imgs (status 200)
+  TOTAL 0 images
+
+=== villa-arvedi ===
+  [villa-arvedi] https://www.villarvedi.it/i-matrimoni/ -> 14 imgs (status 200)
+  [villa-arvedi] fail https://www.villarvedi.it/galleria/ -> 404
+  [villa-arvedi] https://www.villarvedi.it/la-villa/ -> 14 imgs (status 200)
+  [villa-arvedi] https://www.villarvedi.it/ -> 10 imgs (status 200)
+    saved 01 (converted .png) https://www.villarvedi.it/wp-content/uploads/2022/11/VILLAARVEDI.png
+    saved 02 (converted .png) https://www.villarvedi.it/wp-content/uploads/2022/11/VILLAARVEDI_BIANCO.png
+    saved 03 (ok) https://www.villarvedi.it/wp-content/uploads/2015/10/HEADER_WEDDINGv3.jpg
+    saved 04 (converted .png) https://www.villarvedi.it/wp-content/uploads/2022/11/ARALDO.png
+    saved 05 (converted .png) https://www.villarvedi.it/wp-content/uploads/2024/05/marchio_di_qualita_100.png
+    saved 06 (converted .png) https://www.villarvedi.it/wp-content/uploads/2015/10/borgo27.png
+    saved 07 (converted .png) https://www.villarvedi.it/wp-content/uploads/2020/09/greatGardenGrey.png
+    saved 08 (ok) https://www.villarvedi.it/wp-content/uploads/2015/10/DSCN0439.jpg
+  TOTAL 8 images
+
+
+SUMMARY
+  villa-pozzolo: 8
+  villa-lena: 8
+  castello-di-gargonza: 1
+  villa-paola: 8
+  hotel-bellevue-syrene: 1
+  parco-dei-principi-di-sorrento: 0
+  castello-di-spessa: 8
+  villa-catignano: 8
+  borgo-castelvecchi: 8
+  casale-de-pasquinelli: 1
+  antico-borgo-san-lorenzo: 8
+  villa-sermolli: 8
+  villa-poggio-bartoli: 1
+  spao-borgo-san-pietro: 8
+  monastero-santa-margherita: 0
+  villa-arvedi: 8

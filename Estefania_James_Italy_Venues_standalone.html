@@ -1,0 +1,3926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f1e8" />
+  <title>Estefania &amp; James · Italy Venues</title>
+  <meta name="description" content="Private Italy wedding venue shortlist for Estefania & James — Fall 2027." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --cream: #f6f1e8;
+  --cream-deep: #ebe3d4;
+  --ink: #2a241c;
+  --ink-soft: #5c5348;
+  --muted: #8a7f70;
+  --line: rgba(42, 36, 28, 0.12);
+  --terracotta: #b85c38;
+  --terracotta-deep: #8f3f22;
+  --sage: #6b7f6a;
+  --gold: #c4a574;
+  --card: #fffdf9;
+  --shadow: 0 18px 50px rgba(42, 36, 28, 0.08);
+  --radius: 18px;
+  --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans: "Outfit", system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.site-header,
+.hero-strip,
+.toolbar,
+.layout,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2.25rem 1.5rem 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.brand h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.brand .amp {
+  font-style: italic;
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.tagline {
+  margin: 0.4rem 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.3rem;
+  background: var(--cream-deep);
+  border-radius: 999px;
+}
+
+.tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab.is-active {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 0.25rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--terracotta);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.tab:not(.is-active) .badge {
+  background: rgba(184, 92, 56, 0.18);
+  color: var(--terracotta-deep);
+}
+
+.hero-strip {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.hero-copy {
+  margin: 0;
+  max-width: 46rem;
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+.toolbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.chip {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.chip:hover { border-color: var(--ink-soft); color: var(--ink); }
+
+.chip.is-active {
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+  color: #fff;
+}
+
+.toolbar-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.search-wrap input,
+#band-filter {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  outline: none;
+}
+
+.search-wrap input {
+  min-width: min(220px, 70vw);
+}
+
+.search-wrap input:focus,
+#band-filter:focus {
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 3px rgba(184, 92, 56, 0.15);
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 3rem;
+}
+
+.dir-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dir-meta h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+#result-count {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 55px rgba(42, 36, 28, 0.12);
+}
+
+.card-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(145deg, #d9c7b0, #a8896e 45%, #6b5344);
+  overflow: hidden;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-media .monogram {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 3rem;
+  color: rgba(255, 253, 249, 0.88);
+  letter-spacing: 0.08em;
+}
+
+.card-media .credit {
+  position: absolute;
+  left: 0.65rem;
+  bottom: 0.55rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  background: rgba(42,36,28,0.45);
+  backdrop-filter: blur(4px);
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+}
+
+.heart {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  z-index: 2;
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 253, 249, 0.92);
+  color: var(--ink-soft);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 16px rgba(42,36,28,0.12);
+  transition: transform 0.15s, color 0.15s, background 0.15s;
+}
+
+.heart:hover { transform: scale(1.08); }
+.heart.is-on { color: var(--terracotta); background: #fff; }
+.heart svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }
+
+.card-body {
+  padding: 1rem 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.card-region {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 600;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 560;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.card-loc {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+}
+
+.stat-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.stat-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--terracotta);
+  opacity: 0.9;
+}
+
+.stat-icon strong {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.stat-icon span {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.pill {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--cream-deep);
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+}
+
+.empty {
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  background: rgba(255,253,249,0.5);
+}
+
+.empty-title {
+  margin: 0 0 0.4rem;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+}
+
+.empty-body {
+  margin: 0 auto;
+  max-width: 28rem;
+  color: var(--ink-soft);
+}
+
+.site-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.site-footer p { margin: 0; }
+
+/* Drawer */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 36, 28, 0.42);
+  backdrop-filter: blur(3px);
+  z-index: 40;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.overlay.is-open { opacity: 1; }
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(540px, 100%);
+  background: var(--cream);
+  z-index: 50;
+  transform: translateX(105%);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: -20px 0 60px rgba(42,36,28,0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer.is-open { transform: translateX(0); }
+
+.drawer-close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 2;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,253,249,0.92);
+  color: var(--ink);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(42,36,28,0.12);
+}
+
+.drawer-scroll {
+  overflow-y: auto;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drawer-hero {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(145deg, #d9c7b0, #a8896e 45%, #6b5344);
+}
+
+.drawer-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.drawer-hero .monogram {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 4rem;
+  color: rgba(255,253,249,0.9);
+}
+
+.drawer-hero .credit {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.85rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  background: rgba(42,36,28,0.45);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+.drawer-body { padding: 1.4rem 1.4rem 2.5rem; }
+
+.drawer-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 600;
+}
+
+#drawer-title,
+.drawer-body h2 {
+  margin: 0 0 0.35rem;
+  font-family: var(--serif);
+  font-weight: 550;
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  line-height: 1.1;
+}
+
+.drawer-sub {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+}
+
+.drawer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.4rem;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-primary {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--cream);
+}
+
+.btn-heart.is-on {
+  color: var(--terracotta);
+  border-color: rgba(184,92,56,0.35);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-bottom: 1.4rem;
+}
+
+.stat {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+}
+
+.stat dt {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.stat dd {
+  margin: 0.25rem 0 0;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.section {
+  margin-bottom: 1.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.section h3 {
+  margin: 0.9rem 0 0.45rem;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 560;
+}
+
+.section p,
+.section li {
+  margin: 0 0 0.55rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  white-space: pre-wrap;
+}
+
+.section ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.callout {
+  background: rgba(184, 92, 56, 0.08);
+  border-left: 3px solid var(--terracotta);
+  padding: 0.85rem 1rem;
+  border-radius: 0 12px 12px 0;
+  margin: 0.6rem 0;
+}
+
+.callout strong {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracotta-deep);
+  margin-bottom: 0.25rem;
+}
+
+.confidence {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--cream-deep);
+  color: var(--ink-soft);
+}
+
+body.drawer-open { overflow: hidden; }
+
+@media (max-width: 640px) {
+  .site-header { padding-top: 1.5rem; }
+  .stats { grid-template-columns: 1fr; }
+  .toolbar { padding-top: 0.75rem; }
+  .cards { grid-template-columns: 1fr; }
+}
+
+
+/* —— 60-guest cost + calculator —— */
+.cost-60 {
+  background: linear-gradient(180deg, rgba(184,92,56,0.06), rgba(255,253,249,0.9));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem 1.15rem;
+  margin: 1.1rem 0;
+}
+.cost-60 h3 { margin-top: 0; }
+.cost-60-total {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  margin: 0.35rem 0 0.75rem;
+}
+.cost-60-total .muted { font-size: 0.95rem; color: var(--muted); font-style: italic; }
+.overflow-note {
+  background: rgba(196,165,116,0.22);
+  border-left: 3px solid var(--gold);
+  padding: 0.55rem 0.75rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 0.5rem 0 0.75rem;
+}
+.table-wrap { overflow-x: auto; }
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+.cost-table th, .cost-table td {
+  text-align: left;
+  padding: 0.4rem 0.35rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.cost-table th { color: var(--muted); font-weight: 500; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.cost-table td:last-child { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.src-tag {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.65rem;
+  color: var(--muted);
+  background: var(--cream-deep);
+  padding: 0.1rem 0.35rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.assumptions {
+  margin: 0.75rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.calc-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem 1.2rem;
+  margin: 1rem 0 1.25rem;
+  box-shadow: var(--shadow);
+}
+.calc-panel h3 {
+  margin: 0 0 0.25rem;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+.calc-lead {
+  margin: 0 0 0.9rem;
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+}
+@media (max-width: 560px) {
+  .calc-grid { grid-template-columns: 1fr; }
+}
+.calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+.calc-field input[type="number"],
+.calc-field select {
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.5rem 0.65rem;
+  background: #fff;
+}
+.calc-row {
+  display: grid;
+  grid-template-columns: 1fr 4.2rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+.calc-row input[type="range"] { width: 100%; accent-color: var(--terracotta); }
+.calc-totals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+@media (max-width: 560px) {
+  .calc-totals { grid-template-columns: 1fr; }
+}
+.calc-total {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--line);
+}
+.calc-total.primary {
+  grid-column: 1 / -1;
+  background: rgba(184,92,56,0.1);
+  border-color: rgba(184,92,56,0.25);
+}
+.calc-total.host {
+  background: rgba(107,127,106,0.12);
+  border-color: rgba(107,127,106,0.28);
+}
+.calc-total .label {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+.calc-total strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.15;
+}
+.calc-total em {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: normal;
+}
+.calc-details {
+  margin-top: 0.75rem;
+  font-size: 0.86rem;
+}
+.calc-details summary {
+  cursor: pointer;
+  color: var(--terracotta-deep);
+  font-weight: 500;
+}
+.calc-lines {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+.calc-lines li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.28rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+
+</style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <p class="eyebrow">Fall 2027 · Italy</p>
+      <h1>Estefania <span class="amp">&amp;</span> James</h1>
+      <p class="tagline">Our Italy shortlist</p>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button class="tab is-active" data-view="all" role="tab" aria-selected="true">All venues</button>
+      <button class="tab" data-view="shortlist" role="tab" aria-selected="false">
+        Shortlist <span class="badge" id="shortlist-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero-strip" id="hero-strip">
+    <p class="hero-copy">Handpicked villas, borghi, and hotels across Italy — filter by region, heart your favorites, and compare the facts from your shortlist workbook.</p>
+  </section>
+
+  <div class="toolbar" id="toolbar">
+    <div class="chips" id="region-chips" aria-label="Filter by region"></div>
+    <div class="toolbar-right">
+      <label class="search-wrap">
+        <span class="sr-only">Search venues</span>
+        <input type="search" id="search" placeholder="Search name or city…" autocomplete="off" />
+      </label>
+      <select id="band-filter" aria-label="Budget band">
+        <option value="all">All budgets</option>
+        <option value="Large">Large (&gt; €60k)</option>
+        <option value="Medium">Medium (€30–60k)</option>
+        <option value="Modest">Modest (&lt; €30k)</option>
+      </select>
+    </div>
+  </div>
+
+  <main class="layout">
+    <section class="directory" aria-live="polite">
+      <div class="dir-meta">
+        <h2 id="view-title">All venues</h2>
+        <p id="result-count"></p>
+      </div>
+      <div class="cards" id="cards"></div>
+      <div class="empty" id="empty" hidden>
+        <p class="empty-title">No venues here yet</p>
+        <p class="empty-body">Tap the heart on any card to save it to your shortlist. Favorites stay on this phone via local storage.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Private picker for Estefania &amp; James · Facts from the LaRosa-format Italy shortlist · Photos from official venue sites (local covers) · interactive cost calculator</p>
+  </footer>
+
+  <!-- Detail slide-over -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <button class="drawer-close" id="drawer-close" aria-label="Close details">&times;</button>
+    <div class="drawer-scroll" id="drawer-content"></div>
+  </aside>
+
+  <script>
+window.__EJ_VENUES__ = {
+  "meta": {
+    "title": "Estefania & James · Italy Venues",
+    "subtitle": "Our Italy shortlist for Fall 2027",
+    "couple": [
+      "Estefania",
+      "James"
+    ],
+    "planningNote": "Fall 2027 · September–October preferred · hosted full bar · destination weekend",
+    "currency": "EUR",
+    "venueCount": 16,
+    "costAssumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+    "calculatorDefaults": {
+      "weddingGuests": 60,
+      "guestPayPerNight": 0,
+      "minGuests": 20,
+      "maxGuests": 150
+    }
+  },
+  "venues": [
+    {
+      "id": "villa-pozzolo",
+      "name": "Villa Pozzolo",
+      "location": "Florence area, Tuscany",
+      "city": "Florence area",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Large",
+      "dateRequirements": "3-night minimum. 2027 weekends still available (email): Mar 20; Apr 10, 24; May 8, 15; Jun 19; Jul 3, 10, 24; Aug 7, 14; Oct 30; Nov 6, 13, 20. No September dates shown.",
+      "brochure": "See Vega email for full proposal (private attachment)",
+      "pricesPackages": "2027 correspondence: €22,950 per night including stated package for up to 35 overnight guests.\n3-night minimum → €68,850 before other costs.\n(LaRosa Large older figure €19,490/night — prefer current €22,950 email rate.)\n9% gratuity on total bill (LaRosa). Confirm what “absolutely everything described above” includes.",
+      "website": "https://villapozzolo.com/",
+      "venueFee": "€22,950 / night (package for ≤35 overnight)",
+      "guestsAccommodated": "~35 overnight; ~23 bedrooms",
+      "discountsExtraFees": "9% gratuity required (LaRosa)",
+      "backupIndoor": "TBD — ask venue",
+      "minMaxNumbers": "35 overnight package; 100 needs overflow",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "Confirm inclusions in “everything” package",
+      "foodPrice": "Confirm if in nightly rate — TBD without original proposal",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — ask venue",
+      "overnightCapacity": "~35 (23 bedrooms)",
+      "eventCapacity": "TBD — ask venue",
+      "minNights": "3",
+      "airportNotes": "Florence (FLR)",
+      "allIn40": "€92k–€118k",
+      "allIn100": "€118k–€155k",
+      "bestFit": "High-budget private Tuscan house-party weekend",
+      "watchOuts": "Only fall date shown Oct 30; obtain full inclusions & payment schedule",
+      "confidence": "Low-medium",
+      "sourceNotes": "Italian Venues 2027 email rate preferred over LaRosa €19,490/night",
+      "correctedLocation": "",
+      "image": "assets/covers/villa-pozzolo.jpg",
+      "imageCredit": "Official site",
+      "monogram": "VP",
+      "allIn60": "€128k–€163k",
+      "allIn60Low": 128321,
+      "allIn60High": 162875,
+      "allIn60Mid": 145598,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 68950,
+          "high": 74466,
+          "source": "quote"
+        },
+        {
+          "item": "Gratuity (9%)",
+          "low": 6206,
+          "high": 6702,
+          "source": "quote"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Welcome party (Italy avg)",
+          "low": 3000,
+          "high": 4800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Farewell brunch (Italy avg)",
+          "low": 1500,
+          "high": 2400,
+          "source": "italy-average"
+        },
+        {
+          "item": "Overflow lodging ~25 guests × 3n (nearby hotel est.)",
+          "low": 13500,
+          "high": 21000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 11666,
+          "high": 14807,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~35 < 60 wedding guests — overflow lodging estimated for 25 guests.",
+      "allIn60OverflowNote": "Onsite overnight capacity ~35 < 60 wedding guests — overflow lodging estimated for 25 guests.",
+      "costModel": {
+        "overnightCap": 35,
+        "defaultNights": 3,
+        "rentalTotal": 68950,
+        "rentalPerNight": 22983.333333333332,
+        "rentalSource": "quote",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": 0.09,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "villa-lena",
+      "name": "Villa Lena",
+      "location": "Palaia, Tuscany",
+      "city": "Palaia",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Large",
+      "dateRequirements": "2–3 nights min depending on season. 2027 availability (email): May 21–24, 24–27, 28–31; Jun 4–7, 28–Jul 1; Jul 2–5, 5–7; Aug 27–30; Sep 3–6, 6–9, 12–25, 17–20, 27–30; Oct entire month.",
+      "brochure": "Villa_Lena_privatisation_rates 2027-NEW.pdf (via email; Gmail link in shortlist)",
+      "pricesPackages": "QUOTED 2027 privatisation (prefer over older LaRosa “from €60k”):\n7–30 Sep weekend: €49,500 / 3 nights (3-night min).\nOct–Nov weekend: €33,250 / 2n or €45,400 / 3n.\nOct–Nov midweek: €28,100 / 2n or €40,750 / 3n.\nF&B estimate: €430 pp / 2 event days; €500–€600 pp / 3 days (pizza, aperitivo & dinner, 3h open bar, farewell).\nTourist tax €1.50 / guest / night; rental VAT/service included.",
+      "website": "https://www.villa-lena.it/celebrate-with-us/weddings/",
+      "venueFee": "€49,500 / 3n (Sep weekend 2027 quote)",
+      "guestsAccommodated": "~76 overnight included; ~88 listed in LaRosa sheet",
+      "discountsExtraFees": "Tourist tax €1.50 pp/n; F&B tax treatment unclear",
+      "backupIndoor": "yes (LaRosa); rain-backup reserve advised",
+      "minMaxNumbers": "ideal ~130 event (LaRosa); confirm",
+      "musicCurfew": "No early curfew reported — confirm",
+      "inHouseCatering": "yes",
+      "foodPrice": "€500–€600 pp bundled 3-day F&B (venue estimate)",
+      "cake": "TBD / often in F&B — confirm",
+      "alcoholPrice": "3h open bar in F&B estimate; extras TBD",
+      "overnightCapacity": "~76 (quoted included)",
+      "eventCapacity": "~130–140 (confirm)",
+      "minNights": "2–3 (season-dependent; Sep weekend often 3)",
+      "airportNotes": "Pisa (PSA) / Florence (FLR)",
+      "allIn40": "€75k–€105k",
+      "allIn100": "€105k–€150k",
+      "bestFit": "Polished multi-day, mostly self-contained destination wedding",
+      "watchOuts": "High fixed buyout + expensive F&B; request exact Sep/Oct 2027 proposal & inclusions",
+      "confidence": "Medium (strong quoted rental; F&B still estimate)",
+      "sourceNotes": "Quoted rates sheet IDs 7–10 + Italian Venues email notes preferred over LaRosa Large older high-season ranges",
+      "correctedLocation": "",
+      "image": "assets/covers/villa-lena.webp",
+      "imageCredit": "Official site",
+      "monogram": "VL",
+      "allIn60": "€103k–€126k",
+      "allIn60Low": 103400,
+      "allIn60High": 126456,
+      "allIn60Mid": 114928,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 49500,
+          "high": 53460,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 30000,
+          "high": 36000,
+          "source": "quote"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 9400,
+          "high": 11496,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 76,
+        "defaultNights": 3,
+        "rentalTotal": 49500,
+        "rentalPerNight": 16500.0,
+        "rentalSource": "quote",
+        "fbPerGuest": 550,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": 1.5,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "castello-di-gargonza",
+      "name": "Castello di Gargonza",
+      "location": "Tuscany — Arezzo",
+      "city": "Monte San Savino / Arezzo area",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Large",
+      "dateRequirements": "Minimum of 3 nights",
+      "brochure": "Brochure wedding eng - WP.pdf; NEW wedding tariffs 2025_compressed.pdf",
+      "pricesPackages": "€14,000 a night (accommodation/venue). Planner ~€3,500. In-house catering ~€170 pp. Public brochure mainly descriptive — request 2027 tariff.",
+      "website": "https://gargonza.it/",
+      "venueFee": "n/a (nightly buyout)",
+      "guestsAccommodated": "65 overnight",
+      "discountsExtraFees": "€3,500 planner fees",
+      "backupIndoor": "TBD — ask venue",
+      "minMaxNumbers": "65 (overnight focus)",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes",
+      "foodPrice": "€170 pp",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — ask venue",
+      "overnightCapacity": "~65",
+      "eventCapacity": "TBD (100 needs overflow lodging)",
+      "minNights": "3",
+      "airportNotes": "Florence (FLR) / Perugia — confirm",
+      "allIn40": "€65k–€82k",
+      "allIn100": "€95k–€125k",
+      "bestFit": "Immersive Tuscan village weekend with strong atmosphere",
+      "watchOuts": "Large fixed accommodation; catering/bar need 2027 quote; pricing docs may be older",
+      "confidence": "Medium-low",
+      "sourceNotes": "Merged LaRosa Large Budget row + Italian Venues AI Summary",
+      "correctedLocation": "",
+      "image": "assets/covers/castello-di-gargonza.jpg",
+      "imageCredit": "Official site",
+      "monogram": "CG",
+      "allIn60": "€73k–€88k",
+      "allIn60Low": 73359,
+      "allIn60High": 88077,
+      "allIn60Mid": 80718,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 42000,
+          "high": 45360,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 9690,
+          "high": 10710,
+          "source": "quote"
+        },
+        {
+          "item": "Planner / coordinator",
+          "low": 3500,
+          "high": 3500,
+          "source": "quote"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 6669,
+          "high": 8007,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 65,
+        "defaultNights": 3,
+        "rentalTotal": 42000,
+        "rentalPerNight": 14000.0,
+        "rentalSource": "quote",
+        "fbPerGuest": 170,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": 3500,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "villa-paola",
+      "name": "Villa Paola",
+      "location": "Tropea, Calabria",
+      "city": "Tropea",
+      "region": "Calabria",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Exclusive buyout; 2-night minimum",
+      "brochure": "https://media.blastness.info/964/VP_Wedding_ENG_25_V_mail.pdf",
+      "pricesPackages": "April/October €7,000 per night; May–September €12,000 per night.\n12 double rooms with breakfast for 24 overnight.\nCatering in-house but NOT included in nightly rate.\nOutdoor event capacity 90; indoor dinner backup 50; one room limited to 40.",
+      "website": "https://www.villapaolatropea.it/en/",
+      "venueFee": "€7k (Apr/Oct) or €12k (May–Sep) per night",
+      "guestsAccommodated": "24 overnight; event max 90 outdoor / 50 indoor dinner",
+      "discountsExtraFees": "Private transfers extra",
+      "backupIndoor": "Indoor dinner backup ~50; one room ~40",
+      "minMaxNumbers": "max 90 outdoor; indoor limits 40–50",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes (not included in room rate)",
+      "foodPrice": "TBD — ask venue",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — ask venue",
+      "overnightCapacity": "24",
+      "eventCapacity": "90 outdoor / 50 indoor dinner",
+      "minNights": "2",
+      "airportNotes": "Lamezia Terme (SUF) ~60 km / ~1 hour; private transfers extra",
+      "allIn40": "€39k–€58k",
+      "allIn100": "Not viable (max 90; ~€62k–€88k at 90)",
+      "bestFit": "Scenic design-forward Calabria wedding of 40–60, especially October",
+      "watchOuts": "Indoor backup limited; most guests need off-site lodging",
+      "confidence": "High on venue terms; medium on all-in",
+      "sourceNotes": "Italian Venues AI Summary + public brochure PDF",
+      "correctedLocation": "",
+      "image": "assets/covers/villa-paola.jpg",
+      "imageCredit": "Official site",
+      "monogram": "VP",
+      "allIn60": "€59k–€96k",
+      "allIn60Low": 58806,
+      "allIn60High": 96426,
+      "allIn60Mid": 77616,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (2n)",
+          "low": 14000,
+          "high": 24000,
+          "source": "quote"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Welcome party (Italy avg)",
+          "low": 3000,
+          "high": 4800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Overflow lodging ~36 guests × 2n (nearby hotel est.)",
+          "low": 12960,
+          "high": 20160,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5346,
+          "high": 8766,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~24 < 60 wedding guests — overflow lodging estimated for 36 guests.",
+      "allIn60OverflowNote": "Onsite overnight capacity ~24 < 60 wedding guests — overflow lodging estimated for 36 guests.",
+      "costModel": {
+        "overnightCap": 24,
+        "defaultNights": 2,
+        "rentalTotal": 14000,
+        "rentalPerNight": 7000,
+        "rentalSource": "quote",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 24000,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "hotel-bellevue-syrene",
+      "name": "Hotel Bellevue Syrene",
+      "location": "Sorrento, Campania",
+      "city": "Sorrento",
+      "region": "Campania",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Public guidance: weddings normally ~90 guests; smaller by exception — ask for 40-guest waiver",
+      "brochure": "TBD — ask venue",
+      "pricesPackages": "Banquet menu about €230–€270 pp.\nPackage typically includes welcome cocktail, cake, wine/sparkling/coffee/liqueurs, printed menus/seating, seasonal flowers/candles, wedding-night suite, parking, children’s entertainment, musical entertainment with sound system — confirm 2027.\nTerrace/indoor can handle 100+. Full 51-room buyout not assumed in estimate.",
+      "website": "https://www.bellevue.it/en/book-holiday-sorrento",
+      "venueFee": "Typically baked into banquet/minimum — TBD written quote",
+      "guestsAccommodated": "Hotel rooms (51-room property); confirm block",
+      "discountsExtraFees": "Upgraded full cocktail bar, enhanced florals/music extra",
+      "backupIndoor": "yes",
+      "minMaxNumbers": "Normal min ~90; smaller by exception; 100+ capacity",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes",
+      "foodPrice": "€230–€270 pp banquet",
+      "cake": "Typically included in package",
+      "alcoholPrice": "Wine/sparkling/liqueurs in package; upgraded full bar extra",
+      "overnightCapacity": "Hotel inventory — confirm block size",
+      "eventCapacity": "100+",
+      "minNights": "TBD — ask venue",
+      "airportNotes": "Naples (NAP); ferry/train to Sorrento",
+      "allIn40": "€35k–€50k only if small-wedding exception granted",
+      "allIn100": "€45k–€65k (excl. full hotel buyout)",
+      "bestFit": "Elegant bundled Sorrento hotel celebration",
+      "watchOuts": "90-guest norm; confirm exception for 40; tax/service treatment",
+      "confidence": "Medium-high",
+      "sourceNotes": "Italian Venues AI Summary + bellevue.it",
+      "correctedLocation": "",
+      "image": "assets/covers/hotel-bellevue-syrene.jpg",
+      "imageCredit": "Official site",
+      "monogram": "HB",
+      "allIn60": "€64k–€88k",
+      "allIn60Low": 64394,
+      "allIn60High": 88374,
+      "allIn60Mid": 76384,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (2n)",
+          "low": 0,
+          "high": 0,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 13800,
+          "high": 16200,
+          "source": "quote"
+        },
+        {
+          "item": "Guest rooms estimate (2n, Italy hotel avg)",
+          "low": 30240,
+          "high": 38640,
+          "source": "italy-average-hotel"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5854,
+          "high": 8034,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 60,
+        "defaultNights": 2,
+        "rentalTotal": 0,
+        "rentalPerNight": null,
+        "rentalSource": "quote",
+        "fbPerGuest": 250,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": 280,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "parco-dei-principi-di-sorrento",
+      "name": "Parco dei Principi di Sorrento",
+      "location": "Sorrento, Campania",
+      "city": "Sorrento",
+      "region": "Campania",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "TBD — ask venue for Fall 2027 availability & any minimums",
+      "brochure": "Wedding package text in Italian Venues AI Summary; https://www.hotelparcoprincipi.com/en/events.html",
+      "pricesPackages": "WEDDING PACKAGE 2027: €280.00 per person including 10% VAT.\nIncludes: welcome aperitif (6 finger-food specialties); four-course gastronomic menu; water + selection of local wines; buffet of 6 mini pastries; bespoke wedding cake; printed menus; seating chart; white table linen; cream chair covers.\nLodging / buyout / bar upgrades / ceremony fees NOT in this package line — ask venue.\nThird-party listings note capacity roughly 10–170; confirm official.",
+      "website": "https://www.hotelparcoprincipi.com/en/",
+      "venueFee": "Typically in package / TBD separate room hire",
+      "guestsAccommodated": "Hotel rooms — confirm block; event listings ~10–170",
+      "discountsExtraFees": "Upgrades beyond package TBD",
+      "backupIndoor": "yes (Sedowa Room etc.)",
+      "minMaxNumbers": "Listings ~10–170 — confirm with hotel",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes",
+      "foodPrice": "€280 pp package 2027 (incl. 10% VAT) — see inclusions",
+      "cake": "Included (bespoke wedding cake)",
+      "alcoholPrice": "Local wines in package; full open bar TBD",
+      "overnightCapacity": "Hotel inventory — TBD block",
+      "eventCapacity": "~10–170 (third-party; confirm)",
+      "minNights": "TBD — ask venue",
+      "airportNotes": "Naples (NAP); Sorrento transfers",
+      "allIn40": "€25k–€40k planning (package €11.2k + rooms/extras TBD)",
+      "allIn100": "€40k–€65k planning (package €28k + rooms/extras TBD)",
+      "bestFit": "Sorrento sea-view hotel wedding with clear 2027 per-person F&B package",
+      "watchOuts": "Confirm lodging costs, ceremony space fees, bar upgrades, Fall 2027 dates",
+      "confidence": "High on €280 pp package; medium-low on all-in lodging",
+      "sourceNotes": "Italian Venues AI Summary package text (NEW) + hotelparcoprincipi.com",
+      "correctedLocation": "",
+      "image": "",
+      "imageCredit": "Photo TBD — official site blocked",
+      "monogram": "PP",
+      "allIn60": "€63k–€85k",
+      "allIn60Low": 63206,
+      "allIn60High": 85404,
+      "allIn60Mid": 74305,
+      "allIn60Breakdown": [
+        {
+          "item": "F&B / banquet package",
+          "low": 15960,
+          "high": 17640,
+          "source": "quote"
+        },
+        {
+          "item": "Guest rooms estimate (2n, Italy hotel avg)",
+          "low": 27000,
+          "high": 34500,
+          "source": "italy-average-hotel"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5746,
+          "high": 7764,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 60,
+        "defaultNights": 2,
+        "rentalTotal": 0,
+        "rentalPerNight": null,
+        "rentalSource": null,
+        "fbPerGuest": 280,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": 250,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "castello-di-spessa",
+      "name": "Castello di Spessa",
+      "location": "Collio, Friuli-Venezia Giulia",
+      "city": "Capriva del Friuli",
+      "region": "Friuli",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Weekend weddings require min 65 adults. For intimate ~40: weekday Mon–Thu (no min) OR Ristorante La Tavernetta (no stated min).",
+      "brochure": "https://castellodispessa.it/en/weddings/ (2024 bilingual brochure on site)",
+      "pricesPackages": "Rental/catering/bar/lodging prices NOT public — request line-item Sep/Oct 2027 quote.\nIn-house catering via La Tavernetta; estate wines; ~43 rooms across castle/Tavernetta/vineyard apts.\nCan host up to ~300 ceremony/reception; overnight 90+ in resort.",
+      "website": "https://www.castellodispessa.it/",
+      "venueFee": "TBD — ask venue",
+      "guestsAccommodated": "~90+ overnight (43 rooms); event to ~300",
+      "discountsExtraFees": "TBD — ask venue",
+      "backupIndoor": "yes (stately halls + Tavernetta)",
+      "minMaxNumbers": "Weekend min 65 adults; weekday/Tavernetta no min stated; max ~300",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes (La Tavernetta)",
+      "foodPrice": "TBD — ask venue",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Estate wines available — package TBD",
+      "overnightCapacity": "~90+",
+      "eventCapacity": "up to ~300",
+      "minNights": "TBD — ask venue",
+      "airportNotes": "Trieste (TRS) / Venice (VCE) — confirm",
+      "allIn40": "€32k–€48k (weekday or Tavernetta path)",
+      "allIn100": "€58k–€85k",
+      "bestFit": "Wine-country Collio celebration, especially above weekend minimum",
+      "watchOuts": "Least price-transparent; NOT Tuscany; get written 2027 quote before comparing",
+      "confidence": "Low",
+      "sourceNotes": "Italian Venues correspondence + castellodispessa.it public pages; no invent prices",
+      "correctedLocation": "Collio / Capriva del Friuli, Friuli — NOT Tuscany",
+      "image": "assets/covers/castello-di-spessa.jpg",
+      "imageCredit": "Official site",
+      "monogram": "CS",
+      "allIn60": "€49k–€74k",
+      "allIn60Low": 48785,
+      "allIn60High": 74415,
+      "allIn60Mid": 61600,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / stay (estimated from prior all-in planning)",
+          "low": 17850,
+          "high": 24150,
+          "source": "derived"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Welcome party (Italy avg)",
+          "low": 3000,
+          "high": 4800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4435,
+          "high": 6765,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 90,
+        "defaultNights": 2,
+        "rentalTotal": null,
+        "rentalPerNight": null,
+        "rentalSource": null,
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "villa-catignano",
+      "name": "Villa Catignano",
+      "location": "Castelnuovo Berardenga / Chianti near Siena, Tuscany",
+      "city": "Castelnuovo Berardenga",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Normally 4-night min for villa; exceptional 3-night whole property (not Jul/Aug).\n2027 availability notes: Mar 5–9, 15–19; Jul maybe 22–26; Sep maybe 27–Oct 1 (know by 27 Sep); Nov several windows 4–26.",
+      "brochure": "Detailed pricing in Italian Venues AI Summary / comments; https://www.villacatignano.it/weddings-events.html",
+      "pricesPackages": "ENTIRE PROPERTY 2027:\n€24,256 total / 4 nights;\n€20,434 villa 4n + rest of property 3n (also Jul/Aug recommended);\n€18,192 / 3 nights entire property (exceptional; not Jul/Aug).\n+ Wedding spaces (discounted with lodging): €2,500 for Tinaia / Italian garden / courtyard (instead of €5,500).\nRain: Grey Hall €700 (FREE if used as rain plan); frescoed sitting room €1,400 or €700 if used (not for after-dinner).\nBreakfast (min 30, book by 1 Feb): €16–€29 pp/day; 2027 may be +10% (known Nov 2026).\nTinaia seats ~100 / dancing ~120; Grey/Tinaia other dinners €500 / 4h, close 11pm.\nNo vendor exclusivity — choose own caterer/florist/music; planner recommended.",
+      "website": "https://www.villacatignano.it/",
+      "venueFee": "€2,500 wedding spaces (with lodging) + property rental above",
+      "guestsAccommodated": "Tinaia ~100 seated / ~120 dancing; overnight TBD (apartments)",
+      "discountsExtraFees": "2027 breakfast may +10%; Grey Hall free as rain backup if used",
+      "backupIndoor": "yes — Grey Hall (free as rain plan) / Tinaia",
+      "minMaxNumbers": "Tinaia to ~100–120; marquee if more",
+      "musicCurfew": "Indoor room rentals close 11pm; outdoor TBD",
+      "inHouseCatering": "no exclusivity — external caterers allowed",
+      "foodPrice": "TBD — choose caterer (not in property rental)",
+      "cake": "TBD — ask venue / caterer",
+      "alcoholPrice": "TBD — ask venue / caterer",
+      "overnightCapacity": "TBD — ask venue (villa apartments + fattoria)",
+      "eventCapacity": "~100–120 (Tinaia); more with marquee",
+      "minNights": "4 normal / 3 exceptional (not Jul/Aug)",
+      "airportNotes": "~2h Pisa Int’l; ~8 km from Siena; Florence ~70 km",
+      "allIn40": "€40k–€55k (planning; lodging+hall quoted, F&B external)",
+      "allIn100": "€55k–€80k (planning)",
+      "bestFit": "Siena/Chianti villa buyout with flexible vendors and clear 2027 lodging quotes",
+      "watchOuts": "Sep maybe-dates only; F&B not included; confirm overnight headcount",
+      "confidence": "High on lodging/hall quotes; medium on all-in (F&B TBD)",
+      "sourceNotes": "Italian Venues AI Summary detailed 2027 pricing (NEW); website filled via public search",
+      "correctedLocation": "",
+      "image": "assets/covers/villa-catignano.jpg",
+      "imageCredit": "Official site",
+      "monogram": "VC",
+      "allIn60": "€65k–€94k",
+      "allIn60Low": 65441,
+      "allIn60High": 93552,
+      "allIn60Mid": 79497,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 20692,
+          "high": 22347,
+          "source": "quote"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Welcome party (Italy avg)",
+          "low": 3000,
+          "high": 4800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Farewell brunch (Italy avg)",
+          "low": 1500,
+          "high": 2400,
+          "source": "italy-average"
+        },
+        {
+          "item": "Overflow lodging ~20 guests × 3n (nearby hotel est.)",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5949,
+          "high": 8505,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~40 < 60 wedding guests — overflow lodging estimated for 20 guests.",
+      "allIn60OverflowNote": "Onsite overnight capacity ~40 < 60 wedding guests — overflow lodging estimated for 20 guests.",
+      "costModel": {
+        "overnightCap": 40,
+        "defaultNights": 3,
+        "rentalTotal": 20692,
+        "rentalPerNight": 6897.333333333333,
+        "rentalSource": "quote",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "borgo-castelvecchi",
+      "name": "Borgo Castelvecchi",
+      "location": "Chianti — Tuscany",
+      "city": "Radda / Chianti area",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Min 2 nights midweek; 3 nights over a weekend",
+      "brochure": "Borgo Castelvecchi (materials on file / ask venue)",
+      "pricesPackages": "Up to 65: weekend 3 nights €21,900; midweek 2 nights €13,500; extra night €3,500.\nUp to 100: weekend €28,700; midweek €17,500.\nIncludes exclusive use, accommodation, buffet breakfast, VAT, cleaning, event spaces, indoor rain backup / dance / open-bar room, pool-party option, dancing to 4 a.m., possible late checkout.\nWedding menu €130–€150 pp incl. meal beverages; open bar & pizza/pool extras.",
+      "website": "https://www.castelvecchi.com/language/en/home-page-english/",
+      "venueFee": "Included in weekend/midweek packages",
+      "guestsAccommodated": "65–100",
+      "discountsExtraFees": "Ask if early-booking discount still applies; bar packages extra",
+      "backupIndoor": "yes (indoor rain backup / dance room)",
+      "minMaxNumbers": "65–100 packages",
+      "musicCurfew": "Dancing extension to 4 a.m. advertised — confirm",
+      "inHouseCatering": "yes",
+      "foodPrice": "€130–€150 pp (incl. meal beverages)",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Hosted open bar extra — TBD package price",
+      "overnightCapacity": "65–100 (package tiers)",
+      "eventCapacity": "~100",
+      "minNights": "2 midweek / 3 weekend",
+      "airportNotes": "Florence (FLR)",
+      "allIn40": "€43k–€56k",
+      "allIn100": "€65k–€85k",
+      "bestFit": "Clear value Chianti all-weekend buyout",
+      "watchOuts": "Confirm room count, bar package, tax/service, early-booking discount",
+      "confidence": "High on base pricing; medium on all-in",
+      "sourceNotes": "Italian Venues AI Summary + LaRosa Modest Budget row",
+      "correctedLocation": "",
+      "image": "assets/covers/borgo-castelvecchi.jpg",
+      "imageCredit": "Official site",
+      "monogram": "BC",
+      "allIn60": "€49k–€62k",
+      "allIn60Low": 48620,
+      "allIn60High": 62040,
+      "allIn60Mid": 55330,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 21900,
+          "high": 21900,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 7800,
+          "high": 9000,
+          "source": "quote"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4420,
+          "high": 5640,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 65,
+        "defaultNights": 3,
+        "rentalTotal": 21900,
+        "rentalPerNight": 7300.0,
+        "rentalSource": "quote",
+        "fbPerGuest": 140,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "casale-de-pasquinelli",
+      "name": "Casale De' Pasquinelli",
+      "location": "Lucca — Tuscany",
+      "city": "Lucca area",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Minimum 3 nights (LaRosa Medium)",
+      "brochure": "https://www.casaledepasquinelli.it/brochure",
+      "pricesPackages": "Dynamic estate buyout ~€13,300–€21,500 depending on nights/season (brochure).\nAnecdotal 2027 quote ~€16k for 2–3 nights — confirm dated proposal.\nCatering €174 +10% VAT pp at 40 guests; €165 at 41–50; ~€145 above 81 (~1 bottle wine pp; extra bottles ~€20).\nPartner DJ ~€1,500 + tax; allow ≥€8k flowers/decor (sheet).",
+      "website": "https://www.casaledepasquinelli.it/",
+      "venueFee": "Dynamic €13.3k–€21.5k buyout range",
+      "guestsAccommodated": "~36–37 overnight (5 residences); banquet to ~200",
+      "discountsExtraFees": "Min spend ~€8,000 flowers/decor (LaRosa)",
+      "backupIndoor": "TBD — ask venue",
+      "minMaxNumbers": "overnight ~37; banquet up to ~200",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "Preferred vendors / partner catering",
+      "foodPrice": "€145–€174 pp +10% VAT (tiered)",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Wine in dinner; cocktail bar extra — TBD",
+      "overnightCapacity": "~36–37",
+      "eventCapacity": "up to ~200 banquet",
+      "minNights": "3",
+      "airportNotes": "Pisa (PSA) closest; limited public transit — plan shuttles",
+      "allIn40": "€48k–€65k",
+      "allIn100": "€68k–€95k",
+      "bestFit": "Exclusive whole-estate Lucca countryside; large banquet possible",
+      "watchOuts": "Obtain dated 2027 buyout + vendor proposal; shuttles required",
+      "confidence": "Medium",
+      "sourceNotes": "Merged LaRosa Medium + Italian Venues AI Summary",
+      "correctedLocation": "",
+      "image": "assets/covers/casale-de-pasquinelli.jpg",
+      "imageCredit": "Official site (via web-agency portfolio)",
+      "monogram": "CP",
+      "allIn60": "€62k–€87k",
+      "allIn60Low": 62271,
+      "allIn60High": 87234,
+      "allIn60Mid": 74753,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 13300,
+          "high": 21500,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 10890,
+          "high": 11484,
+          "source": "quote"
+        },
+        {
+          "item": "Overflow lodging ~23 guests × 3n (nearby hotel est.)",
+          "low": 12420,
+          "high": 19320,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (venue min spend)",
+          "low": 8000,
+          "high": 8000,
+          "source": "quote"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music",
+          "low": 1500,
+          "high": 1500,
+          "source": "quote"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5661,
+          "high": 7930,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~37 < 60 wedding guests — overflow lodging estimated for 23 guests.",
+      "allIn60OverflowNote": "Onsite overnight capacity ~37 < 60 wedding guests — overflow lodging estimated for 23 guests.",
+      "costModel": {
+        "overnightCap": 37,
+        "defaultNights": 3,
+        "rentalTotal": 16000,
+        "rentalPerNight": 5333.333333333333,
+        "rentalSource": "quote",
+        "fbPerGuest": 165,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": 1500,
+        "floralsMinQuoted": 8000,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 21500,
+        "rentalLow": 13300
+      }
+    },
+    {
+      "id": "antico-borgo-san-lorenzo",
+      "name": "Antico Borgo San Lorenzo",
+      "location": "San Gimignano — Tuscany",
+      "city": "San Gimignano",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "MINIMUM STAY 3 nights",
+      "brochure": "COMPLETA Antico Borgo San Lorenzo + MENU PRICING",
+      "pricesPackages": "MID SEASON (Mar–May, Oct–Nov): €2,700–€3,200 / night.\nHIGH SEASON (Jun–Sep): €3,400 / night.\nWedding fee €2,000 (brochure) / current listing may show €2,500 — covers spaces, tableware & ceremony equipment up to 60, setup, basic day coordination, English-speaking staff.\nDinner from ~€125 pp; breakfast €22; pizza €48; BBQ/other ~€55.",
+      "website": "https://www.anticoborgosanlorenzo.it/en/",
+      "venueFee": "€2,000–€2,500 wedding fee + nightly rental",
+      "guestsAccommodated": "40–42 overnight; reception to ~100",
+      "discountsExtraFees": "10% rental discount Mon–Thu; cleaning/towels/tourist tax/SIAE extra",
+      "backupIndoor": "TBD — ask venue",
+      "minMaxNumbers": "overnight ~40–42; event up to ~100",
+      "musicCurfew": "Loud music ends 1 a.m.; event access may run to 2 a.m.",
+      "inHouseCatering": "yes / preferred",
+      "foodPrice": "from ~€125 pp dinner",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "External full bar needed — TBD",
+      "overnightCapacity": "~40–42",
+      "eventCapacity": "~100 (rentals above 60)",
+      "minNights": "3",
+      "airportNotes": "Florence (FLR) / Pisa (PSA)",
+      "allIn40": "€31k–€43k",
+      "allIn100": "€58k–€82k",
+      "bestFit": "Compact San Gimignano borgo; strong overnight for ~40",
+      "watchOuts": "Music to 1 a.m.; 100 guests need off-site rooms & shuttles",
+      "confidence": "High-medium",
+      "sourceNotes": "Merged LaRosa Modest + Italian Venues (listed as Borgo San Lorenzo)",
+      "correctedLocation": "",
+      "image": "assets/covers/antico-borgo-san-lorenzo.jpg",
+      "imageCredit": "Official site",
+      "monogram": "AB",
+      "allIn60": "€48k–€68k",
+      "allIn60Low": 47790,
+      "allIn60High": 67719,
+      "allIn60Mid": 57754,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 12100,
+          "high": 13068,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 7125,
+          "high": 7875,
+          "source": "quote"
+        },
+        {
+          "item": "Overflow lodging ~18 guests × 3n (nearby hotel est.)",
+          "low": 9720,
+          "high": 15120,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4344,
+          "high": 6156,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~42 < 60 wedding guests — overflow lodging estimated for 18 guests.",
+      "allIn60OverflowNote": "Onsite overnight capacity ~42 < 60 wedding guests — overflow lodging estimated for 18 guests.",
+      "costModel": {
+        "overnightCap": 42,
+        "defaultNights": 3,
+        "rentalTotal": 12100,
+        "rentalPerNight": 4033.3333333333335,
+        "rentalSource": "quote",
+        "fbPerGuest": 125,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "villa-sermolli",
+      "name": "Villa Sermolli",
+      "location": "Tuscany hills, Tuscany",
+      "city": "Tuscany hills",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Exclusive use packages commonly 2 nights (+ optional 3rd). High season May–Sep; low Apr/Oct (Mar/Nov on request).",
+      "brochure": "Villa_Sermolli_all inclusive Destination Wedding.pdf + email quotes (shortlist Gmail link)",
+      "pricesPackages": "QUOTED DIY exclusivity (2 nights + breakfast, up to 80):\nHigh season €18,000; low season €16,000.\nExtra night ~€8,100 high / ~€7,200 low.\nExample 60 guests: rental €18k + pizza night €4.5k + dinner/drinks to 1am €10.2k ≈ €32.7k before other vendors.\nMenu from €100 pp; wedding bar €70 (17:00–01:00) or €85 to 02:00.\nALL-INCLUSIVE buyout up to 80: €55,000 / 2 nights or €77,500 / 3 nights (VAT/service/staff included; photo/flowers/DJ/hair in package).",
+      "website": "https://villa-sermolli.com/",
+      "venueFee": "€16k–€18k / 2n DIY; or €55k–€77.5k all-inclusive buyout",
+      "guestsAccommodated": "80 overnight (up to ~95 with extra beds)",
+      "discountsExtraFees": "10% midweek Tue–Thu outside Jul/Aug (DIY); SIAE licence",
+      "backupIndoor": "Indoor seats ~86; marquee offered at no extra cost",
+      "minMaxNumbers": "Event capacity ~130",
+      "musicCurfew": "Outdoor music rules TBD; party to 01:00/02:00 in bar packages",
+      "inHouseCatering": "yes (DIY menus or all-inclusive)",
+      "foodPrice": "from €100 pp (DIY); included in all-inclusive",
+      "cake": "Included in all-inclusive; DIY TBD",
+      "alcoholPrice": "€70–€85 pp wedding bar (DIY); selected drinks in all-inclusive",
+      "overnightCapacity": "80 (to ~95 w/ extras)",
+      "eventCapacity": "~130",
+      "minNights": "2 (3 available)",
+      "airportNotes": "Florence / Pisa — confirm",
+      "allIn40": "€38k–€52k (DIY path)",
+      "allIn100": "€58k–€78k",
+      "bestFit": "Characterful Tuscan hotel buyout with F&B and rooms under one roof",
+      "watchOuts": "Confirm event capacity/late-night rules; choose DIY vs all-inclusive carefully",
+      "confidence": "Medium–high on rental; medium on all-in DIY",
+      "sourceNotes": "LaRosa_Italy_Venue_Comparison quoted rates preferred over shortlist sheet name “Sermoli”",
+      "correctedLocation": "",
+      "image": "assets/covers/villa-sermolli.jpg",
+      "imageCredit": "Official site",
+      "monogram": "VS",
+      "allIn60": "€51k–€67k",
+      "allIn60Low": 51425,
+      "allIn60High": 67089,
+      "allIn60Mid": 59257,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (2n)",
+          "low": 18000,
+          "high": 19440,
+          "source": "quote"
+        },
+        {
+          "item": "F&B dinner (from €100 pp)",
+          "low": 6000,
+          "high": 6000,
+          "source": "quote"
+        },
+        {
+          "item": "Wedding bar (€70–€85 pp)",
+          "low": 4200,
+          "high": 5100,
+          "source": "quote"
+        },
+        {
+          "item": "Welcome pizza night (quoted example ~60)",
+          "low": 4050,
+          "high": 4950,
+          "source": "quote"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4675,
+          "high": 6099,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 80,
+        "defaultNights": 2,
+        "rentalTotal": 18000,
+        "rentalPerNight": 9000.0,
+        "rentalSource": "quote",
+        "fbPerGuest": null,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": 100,
+        "fbBarPerGuest": 70,
+        "welcomePizzaBudget60": 4500,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "villa-poggio-bartoli",
+      "name": "Villa Poggio Bartoli",
+      "location": "Near Florence, Tuscany",
+      "city": "Near Florence",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "3-night minimum (brochure). Fall 2027 dates TBD — ask venue.",
+      "brochure": "https://drive.google.com/file/d/1Rd4FVVDcd_xfatT-1fbamnJc86YWYM-S/view?usp=drive_link",
+      "pricesPackages": "Quoted (comparison workbook): exclusive rental €13,000 for 3 nights (brochure basis 50–60 guests; requote for larger).\nOptional apartment +€1,500 / 3 nights (4 beds).\nRain-backup stretch tent from €3,000.\nPlanning from €2,000; dinner from €150 pp; flowers/photo/DJ from brochure.",
+      "website": "https://www.villapoggiobartoli.it/en/home-eng/",
+      "venueFee": "€13,000 / 3 nights (quoted)",
+      "guestsAccommodated": "26–32 overnight (10 bedrooms; optional apt +4)",
+      "discountsExtraFees": "VAT/service & tourist tax unconfirmed; tent optional",
+      "backupIndoor": "Stretch tent available (quoted €3k)",
+      "minMaxNumbers": "Pricing framed for ~50–60; confirm 70+ event capacity",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "Preferred vendors / onsite options (confirm)",
+      "foodPrice": "from €150 pp (brochure)",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — bar allowance needed",
+      "overnightCapacity": "~26–32 (+4 optional apt)",
+      "eventCapacity": "TBD — confirm for 70–100",
+      "minNights": "3",
+      "airportNotes": "Florence (FLR) / Pisa (PSA) — exact transfer TBD",
+      "allIn40": "€34k–€44k",
+      "allIn100": "€55k–€75k (overflow lodging)",
+      "bestFit": "Intimate destination weekend; core group stays onsite",
+      "watchOuts": "Complete 2027 tariff & 100-person event capacity need written confirmation",
+      "confidence": "Medium-low",
+      "sourceNotes": "Italian Venues AI Summary + LaRosa_Italy_Venue_Comparison quoted rates (prefer €13k/3n over sheet “13+”)",
+      "correctedLocation": "",
+      "image": "assets/covers/villa-poggio-bartoli.jpg",
+      "imageCredit": "Official site (archived asset)",
+      "monogram": "VP",
+      "allIn60": "€55k–€76k",
+      "allIn60Low": 55187,
+      "allIn60High": 76461,
+      "allIn60Mid": 65824,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 13000,
+          "high": 14040,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 8550,
+          "high": 9450,
+          "source": "quote"
+        },
+        {
+          "item": "Overflow lodging ~28 guests × 3n (nearby hotel est.)",
+          "low": 15120,
+          "high": 23520,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator",
+          "low": 2000,
+          "high": 2000,
+          "source": "quote"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5017,
+          "high": 6951,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~32 < 60 wedding guests — overflow lodging estimated for 28 guests.",
+      "allIn60OverflowNote": "Onsite overnight capacity ~32 < 60 wedding guests — overflow lodging estimated for 28 guests.",
+      "costModel": {
+        "overnightCap": 32,
+        "defaultNights": 3,
+        "rentalTotal": 13000,
+        "rentalPerNight": 4333.333333333333,
+        "rentalSource": "quote",
+        "fbPerGuest": 150,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": 2000,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "spao-borgo-san-pietro",
+      "name": "SPAO Borgo San Pietro",
+      "location": "Allerona area — Umbria / Tuscany / Lazio border",
+      "city": "Allerona / Orvieto area",
+      "region": "Umbria",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "3-night stay indicated on shortlist",
+      "brochure": "TBD — ask venue",
+      "pricesPackages": "Shortlist indicates ~€27,000 for a 3-night stay / exclusive group use (capacity ~100).\nFood, bar, room count, taxes, and wedding production NOT publicly itemized — verify if current 2027 quote.\nNOTE: Distinct from Borgo Santo Pietro (Palazzetto luxury resort in LaRosa Large at €168k/2n).",
+      "website": "https://www.spao.it/",
+      "venueFee": "~€27,000 / 3 nights (sheet — confirm 2027)",
+      "guestsAccommodated": "~100 (sheet)",
+      "discountsExtraFees": "TBD — ask venue",
+      "backupIndoor": "TBD — ask venue",
+      "minMaxNumbers": "~100",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "TBD — ask venue",
+      "foodPrice": "TBD — ask venue",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — ask venue",
+      "overnightCapacity": "~100 (verify)",
+      "eventCapacity": "~100 (verify)",
+      "minNights": "3",
+      "airportNotes": "Rome (FCO) / Perugia — confirm",
+      "allIn40": "€48k–€68k",
+      "allIn100": "€70k–€100k",
+      "bestFit": "Secluded whole-village weekend with communal feel",
+      "watchOuts": "Verify overnight capacity, whether €27k is current 2027, vendor exclusivity, curfew, inclusions",
+      "confidence": "Low-medium",
+      "sourceNotes": "Italian Venues shortlist only; do not confuse with Borgo Santo Pietro",
+      "correctedLocation": "Near Allerona (Umbria border) — not Borgo Santo Pietro / Palazzetto",
+      "image": "assets/covers/spao-borgo-san-pietro.jpg",
+      "imageCredit": "Official site",
+      "monogram": "SB",
+      "allIn60": "€60k–€83k",
+      "allIn60Low": 60500,
+      "allIn60High": 82566,
+      "allIn60Mid": 71533,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (3n)",
+          "low": 27000,
+          "high": 29160,
+          "source": "quote"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Welcome party (Italy avg)",
+          "low": 3000,
+          "high": 4800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Farewell brunch (Italy avg)",
+          "low": 1500,
+          "high": 2400,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 5500,
+          "high": 7506,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 100,
+        "defaultNights": 3,
+        "rentalTotal": 27000,
+        "rentalPerNight": 9000.0,
+        "rentalSource": "quote",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "monastero-santa-margherita",
+      "name": "Monastero Santa Margherita",
+      "location": "Todi, Umbria",
+      "city": "Todi",
+      "region": "Umbria",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Exclusive rental min 2 nights including all rooms (51). Weekend weddings: 2-night room buyout + second event, min ~60 guests (LaRosa).",
+      "brochure": "wedding-offert-pack-2026-wp-ok…pdf; wedding-services…pdf; https://monasterosantamargherita.com/gli-spazi/",
+      "pricesPackages": "Location fee: weekend Fri–Sun €5,000; weekdays Mon–Thu €3,000.\nCeremony set-up €1,000.\n2027/28 listing notes: packages from ~€20k for 50 guests; catering from €137 pp; drinks from €19 pp; two nights accommodation for 50 included in some packages — confirm custom Fall 2027 proposal.",
+      "website": "https://monasterosantamargherita.com/",
+      "venueFee": "€3,000–€5,000 location + package elements",
+      "guestsAccommodated": "~120–125 overnight; event up to ~350",
+      "discountsExtraFees": "Ceremony €1,000; package mins apply",
+      "backupIndoor": "yes",
+      "minMaxNumbers": "ceremony ~30–130; event to ~350; weekend min ~60 noted",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes (licensed bar)",
+      "foodPrice": "from €137 pp",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "drinks from €19 pp",
+      "overnightCapacity": "~120–125",
+      "eventCapacity": "up to ~350",
+      "minNights": "2",
+      "airportNotes": "Rome (FCO/CIA) / Perugia — confirm transfer time",
+      "allIn40": "€45k–€62k (may price at 50-person minimum)",
+      "allIn100": "€80k–€110k",
+      "bestFit": "Self-contained Umbria destination with strong accommodation value",
+      "watchOuts": "Row wrongly said Tuscany — it is Todi, Umbria; get custom Fall 2027 proposal",
+      "confidence": "Medium-high on structure; medium on total",
+      "sourceNotes": "Merged LaRosa Modest (TODI, UMBRIA) + Italian Venues AI Summary",
+      "correctedLocation": "Todi, Umbria — NOT Tuscany",
+      "image": "",
+      "imageCredit": "Photo TBD — official site blocked",
+      "monogram": "MS",
+      "allIn60": "€32k–€45k",
+      "allIn60Low": 31844,
+      "allIn60High": 44738,
+      "allIn60Mid": 38291,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging buyout (2n)",
+          "low": 5000,
+          "high": 5400,
+          "source": "quote"
+        },
+        {
+          "item": "Ceremony set-up",
+          "low": 1000,
+          "high": 1000,
+          "source": "quote"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 7809,
+          "high": 8631,
+          "source": "quote"
+        },
+        {
+          "item": "Drinks package",
+          "low": 1140,
+          "high": 1140,
+          "source": "quote"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 2895,
+          "high": 4067,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 120,
+        "defaultNights": 2,
+        "rentalTotal": 5000,
+        "rentalPerNight": 2500.0,
+        "rentalSource": "quote",
+        "fbPerGuest": 137,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": 19,
+        "ceremonyFee": 1000,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    },
+    {
+      "id": "villa-arvedi",
+      "name": "Villa Arvedi",
+      "location": "Grezzana near Verona, Veneto",
+      "city": "Grezzana",
+      "region": "Veneto",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Exclusive use one event/day; lodging not onsite — confirm timing with caterer",
+      "brochure": "https://www.villarvedi.it/i-matrimoni/",
+      "pricesPackages": "Primarily venue rental (marketplace listings ~€7,200–€8,500 — confirm 2027).\nExternal catering free choice. No lodging package confirmed.\nBudget separately: caterer, full bar, planner, photo/video, music, florals, rentals, lighting, ceremony, tax/service, transport/lodging.",
+      "website": "https://www.villarvedi.it/",
+      "venueFee": "~€7,200–€8,500 (directory; confirm 2027 quote)",
+      "guestsAccommodated": "No onsite lodging — event 30–300; indoor max ~180 one room",
+      "discountsExtraFees": "All vendors external",
+      "backupIndoor": "yes (historic halls)",
+      "minMaxNumbers": "min ~30; max ~300 (sala unica max ~180)",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "no — external, free choice",
+      "foodPrice": "TBD — ask venue / caterer",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — ask venue",
+      "overnightCapacity": "None onsite — hotels in Verona",
+      "eventCapacity": "~40–300 (indoor single room ~180)",
+      "minNights": "n/a (day venue)",
+      "airportNotes": "Verona (VRN) ~30–40 min; ~10 km from Verona",
+      "allIn40": "€32k–€46k",
+      "allIn100": "€50k–€72k",
+      "bestFit": "Grand historic villa day wedding with flexible guest count",
+      "watchOuts": "NOT Prosecco region; no lodging; need full vendor quote & curfew rules",
+      "confidence": "Medium-low",
+      "sourceNotes": "Italian Venues AI Summary + public villarvedi.it; location corrected",
+      "correctedLocation": "Grezzana near Verona, Veneto — NOT Prosecco",
+      "image": "assets/covers/villa-arvedi.jpg",
+      "imageCredit": "Official site",
+      "monogram": "VA",
+      "allIn60": "€46k–€70k",
+      "allIn60Low": 45674,
+      "allIn60High": 70376,
+      "allIn60Mid": 58025,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue rental (day)",
+          "low": 7222,
+          "high": 8478,
+          "source": "directory"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "All guest lodging offsite (60 × 1n est.)",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4152,
+          "high": 6398,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Day venue — no onsite rooms; guest lodging estimated separately in Verona-area hotels.",
+      "allIn60OverflowNote": "Day venue — no onsite rooms; guest lodging estimated separately in Verona-area hotels.",
+      "costModel": {
+        "overnightCap": 0,
+        "defaultNights": 1,
+        "rentalTotal": 7850,
+        "rentalPerNight": null,
+        "rentalSource": "directory",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": true,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": null,
+        "rentalLow": null
+      }
+    }
+  ]
+}
+;
+(() => {
+  const STORAGE_KEY = "ej-italy-shortlist-v1";
+  const CALC_KEY = "ej-italy-calc-defaults-v1";
+
+  const heartSvg = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.716-4.35-9.428-7.062C.86 12.226.5 10.2.5 8.75.5 5.962 2.762 3.7 5.55 3.7c1.54 0 3.02.72 4 1.86A5.18 5.18 0 0 1 13.55 3.7c2.788 0 5.05 2.262 5.05 5.05 0 1.45-.36 3.476-2.072 5.188C18.716 16.65 12 21 12 21z"/></svg>`;
+  const iconPeople = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm-8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.67 0-8 1.34-8 4v2h10v-2c0-1.5.7-2.7 1.8-3.6C10.5 13.1 9.2 13 8 13zm8 0c-.3 0-.63.02-.97.05A4.86 4.86 0 0 1 17 17v2h7v-2c0-2.66-5.33-4-8-4z"/></svg>`;
+  const iconEuro = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1.2 14.5h-1.7c-.9 0-1.7-.3-2.3-.8-.4.2-.8.3-1.2.3h-.8v-1.5h.6c.3 0 .5-.05.7-.15A3.7 3.7 0 0 1 7.8 13H6.5v-1.5h1.2c0-.35.05-.7.12-1H6.5V9h1.55A3.9 3.9 0 0 1 11.5 6.8h1.7v1.5h-.9c-.7 0-1.35.3-1.8.8.55-.2 1.15-.3 1.8-.3h1.1v1.5h-1.1c-.55 0-1.05.1-1.5.3.2.35.35.75.4 1.2h2.2V13h-2.15c-.05.55-.2 1.05-.45 1.5.45.3 1 .5 1.6.5h.9v1.5z"/></svg>`;
+  const iconCal = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>`;
+
+  const AVG = {
+    planner: [3000, 5000],
+    photo: [3000, 4500],
+    video: [2500, 4000],
+    florals: [3000, 6000],
+    dj: [1000, 2000],
+    ceremony: [500, 1000],
+    transport: [1500, 3000],
+    fbDinnerBar: [150, 220],
+    welcome: [50, 80],
+    brunch: [25, 40],
+    overflowRoomNight: [180, 280],
+    contingencyPct: 0.1,
+  };
+
+  const state = {
+    venues: [],
+    meta: {},
+    view: "all",
+    region: "All",
+    band: "all",
+    query: "",
+    shortlist: loadShortlist(),
+    activeId: null,
+    calcDefaults: loadCalcDefaults(),
+  };
+
+  const els = {
+    cards: document.getElementById("cards"),
+    empty: document.getElementById("empty"),
+    chips: document.getElementById("region-chips"),
+    search: document.getElementById("search"),
+    band: document.getElementById("band-filter"),
+    count: document.getElementById("shortlist-count"),
+    resultCount: document.getElementById("result-count"),
+    viewTitle: document.getElementById("view-title"),
+    tabs: document.querySelectorAll(".tab"),
+    overlay: document.getElementById("overlay"),
+    drawer: document.getElementById("drawer"),
+    drawerContent: document.getElementById("drawer-content"),
+    drawerClose: document.getElementById("drawer-close"),
+    toolbar: document.getElementById("toolbar"),
+  };
+
+  function loadShortlist() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      const arr = raw ? JSON.parse(raw) : [];
+      return new Set(Array.isArray(arr) ? arr : []);
+    } catch {
+      return new Set();
+    }
+  }
+
+  function loadCalcDefaults() {
+    const base = { weddingGuests: 60, guestPayPerNight: 0, nightsPref: null };
+    try {
+      const raw = localStorage.getItem(CALC_KEY);
+      const obj = raw ? JSON.parse(raw) : {};
+      return { ...base, ...obj };
+    } catch {
+      return base;
+    }
+  }
+
+  function saveCalcDefaults(partial) {
+    state.calcDefaults = { ...state.calcDefaults, ...partial };
+    localStorage.setItem(CALC_KEY, JSON.stringify(state.calcDefaults));
+  }
+
+  function saveShortlist() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([...state.shortlist]));
+    els.count.textContent = String(state.shortlist.size);
+  }
+
+  function esc(s) {
+    return String(s ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function clean(s) {
+    if (!s) return "";
+    const t = String(s).trim();
+    if (!t || /^tbd/i.test(t)) return "";
+    return t;
+  }
+
+  function fmtEuro(n) {
+    const v = Math.round(Number(n) || 0);
+    return "€" + v.toLocaleString("en-US");
+  }
+
+  function fmtCompact(n) {
+    const v = Math.round(Number(n) || 0);
+    if (v >= 1000) {
+      const k = v / 1000;
+      if (Math.abs(k - Math.round(k)) < 0.05) return `€${Math.round(k)}k`;
+      return k >= 10 ? `€${Math.round(k)}k` : `€${k.toFixed(1).replace(/\.0$/, "")}k`;
+    }
+    return fmtEuro(v);
+  }
+
+  function overnightNum(v) {
+    const cm = v.costModel || {};
+    if (typeof cm.overnightCap === "number") return cm.overnightCap;
+    const raw = clean(v.overnightCapacity) || clean(v.guestsAccommodated) || "";
+    const m = raw.match(/(\d+)/);
+    return m ? Number(m[1]) : null;
+  }
+
+  function nightsDisplay(v) {
+    const raw = clean(v.minNights) || "";
+    if (!raw || /n\/a/i.test(raw)) {
+      const d = (v.costModel || {}).defaultNights;
+      return d ? String(d) : "—";
+    }
+    const range = raw.match(/(\d+)\s*[–-]\s*(\d+)/);
+    if (range) return `${range[1]}–${range[2]}`;
+    const single = raw.match(/(\d+)/);
+    return single ? single[1] : raw.slice(0, 8);
+  }
+
+  function defaultNightsFor(v) {
+    if (state.calcDefaults.nightsPref === 2 || state.calcDefaults.nightsPref === 3) {
+      return state.calcDefaults.nightsPref;
+    }
+    const cm = v.costModel || {};
+    if (cm.defaultNights) return cm.defaultNights;
+    const d = nightsDisplay(v);
+    const m = String(d).match(/(\d+)/);
+    return m ? Number(m[1]) : 3;
+  }
+
+  function cardCostLabel(v) {
+    if (v.allIn60) {
+      const m = String(v.allIn60).match(/€?\s*([\d.]+)\s*k\s*[–-]\s*€?\s*([\d.]+)\s*k/i);
+      if (m) return `€${m[1]}–${m[2]}k`;
+      if (v.allIn60Mid) return `€~${Math.round(v.allIn60Mid / 1000)}k`;
+      return String(v.allIn60).replace(/^€/, "€");
+    }
+    return clean(v.allIn40) || "Ask";
+  }
+
+  function mediaBlock(v, className) {
+    const credit = v.imageCredit ? `<span class="credit">${esc(v.imageCredit)}</span>` : "";
+    if (v.image) {
+      return `<div class="${className}">
+        <img src="${esc(v.image)}" alt="${esc(v.name)}" loading="lazy" decoding="async"
+          onerror="this.style.display='none'; this.parentElement.querySelector('.monogram').hidden=false;" />
+        <div class="monogram" hidden>${esc(v.monogram || "IT")}</div>
+        ${credit}
+      </div>`;
+    }
+    return `<div class="${className}"><div class="monogram">${esc(v.monogram || "IT")}</div>${credit}</div>`;
+  }
+
+  function filteredVenues() {
+    let list = state.venues.slice();
+    if (state.view === "shortlist") list = list.filter((v) => state.shortlist.has(v.id));
+    if (state.region !== "All") list = list.filter((v) => v.region === state.region);
+    if (state.band !== "all") list = list.filter((v) => v.budgetBand === state.band);
+    if (state.query) {
+      const q = state.query.toLowerCase();
+      list = list.filter((v) =>
+        [v.name, v.city, v.location, v.region, v.bestFit].join(" ").toLowerCase().includes(q)
+      );
+    }
+    return list;
+  }
+
+  function renderChips() {
+    const regions = ["All", ...new Set(state.venues.map((v) => v.region).filter(Boolean))];
+    const preferred = ["All", "Tuscany", "Umbria", "Campania", "Veneto", "Friuli", "Calabria"];
+    regions.sort((a, b) => {
+      const ia = preferred.indexOf(a);
+      const ib = preferred.indexOf(b);
+      if (ia === -1 && ib === -1) return a.localeCompare(b);
+      if (ia === -1) return 1;
+      if (ib === -1) return -1;
+      return ia - ib;
+    });
+    els.chips.innerHTML = regions
+      .map(
+        (r) =>
+          `<button type="button" class="chip${state.region === r ? " is-active" : ""}" data-region="${esc(r)}">${esc(r)}</button>`
+      )
+      .join("");
+  }
+
+  function renderCards() {
+    const list = filteredVenues();
+    els.viewTitle.textContent = state.view === "shortlist" ? "Shortlist" : "All venues";
+    els.resultCount.textContent = `${list.length} venue${list.length === 1 ? "" : "s"}`;
+    els.count.textContent = String(state.shortlist.size);
+
+    if (!list.length) {
+      els.cards.innerHTML = "";
+      els.empty.hidden = false;
+      els.empty.querySelector(".empty-title").textContent =
+        state.view === "shortlist" ? "No venues shortlisted yet" : "No matches";
+      els.empty.querySelector(".empty-body").textContent =
+        state.view === "shortlist"
+          ? "Tap the heart on any card to save it here. Favorites stay on this device via local storage."
+          : "Try another region, budget band, or search term.";
+      return;
+    }
+
+    els.empty.hidden = true;
+    els.cards.innerHTML = list
+      .map((v) => {
+        const on = state.shortlist.has(v.id);
+        const overnight = overnightNum(v);
+        const overnightLabel = overnight != null ? String(overnight) : "—";
+        const nights = nightsDisplay(v);
+        const cost = cardCostLabel(v);
+        return `<article class="card" data-id="${esc(v.id)}" tabindex="0" role="button" aria-label="Open ${esc(v.name)}">
+          ${mediaBlock(v, "card-media")}
+          <button type="button" class="heart${on ? " is-on" : ""}" data-heart="${esc(v.id)}" aria-label="${on ? "Remove from shortlist" : "Add to shortlist"}" aria-pressed="${on}">${heartSvg}</button>
+          <div class="card-body">
+            <p class="card-region">${esc(v.region)}</p>
+            <h3>${esc(v.name)}</h3>
+            <p class="card-loc">${esc(v.city || v.location)}</p>
+            <div class="card-stats" role="list">
+              <div class="stat-icon" role="listitem" title="Overnight guests">
+                ${iconPeople}
+                <div><strong>${esc(overnightLabel)}</strong><span>overnight</span></div>
+              </div>
+              <div class="stat-icon" role="listitem" title="Estimated total for ~60 guests">
+                ${iconEuro}
+                <div><strong>${esc(cost)}</strong><span>est. cost</span></div>
+              </div>
+              <div class="stat-icon" role="listitem" title="Nights">
+                ${iconCal}
+                <div><strong>${esc(nights)}</strong><span>nights</span></div>
+              </div>
+            </div>
+          </div>
+        </article>`;
+      })
+      .join("");
+  }
+
+  function fact(label, value) {
+    const v = clean(value);
+    if (!v) return "";
+    return `<div class="stat"><dt>${esc(label)}</dt><dd>${esc(v)}</dd></div>`;
+  }
+
+  function section(title, body) {
+    const v = clean(body);
+    if (!v) return "";
+    return `<div class="section"><h3>${esc(title)}</h3><p>${esc(v)}</p></div>`;
+  }
+
+  /** Live cost engine — scales with calculator inputs */
+  function computeLiveCost(v, opts) {
+    const cm = v.costModel || {};
+    const guests = Math.max(20, Math.min(150, Number(opts.weddingGuests) || 60));
+    const nights = Number(opts.nights) === 2 ? 2 : Number(opts.nights) === 1 ? 1 : 3;
+    let needRooms = Number(opts.accommodationGuests);
+    if (!Number.isFinite(needRooms) || needRooms < 0) needRooms = guests;
+    const pay = Math.max(0, Number(opts.guestPayPerNight) || 0);
+    const overnightCap = typeof cm.overnightCap === "number" ? cm.overnightCap : overnightNum(v) || 0;
+
+    const low = [];
+    const high = [];
+    const notes = [];
+
+    // Rental / buyout
+    if (cm.dayVenue) {
+      const base = cm.rentalTotal || 7850;
+      low.push(["Venue rental (day)", base * 0.92]);
+      high.push(["Venue rental (day)", base * 1.08]);
+    } else if (cm.rentalTotal != null && cm.rentalTotal > 0) {
+      let rLo = cm.rentalLow != null ? cm.rentalLow : cm.rentalTotal;
+      let rHi = cm.rentalTotalHigh != null ? cm.rentalTotalHigh : cm.rentalTotal;
+      // Scale nights if model assumed different default
+      const baseN = cm.defaultNights || nights;
+      if (baseN && nights !== baseN && cm.rentalPerNight) {
+        rLo = cm.rentalPerNight * nights;
+        rHi = (cm.rentalTotalHigh ? cm.rentalTotalHigh / baseN : cm.rentalPerNight) * nights;
+      } else if (baseN && nights !== baseN && cm.rentalTotal) {
+        const per = cm.rentalTotal / baseN;
+        rLo = per * nights * 0.95;
+        rHi = per * nights * 1.08;
+      }
+      if (v.id === "villa-paola") {
+        rLo = (cm.rentalPerNight || 7000) * nights;
+        rHi = 12000 * nights;
+      }
+      if (v.id === "borgo-castelvecchi") {
+        // package tiers roughly by capacity
+        if (needRooms > 65 || guests > 65) {
+          rLo = rHi = nights >= 3 ? 28700 : 17500;
+        } else {
+          rLo = rHi = nights >= 3 ? 21900 : 13500;
+        }
+      }
+      low.push([`Venue / lodging (${nights}n)`, rLo]);
+      high.push([`Venue / lodging (${nights}n)`, rHi]);
+      if (cm.gratPct) {
+        low.push([`Gratuity (${Math.round(cm.gratPct * 100)}%)`, rLo * cm.gratPct]);
+        high.push([`Gratuity (${Math.round(cm.gratPct * 100)}%)`, rHi * cm.gratPct]);
+      }
+    } else if (cm.roomPerPersonPerNight) {
+      // hotel: rooms estimated
+      const ppn = cm.roomPerPersonPerNight;
+      low.push([`Guest rooms est. (${nights}n)`, ppn * 0.9 * needRooms * nights]);
+      high.push([`Guest rooms est. (${nights}n)`, ppn * 1.15 * needRooms * nights]);
+      notes.push("Room block rate not quoted — Italy hotel average used.");
+    } else if (v.allIn60Low && v.allIn60High) {
+      // fallback: scale static venue portion ~35% of mid
+      const mid = (v.allIn60Low + v.allIn60High) / 2;
+      const venue = mid * 0.32 * (guests / 60);
+      low.push(["Venue / stay (scaled estimate)", venue * 0.9]);
+      high.push(["Venue / stay (scaled estimate)", venue * 1.1]);
+      notes.push("Venue fee not published — scaled from 60-guest planning model.");
+    }
+
+    if (cm.ceremonyFee) {
+      low.push(["Ceremony set-up", cm.ceremonyFee]);
+      high.push(["Ceremony set-up", cm.ceremonyFee]);
+    }
+
+    // F&B
+    if (v.id === "villa-sermolli" && (cm.fbDinnerPerGuest || cm.fbBarPerGuest)) {
+      const dinner = (cm.fbDinnerPerGuest || 100) * guests;
+      const barLo = (cm.fbBarPerGuest || 70) * guests;
+      const barHi = 85 * guests;
+      const pizza = ((cm.welcomePizzaBudget60 || 4500) / 60) * guests;
+      low.push(["F&B dinner", dinner]);
+      high.push(["F&B dinner", dinner]);
+      low.push(["Wedding bar", barLo]);
+      high.push(["Wedding bar", barHi]);
+      low.push(["Welcome pizza night", pizza * 0.9]);
+      high.push(["Welcome pizza night", pizza * 1.1]);
+    } else if (cm.fbPerGuest) {
+      let ppLo = cm.fbPerGuest * 0.95;
+      let ppHi = cm.fbPerGuest * 1.05;
+      if (v.id === "villa-lena") {
+        // scale 3-day bundle vs shorter
+        const base = nights >= 3 ? [500, 600] : [430, 500];
+        ppLo = base[0];
+        ppHi = base[1];
+      }
+      if (v.id === "hotel-bellevue-syrene") {
+        ppLo = 230;
+        ppHi = 270;
+      }
+      if (v.id === "borgo-castelvecchi") {
+        ppLo = 130;
+        ppHi = 150;
+      }
+      if (v.id === "casale-de-pasquinelli") {
+        ppLo = 165 * 1.1;
+        ppHi = 174 * 1.1;
+      }
+      low.push(["F&B / banquet", ppLo * guests]);
+      high.push(["F&B / banquet", ppHi * guests]);
+      if (cm.drinksPerGuest) {
+        low.push(["Drinks package", cm.drinksPerGuest * guests]);
+        high.push(["Drinks package", cm.drinksPerGuest * guests]);
+      }
+    } else {
+      low.push(["F&B dinner+bar (Italy avg)", AVG.fbDinnerBar[0] * guests]);
+      high.push(["F&B dinner+bar (Italy avg)", AVG.fbDinnerBar[1] * guests]);
+      if (nights >= 2 && !cm.dayVenue) {
+        low.push(["Welcome party (Italy avg)", AVG.welcome[0] * guests]);
+        high.push(["Welcome party (Italy avg)", AVG.welcome[1] * guests]);
+      }
+      if (nights >= 3) {
+        low.push(["Brunch (Italy avg)", AVG.brunch[0] * guests]);
+        high.push(["Brunch (Italy avg)", AVG.brunch[1] * guests]);
+      }
+    }
+
+    // Overflow / offsite lodging (gross cost — before guest reimbursements)
+    let overflowGuests = 0;
+    if (cm.dayVenue) {
+      overflowGuests = needRooms;
+      low.push([`Offsite lodging (${needRooms} × ${nights}n est.)`, needRooms * nights * AVG.overflowRoomNight[0]]);
+      high.push([`Offsite lodging (${needRooms} × ${nights}n est.)`, needRooms * nights * AVG.overflowRoomNight[1]]);
+      notes.push("Day venue — all lodging offsite (estimate).");
+    } else if (overnightCap > 0 && needRooms > overnightCap && !cm.roomPerPersonPerNight) {
+      overflowGuests = needRooms - overnightCap;
+      low.push([
+        `Overflow lodging (~${overflowGuests} × ${nights}n)`,
+        overflowGuests * nights * AVG.overflowRoomNight[0],
+      ]);
+      high.push([
+        `Overflow lodging (~${overflowGuests} × ${nights}n)`,
+        overflowGuests * nights * AVG.overflowRoomNight[1],
+      ]);
+      notes.push(
+        `Onsite overnight capacity ~${overnightCap} < ${needRooms} needing rooms — overflow estimated at €${AVG.overflowRoomNight[0]}–€${AVG.overflowRoomNight[1]}/person/night.`
+      );
+    }
+
+    // Vendors
+    const planner = cm.plannerQuoted != null ? [cm.plannerQuoted, cm.plannerQuoted] : AVG.planner;
+    low.push(["Planner / coordinator", planner[0]]);
+    high.push(["Planner / coordinator", planner[1]]);
+
+    if (cm.floralsMinQuoted) {
+      low.push(["Florals / decor", cm.floralsMinQuoted]);
+      high.push(["Florals / decor", Math.max(cm.floralsMinQuoted, AVG.florals[1])]);
+    } else {
+      low.push(["Florals / decor", AVG.florals[0]]);
+      high.push(["Florals / decor", AVG.florals[1]]);
+    }
+    low.push(["Photography", AVG.photo[0]]);
+    high.push(["Photography", AVG.photo[1]]);
+    low.push(["Videography", AVG.video[0]]);
+    high.push(["Videography", AVG.video[1]]);
+    const dj = cm.djQuoted != null ? [cm.djQuoted, cm.djQuoted] : AVG.dj;
+    low.push(["DJ / music", dj[0]]);
+    high.push(["DJ / music", dj[1]]);
+    if (!cm.ceremonyFee) {
+      low.push(["Ceremony / SIAE", AVG.ceremony[0]]);
+      high.push(["Ceremony / SIAE", AVG.ceremony[1]]);
+    }
+    low.push(["Guest transport", AVG.transport[0]]);
+    high.push(["Guest transport", AVG.transport[1]]);
+
+    if (cm.touristTaxPerNight) {
+      const tax = cm.touristTaxPerNight * Math.min(needRooms, overnightCap || needRooms) * nights;
+      low.push(["Tourist tax", tax]);
+      high.push(["Tourist tax", tax]);
+    }
+
+    const sumLo = low.reduce((s, [, a]) => s + a, 0);
+    const sumHi = high.reduce((s, [, a]) => s + a, 0);
+    const contLo = sumLo * AVG.contingencyPct;
+    const contHi = sumHi * AVG.contingencyPct;
+    low.push(["Contingency (10%)", contLo]);
+    high.push(["Contingency (10%)", contHi]);
+
+    const grossLo = sumLo + contLo;
+    const grossHi = sumHi + contHi;
+    const grossMid = (grossLo + grossHi) / 2;
+
+    // Guest reimbursements: pay per night × accommodation guests × nights
+    // Cap reimbursable room-nights to those actually housed (onsite + overflow we budgeted)
+    const reimbursableGuests = needRooms;
+    const reimbursements = reimbursableGuests * nights * pay;
+    const hostLo = Math.max(0, grossLo - reimbursements);
+    const hostHi = Math.max(0, grossHi - reimbursements);
+    const hostMid = Math.max(0, grossMid - reimbursements);
+
+    return {
+      guests,
+      nights,
+      needRooms,
+      pay,
+      overnightCap,
+      overflowGuests,
+      grossLo,
+      grossHi,
+      grossMid,
+      reimbursements,
+      hostLo,
+      hostHi,
+      hostMid,
+      perGuestGross: grossMid / guests,
+      perGuestHost: hostMid / guests,
+      linesLow: low,
+      linesHigh: high,
+      notes,
+    };
+  }
+
+  function renderAllIn60Static(v) {
+    if (!v.allIn60) return "";
+    const rows = (v.allIn60Breakdown || [])
+      .map(
+        (b) => `<tr>
+          <td>${esc(b.item)}<span class="src-tag">${esc(b.source)}</span></td>
+          <td>${fmtCompact(b.low)}–${fmtCompact(b.high).replace("€", "")}</td>
+        </tr>`
+      )
+      .join("");
+    return `<div class="section cost-60">
+      <h3>Estimated total wedding cost · 60 guests</h3>
+      <p class="cost-60-total"><strong>${esc(v.allIn60)}</strong> <span class="muted">(midpoint ${fmtCompact(v.allIn60Mid)})</span></p>
+      ${v.allIn60OverflowNote ? `<p class="overflow-note">${esc(v.allIn60OverflowNote)}</p>` : ""}
+      <div class="table-wrap"><table class="cost-table"><thead><tr><th>Line item</th><th>Range</th></tr></thead><tbody>${rows}</tbody></table></div>
+      <p class="assumptions">${esc(v.allIn60Assumptions || state.meta.costAssumptions || "")}</p>
+    </div>`;
+  }
+
+  function renderCalculator(v) {
+    const guests = state.calcDefaults.weddingGuests || 60;
+    const nights = defaultNightsFor(v);
+    const pay = state.calcDefaults.guestPayPerNight || 0;
+    return `<div class="calc-panel" data-calc-for="${esc(v.id)}">
+      <h3>Adjust your numbers</h3>
+      <p class="calc-lead">Live estimate using this villa’s quoted rates where available, plus Italy destination averages for the rest — like your XLSM Settings sheet.</p>
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>Wedding guests</span>
+          <div class="calc-row">
+            <input type="range" min="20" max="150" step="1" value="${guests}" data-calc="weddingGuests" />
+            <input type="number" min="20" max="150" value="${guests}" data-calc="weddingGuestsNum" />
+          </div>
+        </label>
+        <label class="calc-field">
+          <span>Guests needing accommodation</span>
+          <input type="number" min="0" max="200" value="${guests}" data-calc="accommodationGuests" />
+        </label>
+        <label class="calc-field">
+          <span>Nights</span>
+          <select data-calc="nights">
+            <option value="2"${nights === 2 ? " selected" : ""}>2 nights</option>
+            <option value="3"${nights === 3 ? " selected" : ""}>3 nights</option>
+            ${((v.costModel || {}).dayVenue) ? `<option value="1"${nights === 1 ? " selected" : ""}>1 day (no stay)</option>` : ""}
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>Guest pays · € / person / night</span>
+          <input type="number" min="0" max="500" step="10" value="${pay}" data-calc="guestPayPerNight" />
+        </label>
+      </div>
+      <div class="calc-results" data-calc-results></div>
+    </div>`;
+  }
+
+  function paintCalcResults(container, v) {
+    const panel = container.querySelector(".calc-panel");
+    if (!panel) return;
+    const guests = Number(panel.querySelector('[data-calc="weddingGuests"]').value);
+    const nights = Number(panel.querySelector('[data-calc="nights"]').value);
+    const need = Number(panel.querySelector('[data-calc="accommodationGuests"]').value);
+    const pay = Number(panel.querySelector('[data-calc="guestPayPerNight"]').value);
+    const r = computeLiveCost(v, {
+      weddingGuests: guests,
+      nights,
+      accommodationGuests: need,
+      guestPayPerNight: pay,
+    });
+    const out = panel.querySelector("[data-calc-results]");
+    out.innerHTML = `
+      <div class="calc-totals">
+        <div class="calc-total primary">
+          <span class="label">Estimated gross group cost</span>
+          <strong>${fmtCompact(r.grossLo)}–${fmtCompact(r.grossHi).replace("€", "")}</strong>
+          <em>mid ${fmtCompact(r.grossMid)}</em>
+        </div>
+        <div class="calc-total">
+          <span class="label">Guest lodging reimbursements</span>
+          <strong>${fmtCompact(r.reimbursements)}</strong>
+          <em>${r.needRooms} × ${r.nights}n × ${fmtEuro(r.pay)}</em>
+        </div>
+        <div class="calc-total host">
+          <span class="label">Estimated host outlay</span>
+          <strong>${fmtCompact(r.hostLo)}–${fmtCompact(r.hostHi).replace("€", "")}</strong>
+          <em>mid ${fmtCompact(r.hostMid)} · ${fmtCompact(r.perGuestHost)} / wedding guest</em>
+        </div>
+        <div class="calc-total">
+          <span class="label">Per wedding guest (gross)</span>
+          <strong>${fmtCompact(r.perGuestGross)}</strong>
+        </div>
+      </div>
+      ${r.notes.map((n) => `<p class="overflow-note">${esc(n)}</p>`).join("")}
+      <details class="calc-details"><summary>Line-item midpoints</summary>
+        <ul class="calc-lines">${r.linesLow
+          .map((row, i) => {
+            const hi = r.linesHigh[i] ? r.linesHigh[i][1] : row[1];
+            const mid = (row[1] + hi) / 2;
+            return `<li><span>${esc(row[0])}</span><span>${fmtCompact(mid)}</span></li>`;
+          })
+          .join("")}</ul>
+      </details>`;
+  }
+
+  function bindCalculator(v) {
+    const panel = els.drawerContent.querySelector(".calc-panel");
+    if (!panel) return;
+    const syncGuests = (from) => {
+      const range = panel.querySelector('[data-calc="weddingGuests"]');
+      const num = panel.querySelector('[data-calc="weddingGuestsNum"]');
+      const acc = panel.querySelector('[data-calc="accommodationGuests"]');
+      let g = from === "num" ? Number(num.value) : Number(range.value);
+      g = Math.max(20, Math.min(150, g || 60));
+      range.value = g;
+      num.value = g;
+      // keep accommodation in sync if it still matches previous guest default-ish
+      if (!acc.dataset.touched) acc.value = g;
+      saveCalcDefaults({ weddingGuests: g });
+      paintCalcResults(els.drawerContent, v);
+    };
+    panel.querySelector('[data-calc="weddingGuests"]').addEventListener("input", () => syncGuests("range"));
+    panel.querySelector('[data-calc="weddingGuestsNum"]').addEventListener("input", () => syncGuests("num"));
+    panel.querySelector('[data-calc="accommodationGuests"]').addEventListener("input", (e) => {
+      e.target.dataset.touched = "1";
+      paintCalcResults(els.drawerContent, v);
+    });
+    panel.querySelector('[data-calc="nights"]').addEventListener("change", (e) => {
+      saveCalcDefaults({ nightsPref: Number(e.target.value) });
+      paintCalcResults(els.drawerContent, v);
+    });
+    panel.querySelector('[data-calc="guestPayPerNight"]').addEventListener("input", (e) => {
+      saveCalcDefaults({ guestPayPerNight: Number(e.target.value) || 0 });
+      paintCalcResults(els.drawerContent, v);
+    });
+    paintCalcResults(els.drawerContent, v);
+  }
+
+  function openDrawer(id) {
+    const v = state.venues.find((x) => x.id === id);
+    if (!v) return;
+    state.activeId = id;
+    const on = state.shortlist.has(v.id);
+    const website = clean(v.website);
+
+    els.drawerContent.innerHTML = `
+      ${mediaBlock(v, "drawer-hero")}
+      <div class="drawer-body">
+        <p class="drawer-kicker">${esc(v.region)} · ${esc(v.budgetBand)} band</p>
+        <h2 id="drawer-title">${esc(v.name)}</h2>
+        <p class="drawer-sub">${esc(v.location)}${v.correctedLocation ? ` · <em>${esc(clean(v.correctedLocation).split("—")[0].trim())}</em>` : ""}</p>
+        <div class="drawer-actions">
+          <button type="button" class="btn btn-heart${on ? " is-on" : ""}" data-heart="${esc(v.id)}">${heartSvg} ${on ? "Saved" : "Save to shortlist"}</button>
+          ${website ? `<a class="btn btn-primary" href="${esc(website)}" target="_blank" rel="noopener noreferrer">Visit website</a>` : ""}
+        </div>
+        ${renderCalculator(v)}
+        ${renderAllIn60Static(v)}
+        ${clean(v.confidence) ? `<p><span class="confidence">Confidence: ${esc(v.confidence)}</span></p>` : ""}
+        <dl class="stats">
+          ${fact("Overnight capacity", v.overnightCapacity)}
+          ${fact("Event capacity", v.eventCapacity)}
+          ${fact("Min nights", v.minNights)}
+          ${fact("Venue fee", v.venueFee)}
+          ${fact("40-guest all-in", v.allIn40)}
+          ${fact("60-guest all-in (modeled)", v.allIn60)}
+          ${fact("100-guest all-in", v.allIn100)}
+          ${fact("Food", v.foodPrice)}
+          ${fact("Alcohol", v.alcoholPrice)}
+          ${fact("Music curfew", v.musicCurfew)}
+          ${fact("In-house catering", v.inHouseCatering)}
+          ${fact("Airport", v.airportNotes)}
+          ${fact("Guests accommodated", v.guestsAccommodated)}
+        </dl>
+        ${clean(v.bestFit) ? `<div class="callout"><strong>Best fit</strong>${esc(v.bestFit)}</div>` : ""}
+        ${clean(v.watchOuts) ? `<div class="callout"><strong>Watch-outs</strong>${esc(v.watchOuts)}</div>` : ""}
+        ${section("Prices & packages", v.pricesPackages)}
+        ${section("Date requirements", v.dateRequirements)}
+        ${section("Discounts / extra fees", v.discountsExtraFees)}
+        ${section("Backup indoor space", v.backupIndoor)}
+        ${section("Min / max numbers", v.minMaxNumbers)}
+        ${section("Cake", v.cake)}
+        ${section("Source notes", v.sourceNotes)}
+        ${
+          clean(v.brochure) && clean(v.brochure).startsWith("http")
+            ? `<div class="section"><h3>Brochure</h3><p><a href="${esc(v.brochure)}" target="_blank" rel="noopener noreferrer">Open brochure link</a></p></div>`
+            : ""
+        }
+      </div>`;
+
+    bindCalculator(v);
+
+    els.overlay.hidden = false;
+    requestAnimationFrame(() => {
+      els.overlay.classList.add("is-open");
+      els.drawer.classList.add("is-open");
+      els.drawer.setAttribute("aria-hidden", "false");
+      document.body.classList.add("drawer-open");
+    });
+  }
+
+  function closeDrawer() {
+    els.overlay.classList.remove("is-open");
+    els.drawer.classList.remove("is-open");
+    els.drawer.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("drawer-open");
+    setTimeout(() => {
+      els.overlay.hidden = true;
+      state.activeId = null;
+    }, 280);
+  }
+
+  function toggleHeart(id, ev) {
+    if (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+    }
+    if (state.shortlist.has(id)) state.shortlist.delete(id);
+    else state.shortlist.add(id);
+    saveShortlist();
+    renderCards();
+    if (state.activeId === id) openDrawer(id);
+  }
+
+  function setView(view) {
+    state.view = view;
+    els.tabs.forEach((t) => {
+      const active = t.dataset.view === view;
+      t.classList.toggle("is-active", active);
+      t.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    els.toolbar.style.display = view === "shortlist" ? "none" : "flex";
+    renderCards();
+  }
+
+  els.tabs.forEach((t) => t.addEventListener("click", () => setView(t.dataset.view)));
+  els.chips.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-region]");
+    if (!btn) return;
+    state.region = btn.dataset.region;
+    renderChips();
+    renderCards();
+  });
+  els.search.addEventListener("input", () => {
+    state.query = els.search.value.trim();
+    renderCards();
+  });
+  els.band.addEventListener("change", () => {
+    state.band = els.band.value;
+    renderCards();
+  });
+  els.cards.addEventListener("click", (e) => {
+    const heart = e.target.closest("[data-heart]");
+    if (heart) return toggleHeart(heart.dataset.heart, e);
+    const card = e.target.closest(".card");
+    if (card) openDrawer(card.dataset.id);
+  });
+  els.cards.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const card = e.target.closest(".card");
+    if (!card) return;
+    e.preventDefault();
+    openDrawer(card.dataset.id);
+  });
+  els.drawerContent.addEventListener("click", (e) => {
+    const heart = e.target.closest("[data-heart]");
+    if (heart) toggleHeart(heart.dataset.heart, e);
+  });
+  els.drawerClose.addEventListener("click", closeDrawer);
+  els.overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeDrawer();
+  });
+
+  async function init() {
+    try {
+      const data = window.__EJ_VENUES__;
+      state.venues = data.venues || [];
+      state.meta = data.meta || {};
+      if (data.meta && data.meta.calculatorDefaults) {
+        state.calcDefaults = { ...state.calcDefaults, ...data.meta.calculatorDefaults, ...loadCalcDefaults() };
+      }
+      saveShortlist();
+      renderChips();
+      renderCards();
+    } catch (err) {
+      els.cards.innerHTML = `<p style="color:#8f3f22">Could not load venue data. Open this site via a local server or host so <code>data/venues.json</code> can load.</p>`;
+      console.error(err);
+    }
+  }
+
+  init();
+})();
+
+</script>
+</body>
+</html>
