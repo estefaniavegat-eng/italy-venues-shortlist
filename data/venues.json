@@ -9,7 +9,7 @@
     "planningNote": "Fall 2027 · September–October preferred · hosted full bar · destination weekend",
     "currency": "EUR",
     "venueCount": 21,
-    "costAssumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+    "costAssumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
     "calculatorDefaults": {
       "weddingGuests": 60,
       "guestPayPerNight": 0,
@@ -55,10 +55,10 @@
       "image": "assets/galleries/villa-pozzolo/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VP",
-      "allIn60": "€128k–€163k",
-      "allIn60Low": 128321,
-      "allIn60High": 162875,
-      "allIn60Mid": 145598,
+      "allIn60": "€113k–€140k",
+      "allIn60Low": 113472,
+      "allIn60High": 139775,
+      "allIn60Mid": 126624,
       "allIn60Breakdown": [
         {
           "item": "Venue / lodging buyout (3n)",
@@ -88,12 +88,6 @@
           "item": "Farewell brunch (Italy avg)",
           "low": 1500,
           "high": 2400,
-          "source": "italy-average"
-        },
-        {
-          "item": "Overflow lodging ~25 guests × 3n (nearby hotel est.)",
-          "low": 13500,
-          "high": 21000,
           "source": "italy-average"
         },
         {
@@ -139,14 +133,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Overflow lodging ~25 guests × 3n (nearby hotel est.)",
+          "low": 13500,
+          "high": 21000,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 11666,
-          "high": 14807,
+          "low": 10316,
+          "high": 12707,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~35 < 60 wedding guests — overflow lodging estimated for 25 guests.",
-      "allIn60OverflowNote": "Onsite overnight capacity ~35 < 60 wedding guests — overflow lodging estimated for 25 guests.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Onsite overnight capacity ~35 < 60 wedding guests — ~25 guests book nearby hotels themselves (guest-paid; not in your all-in).",
+      "allIn60OverflowNote": "~25 guests need nearby hotels (guest-paid; not in your all-in).",
       "costModel": {
         "overnightCap": 35,
         "defaultNights": 3,
@@ -179,7 +179,9 @@
         "assets/galleries/villa-pozzolo/06.jpg",
         "assets/galleries/villa-pozzolo/07.jpg",
         "assets/galleries/villa-pozzolo/08.jpg"
-      ]
+      ],
+      "allIn60OverflowLow": 13500,
+      "allIn60OverflowHigh": 21000
     },
     {
       "id": "villa-lena",
@@ -283,13 +285,13 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 76,
         "defaultNights": 3,
         "rentalTotal": 49500,
-        "rentalPerNight": 16500.0,
+        "rentalPerNight": 16500,
         "rentalSource": "quote",
         "fbPerGuest": 550,
         "fbSource": "quote",
@@ -421,13 +423,13 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 65,
         "defaultNights": 3,
         "rentalTotal": 42000,
-        "rentalPerNight": 14000.0,
+        "rentalPerNight": 14000,
         "rentalSource": "quote",
         "fbPerGuest": 170,
         "fbSource": "quote",
@@ -486,10 +488,10 @@
       "image": "assets/galleries/villa-paola/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VP",
-      "allIn60": "€59k–€96k",
-      "allIn60Low": 58806,
-      "allIn60High": 96426,
-      "allIn60Mid": 77616,
+      "allIn60": "€45k–€74k",
+      "allIn60Low": 44550,
+      "allIn60High": 74250,
+      "allIn60Mid": 59400,
       "allIn60Breakdown": [
         {
           "item": "Venue / lodging buyout (2n)",
@@ -507,12 +509,6 @@
           "item": "Welcome party (Italy avg)",
           "low": 3000,
           "high": 4800,
-          "source": "italy-average"
-        },
-        {
-          "item": "Overflow lodging ~36 guests × 2n (nearby hotel est.)",
-          "low": 12960,
-          "high": 20160,
           "source": "italy-average"
         },
         {
@@ -558,14 +554,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Overflow lodging ~36 guests × 2n (nearby hotel est.)",
+          "low": 12960,
+          "high": 20160,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 5346,
-          "high": 8766,
+          "low": 4050,
+          "high": 6750,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~24 < 60 wedding guests — overflow lodging estimated for 36 guests.",
-      "allIn60OverflowNote": "Onsite overnight capacity ~24 < 60 wedding guests — overflow lodging estimated for 36 guests.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Onsite overnight capacity ~24 < 60 wedding guests — ~36 guests book nearby hotels themselves (guest-paid; not in your all-in).",
+      "allIn60OverflowNote": "~36 guests need nearby hotels (guest-paid; not in your all-in).",
       "costModel": {
         "overnightCap": 24,
         "defaultNights": 2,
@@ -600,7 +602,9 @@
         "assets/galleries/villa-paola/08.jpg",
         "assets/galleries/villa-paola/09.jpg"
       ],
-      "brochureUrl": "https://media.blastness.info/964/VP_Wedding_ENG_25_V_mail.pdf"
+      "brochureUrl": "https://media.blastness.info/964/VP_Wedding_ENG_25_V_mail.pdf",
+      "allIn60OverflowLow": 12960,
+      "allIn60OverflowHigh": 20160
     },
     {
       "id": "hotel-bellevue-syrene",
@@ -710,7 +714,7 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 60,
@@ -841,7 +845,7 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 60,
@@ -986,7 +990,7 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 90,
@@ -1060,10 +1064,10 @@
       "image": "assets/galleries/villa-catignano/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VC",
-      "allIn60": "€65k–€94k",
-      "allIn60Low": 65441,
-      "allIn60High": 93552,
-      "allIn60Mid": 79497,
+      "allIn60": "€54k–€75k",
+      "allIn60Low": 53561,
+      "allIn60High": 75072,
+      "allIn60Mid": 64317,
       "allIn60Breakdown": [
         {
           "item": "Venue / lodging buyout (3n)",
@@ -1087,12 +1091,6 @@
           "item": "Farewell brunch (Italy avg)",
           "low": 1500,
           "high": 2400,
-          "source": "italy-average"
-        },
-        {
-          "item": "Overflow lodging ~20 guests × 3n (nearby hotel est.)",
-          "low": 10800,
-          "high": 16800,
           "source": "italy-average"
         },
         {
@@ -1138,14 +1136,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Overflow lodging ~20 guests × 3n (nearby hotel est.)",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 5949,
-          "high": 8505,
+          "low": 4869,
+          "high": 6825,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~40 < 60 wedding guests — overflow lodging estimated for 20 guests.",
-      "allIn60OverflowNote": "Onsite overnight capacity ~40 < 60 wedding guests — overflow lodging estimated for 20 guests.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Onsite overnight capacity ~40 < 60 wedding guests — ~20 guests book nearby hotels themselves (guest-paid; not in your all-in).",
+      "allIn60OverflowNote": "~20 guests need nearby hotels (guest-paid; not in your all-in).",
       "costModel": {
         "overnightCap": 40,
         "defaultNights": 3,
@@ -1180,7 +1184,9 @@
         "assets/galleries/villa-catignano/08.jpg",
         "assets/galleries/villa-catignano/09.jpg"
       ],
-      "brochureUrl": "https://www.villacatignano.it/weddings-events.html"
+      "brochureUrl": "https://www.villacatignano.it/weddings-events.html",
+      "allIn60OverflowLow": 10800,
+      "allIn60OverflowHigh": 16800
     },
     {
       "id": "borgo-castelvecchi",
@@ -1284,13 +1290,13 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 65,
         "defaultNights": 3,
         "rentalTotal": 21900,
-        "rentalPerNight": 7300.0,
+        "rentalPerNight": 7300,
         "rentalSource": "quote",
         "fbPerGuest": 140,
         "fbSource": "quote",
@@ -1356,10 +1362,10 @@
       "image": "assets/galleries/casale-de-pasquinelli/01.jpg",
       "imageCredit": "Official site (via web-agency portfolio)",
       "monogram": "CP",
-      "allIn60": "€62k–€87k",
-      "allIn60Low": 62271,
-      "allIn60High": 87234,
-      "allIn60Mid": 74753,
+      "allIn60": "€49k–€66k",
+      "allIn60Low": 48609,
+      "allIn60High": 65982,
+      "allIn60Mid": 57296,
       "allIn60Breakdown": [
         {
           "item": "Venue / lodging buyout (3n)",
@@ -1372,12 +1378,6 @@
           "low": 10890,
           "high": 11484,
           "source": "quote"
-        },
-        {
-          "item": "Overflow lodging ~23 guests × 3n (nearby hotel est.)",
-          "low": 12420,
-          "high": 19320,
-          "source": "italy-average"
         },
         {
           "item": "Planner / coordinator (Italy avg)",
@@ -1422,14 +1422,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Overflow lodging ~23 guests × 3n (nearby hotel est.)",
+          "low": 12420,
+          "high": 19320,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 5661,
-          "high": 7930,
+          "low": 4419,
+          "high": 5998,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~37 < 60 wedding guests — overflow lodging estimated for 23 guests.",
-      "allIn60OverflowNote": "Onsite overnight capacity ~37 < 60 wedding guests — overflow lodging estimated for 23 guests.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Onsite overnight capacity ~37 < 60 wedding guests — ~23 guests book nearby hotels themselves (guest-paid; not in your all-in).",
+      "allIn60OverflowNote": "~23 guests need nearby hotels (guest-paid; not in your all-in).",
       "costModel": {
         "overnightCap": 37,
         "defaultNights": 3,
@@ -1456,7 +1462,9 @@
       "gallery": [
         "assets/galleries/casale-de-pasquinelli/01.jpg"
       ],
-      "brochureUrl": "https://www.casaledepasquinelli.it/brochure"
+      "brochureUrl": "https://www.casaledepasquinelli.it/brochure",
+      "allIn60OverflowLow": 12420,
+      "allIn60OverflowHigh": 19320
     },
     {
       "id": "antico-borgo-san-lorenzo",
@@ -1494,10 +1502,10 @@
       "image": "assets/galleries/antico-borgo-san-lorenzo/01.jpg",
       "imageCredit": "Official site",
       "monogram": "AB",
-      "allIn60": "€48k–€68k",
-      "allIn60Low": 47790,
-      "allIn60High": 67719,
-      "allIn60Mid": 57754,
+      "allIn60": "€37k–€51k",
+      "allIn60Low": 37098,
+      "allIn60High": 51087,
+      "allIn60Mid": 44093,
       "allIn60Breakdown": [
         {
           "item": "Venue / lodging buyout (3n)",
@@ -1510,12 +1518,6 @@
           "low": 7125,
           "high": 7875,
           "source": "quote"
-        },
-        {
-          "item": "Overflow lodging ~18 guests × 3n (nearby hotel est.)",
-          "low": 9720,
-          "high": 15120,
-          "source": "italy-average"
         },
         {
           "item": "Planner / coordinator (Italy avg)",
@@ -1560,14 +1562,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Overflow lodging ~18 guests × 3n (nearby hotel est.)",
+          "low": 9720,
+          "high": 15120,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 4344,
-          "high": 6156,
+          "low": 3373,
+          "high": 4644,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~42 < 60 wedding guests — overflow lodging estimated for 18 guests.",
-      "allIn60OverflowNote": "Onsite overnight capacity ~42 < 60 wedding guests — overflow lodging estimated for 18 guests.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Onsite overnight capacity ~42 < 60 wedding guests — ~18 guests book nearby hotels themselves (guest-paid; not in your all-in).",
+      "allIn60OverflowNote": "~18 guests need nearby hotels (guest-paid; not in your all-in).",
       "costModel": {
         "overnightCap": 42,
         "defaultNights": 3,
@@ -1600,7 +1608,9 @@
         "assets/galleries/antico-borgo-san-lorenzo/06.jpg",
         "assets/galleries/antico-borgo-san-lorenzo/07.jpg",
         "assets/galleries/antico-borgo-san-lorenzo/08.jpg"
-      ]
+      ],
+      "allIn60OverflowLow": 9720,
+      "allIn60OverflowHigh": 15120
     },
     {
       "id": "villa-sermolli",
@@ -1716,13 +1726,13 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 80,
         "defaultNights": 2,
         "rentalTotal": 18000,
-        "rentalPerNight": 9000.0,
+        "rentalPerNight": 9000,
         "rentalSource": "quote",
         "fbPerGuest": null,
         "fbSource": "quote",
@@ -1788,10 +1798,10 @@
       "image": "assets/galleries/villa-poggio-bartoli/01.jpg",
       "imageCredit": "Official site (archived asset)",
       "monogram": "VP",
-      "allIn60": "€55k–€76k",
-      "allIn60Low": 55187,
-      "allIn60High": 76461,
-      "allIn60Mid": 65824,
+      "allIn60": "€39k–€51k",
+      "allIn60Low": 38555,
+      "allIn60High": 50589,
+      "allIn60Mid": 44572,
       "allIn60Breakdown": [
         {
           "item": "Venue / lodging buyout (3n)",
@@ -1804,12 +1814,6 @@
           "low": 8550,
           "high": 9450,
           "source": "quote"
-        },
-        {
-          "item": "Overflow lodging ~28 guests × 3n (nearby hotel est.)",
-          "low": 15120,
-          "high": 23520,
-          "source": "italy-average"
         },
         {
           "item": "Planner / coordinator",
@@ -1854,14 +1858,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Overflow lodging ~28 guests × 3n (nearby hotel est.)",
+          "low": 15120,
+          "high": 23520,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 5017,
-          "high": 6951,
+          "low": 3505,
+          "high": 4599,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Onsite overnight capacity ~32 < 60 wedding guests — overflow lodging estimated for 28 guests.",
-      "allIn60OverflowNote": "Onsite overnight capacity ~32 < 60 wedding guests — overflow lodging estimated for 28 guests.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Onsite overnight capacity ~32 < 60 wedding guests — ~28 guests book nearby hotels themselves (guest-paid; not in your all-in).",
+      "allIn60OverflowNote": "~28 guests need nearby hotels (guest-paid; not in your all-in).",
       "costModel": {
         "overnightCap": 32,
         "defaultNights": 3,
@@ -1890,7 +1900,9 @@
         "assets/galleries/villa-poggio-bartoli/02.jpg",
         "assets/galleries/villa-poggio-bartoli/03.jpg"
       ],
-      "brochureUrl": "https://drive.google.com/file/d/1Rd4FVVDcd_xfatT-1fbamnJc86YWYM-S/view?usp=drive_link"
+      "brochureUrl": "https://drive.google.com/file/d/1Rd4FVVDcd_xfatT-1fbamnJc86YWYM-S/view?usp=drive_link",
+      "allIn60OverflowLow": 15120,
+      "allIn60OverflowHigh": 23520
     },
     {
       "id": "spao-borgo-san-pietro",
@@ -1928,7 +1940,7 @@
       "image": "assets/galleries/spao-borgo-san-pietro/01.jpg",
       "imageCredit": "Official site",
       "monogram": "SB",
-      "allIn60": "€60k–€83k",
+      "allIn60": "€61k–€83k",
       "allIn60Low": 60500,
       "allIn60High": 82566,
       "allIn60Mid": 71533,
@@ -2006,13 +2018,13 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 100,
         "defaultNights": 3,
         "rentalTotal": 27000,
-        "rentalPerNight": 9000.0,
+        "rentalPerNight": 9000,
         "rentalSource": "quote",
         "fbPerGuest": null,
         "fbSource": null,
@@ -2150,13 +2162,13 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 120,
         "defaultNights": 2,
         "rentalTotal": 5000,
-        "rentalPerNight": 2500.0,
+        "rentalPerNight": 2500,
         "rentalSource": "quote",
         "fbPerGuest": 137,
         "fbSource": "quote",
@@ -2216,10 +2228,10 @@
       "image": "assets/galleries/villa-arvedi/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VA",
-      "allIn60": "€46k–€70k",
-      "allIn60Low": 45674,
-      "allIn60High": 70376,
-      "allIn60Mid": 58025,
+      "allIn60": "€34k–€52k",
+      "allIn60Low": 33794,
+      "allIn60High": 51896,
+      "allIn60Mid": 42845,
       "allIn60Breakdown": [
         {
           "item": "Venue rental (day)",
@@ -2231,12 +2243,6 @@
           "item": "F&B dinner+aperitivo+open bar (Italy avg)",
           "low": 9000,
           "high": 13200,
-          "source": "italy-average"
-        },
-        {
-          "item": "All guest lodging offsite (60 × 1n est.)",
-          "low": 10800,
-          "high": 16800,
           "source": "italy-average"
         },
         {
@@ -2282,14 +2288,20 @@
           "source": "italy-average"
         },
         {
+          "item": "All guest lodging offsite (60 × 1n est.)",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 4152,
-          "high": 6398,
+          "low": 3072,
+          "high": 4718,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Day venue — no onsite rooms; guest lodging estimated separately in Verona-area hotels.",
-      "allIn60OverflowNote": "Day venue — no onsite rooms; guest lodging estimated separately in Verona-area hotels.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Day venue — guest lodging is offsite and guest-paid (excluded from host all-in).",
+      "allIn60OverflowNote": "Day venue — all lodging is guest-paid nearby hotels (not in your all-in).",
       "costModel": {
         "overnightCap": 0,
         "defaultNights": 1,
@@ -2320,7 +2332,9 @@
         "assets/galleries/villa-arvedi/04.jpg",
         "assets/galleries/villa-arvedi/05.jpg"
       ],
-      "brochureUrl": "https://www.villarvedi.it/i-matrimoni/"
+      "brochureUrl": "https://www.villarvedi.it/i-matrimoni/",
+      "allIn60OverflowLow": 10800,
+      "allIn60OverflowHigh": 16800
     },
     {
       "id": "borgo-tre-rose",
@@ -2424,7 +2438,7 @@
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout.",
       "allIn60OverflowNote": "",
       "costModel": {
         "overnightCap": 110,
@@ -2494,10 +2508,10 @@
       "image": "assets/galleries/antica-fattoria-paterno/01.jpg",
       "imageCredit": "Exclusive Italy Weddings / Studio Fotografico Righi",
       "monogram": "FP",
-      "allIn60": "€43k–€69k",
-      "allIn60Low": 43230,
-      "allIn60High": 69300,
-      "allIn60Mid": 56265,
+      "allIn60": "€31k–€51k",
+      "allIn60Low": 31350,
+      "allIn60High": 50820,
+      "allIn60Mid": 41085,
       "allIn60Breakdown": [
         {
           "item": "Venue hire (day)",
@@ -2509,12 +2523,6 @@
           "item": "F&B dinner+aperitivo+open bar (Italy avg)",
           "low": 9000,
           "high": 13200,
-          "source": "italy-average"
-        },
-        {
-          "item": "All guest lodging offsite / estate apartments (60 × 1n est.)",
-          "low": 10800,
-          "high": 16800,
           "source": "italy-average"
         },
         {
@@ -2560,14 +2568,20 @@
           "source": "italy-average"
         },
         {
+          "item": "All guest lodging offsite / estate apartments (60 × 1n est.)",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 3930,
-          "high": 6300,
+          "low": 2850,
+          "high": 4620,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Day-hire venue — tower (14) + sister villa I Massini (48) available separately; 1-night lodging estimated for 60 guests. Multi-night destination weekends cost more.",
-      "allIn60OverflowNote": "Day-hire venue — tower (14) + sister villa I Massini (48) available separately; 1-night lodging estimated for 60 guests. Multi-night destination weekends cost more.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Day venue — guest lodging is offsite and guest-paid (excluded from host all-in).",
+      "allIn60OverflowNote": "Day venue — all lodging is guest-paid nearby hotels (not in your all-in).",
       "costModel": {
         "overnightCap": 62,
         "defaultNights": 1,
@@ -2599,7 +2613,9 @@
         "assets/galleries/antica-fattoria-paterno/05.jpg",
         "assets/galleries/antica-fattoria-paterno/06.jpg"
       ],
-      "brochureUrl": ""
+      "brochureUrl": "",
+      "allIn60OverflowLow": 10800,
+      "allIn60OverflowHigh": 16800
     },
     {
       "id": "il-falconiere",
@@ -2637,10 +2653,10 @@
       "image": "assets/galleries/il-falconiere/01.jpg",
       "imageCredit": "Official site",
       "monogram": "IF",
-      "allIn60": "€44k–€72k",
-      "allIn60Low": 44330,
-      "allIn60High": 71830,
-      "allIn60Mid": 58080,
+      "allIn60": "€32k–€53k",
+      "allIn60Low": 32450,
+      "allIn60High": 53350,
+      "allIn60Mid": 42900,
       "allIn60Breakdown": [
         {
           "item": "Venue fee (excl. accommodation)",
@@ -2652,12 +2668,6 @@
           "item": "F&B dinner+aperitivo+open bar (Italy avg; Michelin may run higher)",
           "low": 9000,
           "high": 15000,
-          "source": "italy-average"
-        },
-        {
-          "item": "Guest lodging (Relais rooms / nearby) 60 × 1n est.",
-          "low": 10800,
-          "high": 16800,
           "source": "italy-average"
         },
         {
@@ -2703,14 +2713,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Guest lodging (Relais rooms / nearby) 60 × 1n est.",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 4030,
-          "high": 6530,
+          "low": 2950,
+          "high": 4850,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Venue fee excludes Relais & Châteaux accommodation (22 rooms/suites). 1-night lodging estimated; Michelin catering may exceed Italy averages.",
-      "allIn60OverflowNote": "Venue fee excludes Relais & Châteaux accommodation (22 rooms/suites). 1-night lodging estimated; Michelin catering may exceed Italy averages.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Day venue — guest lodging is offsite and guest-paid (excluded from host all-in).",
+      "allIn60OverflowNote": "Day venue — all lodging is guest-paid nearby hotels (not in your all-in).",
       "costModel": {
         "overnightCap": 44,
         "defaultNights": 1,
@@ -2742,7 +2758,9 @@
         "assets/galleries/il-falconiere/05.jpg",
         "assets/galleries/il-falconiere/06.jpg"
       ],
-      "brochureUrl": ""
+      "brochureUrl": "",
+      "allIn60OverflowLow": 10800,
+      "allIn60OverflowHigh": 16800
     },
     {
       "id": "villa-castiglioncelli",
@@ -2780,10 +2798,10 @@
       "image": "assets/galleries/villa-castiglioncelli/01.jpg",
       "imageCredit": "Official site (Tenuta San Jacopo)",
       "monogram": "VC",
-      "allIn60": "€45k–€72k",
-      "allIn60Low": 44977,
-      "allIn60High": 71786,
-      "allIn60Mid": 58381,
+      "allIn60": "€33k–€53k",
+      "allIn60Low": 33097,
+      "allIn60High": 53306,
+      "allIn60Mid": 43202,
       "allIn60Breakdown": [
         {
           "item": "Venue hire (day, +VAT)",
@@ -2801,12 +2819,6 @@
           "item": "F&B dinner+aperitivo+open bar (Italy avg)",
           "low": 9000,
           "high": 13200,
-          "source": "italy-average"
-        },
-        {
-          "item": "Guest lodging (estate apartments / nearby) 60 × 1n est.",
-          "low": 10800,
-          "high": 16800,
           "source": "italy-average"
         },
         {
@@ -2852,14 +2864,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Guest lodging (estate apartments / nearby) 60 × 1n est.",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 4089,
-          "high": 6526,
+          "low": 3009,
+          "high": 4846,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Day hire from €5,400 + VAT (low season). Estate has 7 apartments (~21–27 overnight); remaining guests nearby. Multi-night stays extra.",
-      "allIn60OverflowNote": "Day hire from €5,400 + VAT (low season). Estate has 7 apartments (~21–27 overnight); remaining guests nearby. Multi-night stays extra.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Day venue — guest lodging is offsite and guest-paid (excluded from host all-in).",
+      "allIn60OverflowNote": "Day venue — all lodging is guest-paid nearby hotels (not in your all-in).",
       "costModel": {
         "overnightCap": 27,
         "defaultNights": 1,
@@ -2891,7 +2909,9 @@
         "assets/galleries/villa-castiglioncelli/05.jpg",
         "assets/galleries/villa-castiglioncelli/06.jpg"
       ],
-      "brochureUrl": ""
+      "brochureUrl": "",
+      "allIn60OverflowLow": 10800,
+      "allIn60OverflowHigh": 16800
     },
     {
       "id": "vignamaggio",
@@ -2929,10 +2949,10 @@
       "image": "assets/galleries/vignamaggio/01.jpg",
       "imageCredit": "Official site",
       "monogram": "VG",
-      "allIn60": "€44k–€74k",
-      "allIn60Low": 44330,
-      "allIn60High": 74250,
-      "allIn60Mid": 59290,
+      "allIn60": "€32k–€56k",
+      "allIn60Low": 32450,
+      "allIn60High": 55770,
+      "allIn60Mid": 44110,
       "allIn60Breakdown": [
         {
           "item": "Venue hire",
@@ -2944,12 +2964,6 @@
           "item": "F&B dinner+aperitivo+open bar (Italy avg)",
           "low": 9000,
           "high": 13200,
-          "source": "italy-average"
-        },
-        {
-          "item": "Guest lodging (Il Borgo / nearby) 60 × 1n est.",
-          "low": 10800,
-          "high": 16800,
           "source": "italy-average"
         },
         {
@@ -2995,14 +3009,20 @@
           "source": "italy-average"
         },
         {
+          "item": "Guest lodging (Il Borgo / nearby) 60 × 1n est.",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
           "item": "Contingency (10%)",
-          "low": 4030,
-          "high": 6750,
+          "low": 2950,
+          "high": 5070,
           "source": "assumption"
         }
       ],
-      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Venue hire €6–12k; accommodation packages separate (Il Borgo sleeps ~34). 1-night lodging estimated for 60; multi-night Chianti weekends cost more.",
-      "allIn60OverflowNote": "Venue hire €6–12k; accommodation packages separate (Il Borgo sleeps ~34). 1-night lodging estimated for 60; multi-night Chianti weekends cost more.",
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Nearby/overflow hotel lodging for guests not sleeping onsite is guest-paid and excluded from host all-in totals. Onsite guest €/person/night contributions (when set) reduce host outlay toward the villa buyout. Day venue — guest lodging is offsite and guest-paid (excluded from host all-in).",
+      "allIn60OverflowNote": "Day venue — all lodging is guest-paid nearby hotels (not in your all-in).",
       "costModel": {
         "overnightCap": 34,
         "defaultNights": 1,
@@ -3034,7 +3054,9 @@
         "assets/galleries/vignamaggio/05.jpg",
         "assets/galleries/vignamaggio/06.jpg"
       ],
-      "brochureUrl": ""
+      "brochureUrl": "",
+      "allIn60OverflowLow": 10800,
+      "allIn60OverflowHigh": 16800
     }
   ]
 }

@@ -484,27 +484,26 @@
       }
     }
 
-    // Overflow / offsite lodging (gross cost — before guest reimbursements)
+    // Overflow / offsite lodging — informational only (guest-paid; NOT in host budget)
     let overflowGuests = 0;
+    let overflowLo = 0;
+    let overflowHi = 0;
     if (cm.dayVenue) {
       overflowGuests = needRooms;
-      low.push([`Offsite lodging (${needRooms} × ${nights}n est.)`, needRooms * nights * AVG.overflowRoomNight[0]]);
-      high.push([`Offsite lodging (${needRooms} × ${nights}n est.)`, needRooms * nights * AVG.overflowRoomNight[1]]);
-      notes.push("Day venue — all lodging offsite (estimate).");
+      overflowLo = needRooms * nights * AVG.overflowRoomNight[0];
+      overflowHi = needRooms * nights * AVG.overflowRoomNight[1];
+      notes.push(
+        `Day venue — all lodging is guest-paid nearby hotels (est. €${AVG.overflowRoomNight[0]}–€${AVG.overflowRoomNight[1]}/person/night). Excluded from your budget.`
+      );
     } else if (overnightCap > 0 && needRooms > overnightCap && !cm.roomPerPersonPerNight) {
       overflowGuests = needRooms - overnightCap;
-      low.push([
-        `Overflow lodging (~${overflowGuests} × ${nights}n)`,
-        overflowGuests * nights * AVG.overflowRoomNight[0],
-      ]);
-      high.push([
-        `Overflow lodging (~${overflowGuests} × ${nights}n)`,
-        overflowGuests * nights * AVG.overflowRoomNight[1],
-      ]);
+      overflowLo = overflowGuests * nights * AVG.overflowRoomNight[0];
+      overflowHi = overflowGuests * nights * AVG.overflowRoomNight[1];
       notes.push(
-        `Onsite overnight capacity ~${overnightCap} < ${needRooms} needing rooms — overflow estimated at €${AVG.overflowRoomNight[0]}–€${AVG.overflowRoomNight[1]}/person/night.`
+        `~${overflowGuests} guests need nearby hotels (guest-paid; not in your budget). Est. €${AVG.overflowRoomNight[0]}–€${AVG.overflowRoomNight[1]}/person/night.`
       );
     }
+    const overflowMid = (overflowLo + overflowHi) / 2;
 
     // Vendors
     const planner = cm.plannerQuoted != null ? [cm.plannerQuoted, cm.plannerQuoted] : AVG.planner;
@@ -549,10 +548,17 @@
     const grossHi = sumHi + contHi;
     const grossMid = (grossLo + grossHi) / 2;
 
-    // Guest reimbursements: pay per night × accommodation guests × nights
-    // Cap reimbursable room-nights to those actually housed (onsite + overflow we budgeted)
-    const reimbursableGuests = needRooms;
-    const reimbursements = reimbursableGuests * nights * pay;
+    // Guest reimbursements: ONLY guests sleeping onsite (or hotel-block rooms)
+    // Overflow/offsite guests book & pay their own hotels — not reimbursable to host budget.
+    let onsiteGuests;
+    if (cm.roomPerPersonPerNight) {
+      onsiteGuests = needRooms; // hotel-block rooms are onsite lodging
+    } else if (overnightCap > 0) {
+      onsiteGuests = Math.min(needRooms, overnightCap);
+    } else {
+      onsiteGuests = cm.dayVenue ? 0 : needRooms;
+    }
+    const reimbursements = onsiteGuests * nights * pay;
     const hostLo = Math.max(0, grossLo - reimbursements);
     const hostHi = Math.max(0, grossHi - reimbursements);
     const hostMid = Math.max(0, grossMid - reimbursements);
@@ -564,6 +570,10 @@
       pay,
       overnightCap,
       overflowGuests,
+      overflowLo,
+      overflowHi,
+      overflowMid,
+      onsiteGuests,
       grossLo,
       grossHi,
       grossMid,
@@ -579,21 +589,44 @@
     };
   }
 
+  function isGuestPaidLodgingItem(item) {
+    return /overflow\s*lodging|offsite\s*lodging|all guest lodging|guest lodging\s*\(/i.test(
+      String(item || "")
+    );
+  }
+
   function renderAllIn60Static(v) {
     if (!v.allIn60) return "";
-    const rows = (v.allIn60Breakdown || [])
-      .map(
-        (b) => `<tr>
+    const budgeted = [];
+    const overflow = [];
+    for (const b of v.allIn60Breakdown || []) {
+      if (isGuestPaidLodgingItem(b.item)) overflow.push(b);
+      else budgeted.push(b);
+    }
+    const rowHtml = (b) => `<tr>
           <td>${esc(b.item)}<span class="src-tag">${esc(b.source)}</span></td>
           <td>${fmtCompact(b.low)}–${fmtCompact(b.high).replace("€", "")}</td>
-        </tr>`
-      )
-      .join("");
+        </tr>`;
+    const rows = budgeted.map(rowHtml).join("");
+    const overflowRows = overflow.map(rowHtml).join("");
+    const overflowSection = overflow.length
+      ? `<div class="overflow-info">
+      <h4>Guest-paid offsite hotels (not in your budget)</h4>
+      <div class="table-wrap"><table class="cost-table"><thead><tr><th>Line item</th><th>Range</th></tr></thead><tbody>${overflowRows}</tbody></table></div>
+      <p class="overflow-note">${esc(
+        v.allIn60OverflowNote ||
+          "Guests book and pay nearby hotels themselves; these amounts are excluded from your all-in."
+      )}</p>
+    </div>`
+      : v.allIn60OverflowNote
+        ? `<p class="overflow-note">${esc(v.allIn60OverflowNote)}</p>`
+        : "";
     return `<div class="section cost-60">
       <h3>Estimated total wedding cost · 60 guests</h3>
       <p class="cost-60-total"><strong>${esc(v.allIn60)}</strong> <span class="muted">(midpoint ${fmtCompact(v.allIn60Mid)})</span></p>
-      ${v.allIn60OverflowNote ? `<p class="overflow-note">${esc(v.allIn60OverflowNote)}</p>` : ""}
+      <p class="muted" style="margin-top:0.25rem;font-size:0.85rem;">Host budget only — guest-paid offsite lodging excluded.</p>
       <div class="table-wrap"><table class="cost-table"><thead><tr><th>Line item</th><th>Range</th></tr></thead><tbody>${rows}</tbody></table></div>
+      ${overflowSection}
       <p class="assumptions">${esc(v.allIn60Assumptions || state.meta.costAssumptions || "")}</p>
     </div>`;
   }
@@ -648,30 +681,40 @@
       guestPayPerNight: pay,
     });
     const out = panel.querySelector("[data-calc-results]");
+    const overflowInfo =
+      r.overflowGuests > 0
+        ? `<div class="overflow-info">
+        <p class="overflow-note"><strong>Guest-paid offsite hotels (not in your budget):</strong> ${fmtCompact(
+          r.overflowLo
+        )}–${fmtCompact(r.overflowHi).replace("€", "")}
+        <br /><span class="muted">~${r.overflowGuests} guests book and pay nearby hotels themselves.</span></p>
+      </div>`
+        : "";
     out.innerHTML = `
       <div class="calc-totals">
         <div class="calc-total primary">
-          <span class="label">Estimated gross group cost</span>
+          <span class="label">Your estimated wedding spend</span>
           <strong>${fmtCompact(r.grossLo)}–${fmtCompact(r.grossHi).replace("€", "")}</strong>
-          <em>mid ${fmtCompact(r.grossMid)}</em>
+          <em>mid ${fmtCompact(r.grossMid)} · host budget before onsite guest contributions</em>
         </div>
         <div class="calc-total">
-          <span class="label">Guest lodging reimbursements</span>
+          <span class="label">Onsite guest lodging contributions</span>
           <strong>${fmtCompact(r.reimbursements)}</strong>
-          <em>${r.needRooms} × ${r.nights}n × ${fmtEuro(r.pay)}</em>
+          <em>${r.onsiteGuests} onsite × ${r.nights}n × ${fmtEuro(r.pay)}</em>
         </div>
         <div class="calc-total host">
-          <span class="label">Estimated host outlay</span>
+          <span class="label">Your estimated host outlay</span>
           <strong>${fmtCompact(r.hostLo)}–${fmtCompact(r.hostHi).replace("€", "")}</strong>
           <em>mid ${fmtCompact(r.hostMid)} · ${fmtCompact(r.perGuestHost)} / wedding guest</em>
         </div>
         <div class="calc-total">
-          <span class="label">Per wedding guest (gross)</span>
+          <span class="label">Per wedding guest (host budget)</span>
           <strong>${fmtCompact(r.perGuestGross)}</strong>
         </div>
       </div>
+      ${overflowInfo}
       ${r.notes.map((n) => `<p class="overflow-note">${esc(n)}</p>`).join("")}
-      <details class="calc-details"><summary>Line-item midpoints</summary>
+      <details class="calc-details"><summary>Line-item midpoints (host budget)</summary>
         <ul class="calc-lines">${r.linesLow
           .map((row, i) => {
             const hi = r.linesHigh[i] ? r.linesHigh[i][1] : row[1];
