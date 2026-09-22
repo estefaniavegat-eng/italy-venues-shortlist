@@ -8,7 +8,7 @@
     ],
     "planningNote": "Fall 2027 · September–October preferred · hosted full bar · destination weekend",
     "currency": "EUR",
-    "venueCount": 16,
+    "venueCount": 21,
     "costAssumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch ~€25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
     "calculatorDefaults": {
       "weddingGuests": 60,
@@ -597,7 +597,8 @@
         "assets/galleries/villa-paola/05.jpg",
         "assets/galleries/villa-paola/06.jpg",
         "assets/galleries/villa-paola/07.jpg",
-        "assets/galleries/villa-paola/08.jpg"
+        "assets/galleries/villa-paola/08.jpg",
+        "assets/galleries/villa-paola/09.jpg"
       ],
       "brochureUrl": "https://media.blastness.info/964/VP_Wedding_ENG_25_V_mail.pdf"
     },
@@ -1018,7 +1019,8 @@
         "assets/galleries/castello-di-spessa/05.jpg",
         "assets/galleries/castello-di-spessa/06.jpg",
         "assets/galleries/castello-di-spessa/07.jpg",
-        "assets/galleries/castello-di-spessa/08.jpg"
+        "assets/galleries/castello-di-spessa/08.jpg",
+        "assets/galleries/castello-di-spessa/09.jpg"
       ],
       "brochureUrl": "https://www.castellodispessa.it/en/weddings/"
     },
@@ -1175,7 +1177,8 @@
         "assets/galleries/villa-catignano/05.jpg",
         "assets/galleries/villa-catignano/06.jpg",
         "assets/galleries/villa-catignano/07.jpg",
-        "assets/galleries/villa-catignano/08.jpg"
+        "assets/galleries/villa-catignano/08.jpg",
+        "assets/galleries/villa-catignano/09.jpg"
       ],
       "brochureUrl": "https://www.villacatignano.it/weddings-events.html"
     },
@@ -2316,6 +2319,720 @@
         "assets/galleries/villa-arvedi/05.jpg"
       ],
       "brochureUrl": "https://www.villarvedi.it/i-matrimoni/"
+    },
+    {
+      "id": "borgo-tre-rose",
+      "name": "Borgo Tre Rose",
+      "location": "Montepulciano — Tuscany",
+      "city": "Montepulciano",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Minimum 2-night stay; full exclusivity for wedding groups",
+      "brochure": "https://www.borgotrerose.it",
+      "pricesPackages": "From €15,000 exclusive hire (tuscanywedding.ai listing).\nCatering from €100/person — regional Tuscan cuisine with estate wines.\n19 rooms + 16 suites sleeping up to 110 on-site.\nExperiences: wine tasting, cooking classes, yoga, e-bikes, spa, tennis.",
+      "website": "https://www.borgotrerose.it",
+      "venueFee": "From €15,000 exclusive hire",
+      "guestsAccommodated": "up to 110 overnight & event",
+      "discountsExtraFees": "Confirm what the €15k base includes for Fall 2027 (rooms vs venue-only)",
+      "backupIndoor": "Estate restaurant / indoor spaces — confirm capacity",
+      "minMaxNumbers": "2–110 guests",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes (estate restaurant)",
+      "foodPrice": "from €100 pp",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Estate wines available — package TBD",
+      "overnightCapacity": "~110 (19 rooms + 16 suites)",
+      "eventCapacity": "up to 110",
+      "minNights": "2",
+      "airportNotes": "Perugia (PEG) ~30 min; Florence (FLR) ~1h 40min",
+      "allIn40": "€35k–€48k",
+      "allIn100": "€48k–€68k",
+      "bestFit": "Value Montepulciano / Val d'Orcia borgo with full on-site lodging for ~60–110",
+      "watchOuts": "Confirm exact €15k inclusions & 2027 weekend availability; music curfew TBD",
+      "confidence": "Medium-high on structure; medium on total (listing price)",
+      "sourceNotes": "tuscanywedding.ai venues.js + borgotrerose.it",
+      "correctedLocation": "",
+      "image": "assets/galleries/borgo-tre-rose/01.jpg",
+      "imageCredit": "Official site",
+      "monogram": "TR",
+      "allIn60": "€39k–€56k",
+      "allIn60Low": 39050,
+      "allIn60High": 55770,
+      "allIn60Mid": 47410,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue / lodging exclusive hire (2n, from listing)",
+          "low": 15000,
+          "high": 18000,
+          "source": "directory"
+        },
+        {
+          "item": "F&B / banquet package",
+          "low": 6000,
+          "high": 7200,
+          "source": "quote"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 3550,
+          "high": 5070,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby.",
+      "allIn60OverflowNote": "",
+      "costModel": {
+        "overnightCap": 110,
+        "defaultNights": 2,
+        "rentalTotal": 15000,
+        "rentalPerNight": 7500,
+        "rentalSource": "directory",
+        "fbPerGuest": 100,
+        "fbSource": "quote",
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": false,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 18000,
+        "rentalLow": 15000
+      },
+      "gallery": [
+        "assets/galleries/borgo-tre-rose/01.jpg",
+        "assets/galleries/borgo-tre-rose/02.jpg",
+        "assets/galleries/borgo-tre-rose/03.jpg",
+        "assets/galleries/borgo-tre-rose/04.jpg",
+        "assets/galleries/borgo-tre-rose/05.jpg"
+      ],
+      "brochureUrl": ""
+    },
+    {
+      "id": "antica-fattoria-paterno",
+      "name": "Antica Fattoria Paterno",
+      "location": "Montespertoli / Florentine Hills — Tuscany",
+      "city": "Montespertoli",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Open April–October; venue hire separate from accommodation",
+      "brochure": "https://www.fattoriapaterno.it",
+      "pricesPackages": "Venue hire €5,000–€7,500 (excl. catering & accommodation) per tuscanywedding.ai.\nExternal catering via curated list; music licence until 1 a.m. (extension available).\nTower: 7 rooms / 14 beds; sister villa I Massini: 10 apartments / ~48 guests.\nGlass panoramic pavilion + gardens; capacity up to ~200.",
+      "website": "https://www.fattoriapaterno.it",
+      "venueFee": "€5,000–€7,500 venue hire",
+      "guestsAccommodated": "Tower 14 + I Massini ~48 on-site; events up to ~200",
+      "discountsExtraFees": "Accommodation & catering quoted separately",
+      "backupIndoor": "yes (halls / pavilion)",
+      "minMaxNumbers": "events to ~150–200 (planner listings vary)",
+      "musicCurfew": "Music licence to 1 a.m.; extension available",
+      "inHouseCatering": "no — external curated list",
+      "foodPrice": "TBD — external caterers",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "TBD — ask venue / caterer",
+      "overnightCapacity": "~62 combined (tower + I Massini) if both booked",
+      "eventCapacity": "up to ~200",
+      "minNights": "n/a (day venue hire); apartments bookable separately",
+      "airportNotes": "Florence (FLR) ~35–40 min",
+      "allIn40": "€35k–€55k",
+      "allIn100": "€55k–€85k",
+      "bestFit": "Florence-area day hire with late music licence and dramatic pavilion views",
+      "watchOuts": "Lodging/catering not in venue fee; model uses 1n lodging — multi-night weekends higher; confirm 2027 hire",
+      "confidence": "Medium (hire quoted; F&B/lodging averaged)",
+      "sourceNotes": "tuscanywedding.ai + Exclusive Italy Weddings venue profile (photos Studio Righi courtesy)",
+      "correctedLocation": "Montespertoli, Florentine / Chianti hills",
+      "image": "assets/galleries/antica-fattoria-paterno/01.jpg",
+      "imageCredit": "Exclusive Italy Weddings / Studio Fotografico Righi",
+      "monogram": "FP",
+      "allIn60": "€43k–€69k",
+      "allIn60Low": 43230,
+      "allIn60High": 69300,
+      "allIn60Mid": 56265,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue hire (day)",
+          "low": 5000,
+          "high": 7500,
+          "source": "directory"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "All guest lodging offsite / estate apartments (60 × 1n est.)",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 3930,
+          "high": 6300,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Day-hire venue — tower (14) + sister villa I Massini (48) available separately; 1-night lodging estimated for 60 guests. Multi-night destination weekends cost more.",
+      "allIn60OverflowNote": "Day-hire venue — tower (14) + sister villa I Massini (48) available separately; 1-night lodging estimated for 60 guests. Multi-night destination weekends cost more.",
+      "costModel": {
+        "overnightCap": 62,
+        "defaultNights": 1,
+        "rentalTotal": 6250,
+        "rentalPerNight": null,
+        "rentalSource": "directory",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": true,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 7500,
+        "rentalLow": 5000
+      },
+      "gallery": [
+        "assets/galleries/antica-fattoria-paterno/01.jpg",
+        "assets/galleries/antica-fattoria-paterno/02.jpg",
+        "assets/galleries/antica-fattoria-paterno/03.jpg",
+        "assets/galleries/antica-fattoria-paterno/04.jpg",
+        "assets/galleries/antica-fattoria-paterno/05.jpg",
+        "assets/galleries/antica-fattoria-paterno/06.jpg"
+      ],
+      "brochureUrl": ""
+    },
+    {
+      "id": "il-falconiere",
+      "name": "Il Falconiere",
+      "location": "Cortona — Tuscany",
+      "city": "Cortona",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Relais & Châteaux estate; venue fee separate from room blocks",
+      "brochure": "https://www.ilfalconiere.it",
+      "pricesPackages": "From €6,000 venue fee (excl. accommodation) per tuscanywedding.ai.\nIn-house Michelin-starred catering; estate Syrah & Merlot; full event coordination.\n22 rooms/suites across villa, limonaia, and pool house.\nIconic lemon-terrace ceremony; spa; capacity up to ~100.",
+      "website": "https://www.ilfalconiere.it",
+      "venueFee": "From €6,000 (excl. rooms)",
+      "guestsAccommodated": "~44 overnight if full room block (22 keys); events up to ~100",
+      "discountsExtraFees": "Rooms & Michelin menus priced separately — expect premium F&B",
+      "backupIndoor": "yes (villa interiors)",
+      "minMaxNumbers": "up to ~100",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes — Michelin-starred",
+      "foodPrice": "Michelin menus — confirm 2027 pp rates (model uses Italy avg with higher high-end)",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Estate wines available — TBD package",
+      "overnightCapacity": "~44 (22 rooms/suites) if buyout",
+      "eventCapacity": "up to ~100",
+      "minNights": "typical Relais stay 1–2+; confirm wedding block rules",
+      "airportNotes": "Florence ~1h 30min; Perugia ~45min",
+      "allIn40": "€38k–€58k",
+      "allIn100": "€55k–€85k",
+      "bestFit": "Photogenic Cortona Relais with lemon terrace & Michelin dining for ~60–100",
+      "watchOuts": "Michelin F&B can push above model; rooms not in €6k fee; lower Medium band",
+      "confidence": "Medium (venue fee listed; F&B/rooms averaged)",
+      "sourceNotes": "tuscanywedding.ai + ilfalconiere.it",
+      "correctedLocation": "",
+      "image": "assets/galleries/il-falconiere/01.jpg",
+      "imageCredit": "Official site",
+      "monogram": "IF",
+      "allIn60": "€44k–€72k",
+      "allIn60Low": 44330,
+      "allIn60High": 71830,
+      "allIn60Mid": 58080,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue fee (excl. accommodation)",
+          "low": 6000,
+          "high": 8000,
+          "source": "directory"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg; Michelin may run higher)",
+          "low": 9000,
+          "high": 15000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest lodging (Relais rooms / nearby) 60 × 1n est.",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4030,
+          "high": 6530,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Venue fee excludes Relais & Châteaux accommodation (22 rooms/suites). 1-night lodging estimated; Michelin catering may exceed Italy averages.",
+      "allIn60OverflowNote": "Venue fee excludes Relais & Châteaux accommodation (22 rooms/suites). 1-night lodging estimated; Michelin catering may exceed Italy averages.",
+      "costModel": {
+        "overnightCap": 44,
+        "defaultNights": 1,
+        "rentalTotal": 6000,
+        "rentalPerNight": null,
+        "rentalSource": "directory",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": true,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 8000,
+        "rentalLow": 6000
+      },
+      "gallery": [
+        "assets/galleries/il-falconiere/01.jpg",
+        "assets/galleries/il-falconiere/02.jpg",
+        "assets/galleries/il-falconiere/03.jpg",
+        "assets/galleries/il-falconiere/04.jpg",
+        "assets/galleries/il-falconiere/05.jpg",
+        "assets/galleries/il-falconiere/06.jpg"
+      ],
+      "brochureUrl": ""
+    },
+    {
+      "id": "villa-castiglioncelli",
+      "name": "Villa Castiglioncelli",
+      "location": "Cavriglia — Tuscany",
+      "city": "Cavriglia",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Day hire on 130-hectare organic wine & olive estate (Tenuta San Jacopo)",
+      "brochure": "https://www.tenutasanjacopo.it",
+      "pricesPackages": "From €5,400/day + VAT (low season) per tuscanywedding.ai.\nOpen supplier policy; on-site kitchen; in-house coordinator included; civil ceremonies available.\nOn-site chapel, grand hall (indoor ~100), outdoor to ~200.\n7 apartments sleeping ~21–27 on the estate.",
+      "website": "https://www.tenutasanjacopo.it",
+      "venueFee": "From €5,400/day + VAT",
+      "guestsAccommodated": "~21–27 overnight onsite; events ~100 indoor / ~200 outdoor",
+      "discountsExtraFees": "VAT on hire; lodging & catering separate",
+      "backupIndoor": "yes (grand hall ~100)",
+      "minMaxNumbers": "indoor ~100; outdoor ~200",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "open supplier policy; on-site kitchen",
+      "foodPrice": "TBD — external / preferred caterers",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Estate organic wine available — TBD",
+      "overnightCapacity": "~21–27 (7 apartments)",
+      "eventCapacity": "~100 indoor / ~200 outdoor",
+      "minNights": "n/a (day hire); apartments bookable separately",
+      "airportNotes": "Florence ~55 min (60 km); Pisa ~1h 35min",
+      "allIn40": "€38k–€58k",
+      "allIn100": "€55k–€82k",
+      "bestFit": "Eastern Tuscany estate with chapel + flexible open-supplier wedding day",
+      "watchOuts": "Most guests need off-site rooms for 60; confirm high-season day rate & curfew",
+      "confidence": "Medium",
+      "sourceNotes": "tuscanywedding.ai + tenutasanjacopo.it",
+      "correctedLocation": "",
+      "image": "assets/galleries/villa-castiglioncelli/01.jpg",
+      "imageCredit": "Official site (Tenuta San Jacopo)",
+      "monogram": "VC",
+      "allIn60": "€45k–€72k",
+      "allIn60Low": 44977,
+      "allIn60High": 71786,
+      "allIn60Mid": 58381,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue hire (day, +VAT)",
+          "low": 5400,
+          "high": 8000,
+          "source": "directory"
+        },
+        {
+          "item": "VAT ~22% on hire (est.)",
+          "low": 1188,
+          "high": 1760,
+          "source": "assumption"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest lodging (estate apartments / nearby) 60 × 1n est.",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4089,
+          "high": 6526,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Day hire from €5,400 + VAT (low season). Estate has 7 apartments (~21–27 overnight); remaining guests nearby. Multi-night stays extra.",
+      "allIn60OverflowNote": "Day hire from €5,400 + VAT (low season). Estate has 7 apartments (~21–27 overnight); remaining guests nearby. Multi-night stays extra.",
+      "costModel": {
+        "overnightCap": 27,
+        "defaultNights": 1,
+        "rentalTotal": 5400,
+        "rentalPerNight": null,
+        "rentalSource": "directory",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": true,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 8000,
+        "rentalLow": 5400
+      },
+      "gallery": [
+        "assets/galleries/villa-castiglioncelli/01.jpg",
+        "assets/galleries/villa-castiglioncelli/02.jpg",
+        "assets/galleries/villa-castiglioncelli/03.jpg",
+        "assets/galleries/villa-castiglioncelli/04.jpg",
+        "assets/galleries/villa-castiglioncelli/05.jpg",
+        "assets/galleries/villa-castiglioncelli/06.jpg"
+      ],
+      "brochureUrl": ""
+    },
+    {
+      "id": "vignamaggio",
+      "name": "Vignamaggio",
+      "location": "Greve in Chianti — Tuscany",
+      "city": "Greve in Chianti",
+      "region": "Tuscany",
+      "country": "Italy",
+      "budgetBand": "Medium",
+      "dateRequirements": "Historic Renaissance estate; venue hire and lodging packages can be combined or separate",
+      "brochure": "https://vignamaggio.com",
+      "pricesPackages": "Venue hire from €6,000–€12,000; accommodation packages available separately (tuscanywedding.ai).\nIn-house catering; estate Chianti Classico, Grechetto, and rosé; cellar tours & tastings.\nIl Teatro underground theatre, Italian gardens, three pools, frescoed cellars.\nOn-site lodging up to ~34 across Il Borgo; events up to ~120.",
+      "website": "https://vignamaggio.com",
+      "venueFee": "€6,000–€12,000 venue hire",
+      "guestsAccommodated": "~34 overnight on-site; events up to ~120",
+      "discountsExtraFees": "Lodging packages separate from venue hire",
+      "backupIndoor": "yes (Il Teatro / frescoed spaces)",
+      "minMaxNumbers": "events up to ~120",
+      "musicCurfew": "TBD — ask venue",
+      "inHouseCatering": "yes",
+      "foodPrice": "TBD — in-house catering menus",
+      "cake": "TBD — ask venue",
+      "alcoholPrice": "Estate wines — TBD package",
+      "overnightCapacity": "~34 (Il Borgo)",
+      "eventCapacity": "up to ~120",
+      "minNights": "confirm lodging package rules",
+      "airportNotes": "Florence (FLR) ~35 min; Pisa (PSA) ~1h 30min",
+      "allIn40": "€38k–€58k",
+      "allIn100": "€55k–€85k",
+      "bestFit": "Storied Chianti Classico estate (Mona Lisa lore) for a design-forward ~60–100 wedding",
+      "watchOuts": "Hire band wide (€6–12k); most of 60 need overflow lodging; confirm 2027",
+      "confidence": "Medium",
+      "sourceNotes": "tuscanywedding.ai + vignamaggio.com",
+      "correctedLocation": "",
+      "image": "assets/galleries/vignamaggio/01.jpg",
+      "imageCredit": "Official site",
+      "monogram": "VG",
+      "allIn60": "€44k–€74k",
+      "allIn60Low": 44330,
+      "allIn60High": 74250,
+      "allIn60Mid": 59290,
+      "allIn60Breakdown": [
+        {
+          "item": "Venue hire",
+          "low": 6000,
+          "high": 12000,
+          "source": "directory"
+        },
+        {
+          "item": "F&B dinner+aperitivo+open bar (Italy avg)",
+          "low": 9000,
+          "high": 13200,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest lodging (Il Borgo / nearby) 60 × 1n est.",
+          "low": 10800,
+          "high": 16800,
+          "source": "italy-average"
+        },
+        {
+          "item": "Planner / coordinator (Italy avg)",
+          "low": 3000,
+          "high": 5000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Florals / decor (Italy avg)",
+          "low": 3000,
+          "high": 6000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Photography (Italy avg)",
+          "low": 3000,
+          "high": 4500,
+          "source": "italy-average"
+        },
+        {
+          "item": "Videography (Italy avg)",
+          "low": 2500,
+          "high": 4000,
+          "source": "italy-average"
+        },
+        {
+          "item": "DJ / music (Italy avg)",
+          "low": 1000,
+          "high": 2000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Ceremony / SIAE (Italy avg)",
+          "low": 500,
+          "high": 1000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Guest transport / shuttles (Italy avg)",
+          "low": 1500,
+          "high": 3000,
+          "source": "italy-average"
+        },
+        {
+          "item": "Contingency (10%)",
+          "low": 4030,
+          "high": 6750,
+          "source": "assumption"
+        }
+      ],
+      "allIn60Assumptions": "Italy destination averages used when the villa did not quote a line item (2025–2027 planning bands): planner €3–5k; photography €3–4.5k; videography €2.5–4k; florals/decor €3–6k; DJ/music €1–2k; ceremony/SIAE €0.5–1k; guest shuttles €1.5–3k. If no F&B quote: dinner+aperitivo+open bar ~€150–€220 pp; welcome party ~€50–€80 pp; brunch €25–€40 pp for a multi-day weekend. Contingency ~10%. Overflow lodging (when overnight capacity < guests needing rooms) estimated ~€180–€280 pp/night nearby. Venue hire €6–12k; accommodation packages separate (Il Borgo sleeps ~34). 1-night lodging estimated for 60; multi-night Chianti weekends cost more.",
+      "allIn60OverflowNote": "Venue hire €6–12k; accommodation packages separate (Il Borgo sleeps ~34). 1-night lodging estimated for 60; multi-night Chianti weekends cost more.",
+      "costModel": {
+        "overnightCap": 34,
+        "defaultNights": 1,
+        "rentalTotal": 9000,
+        "rentalPerNight": null,
+        "rentalSource": "directory",
+        "fbPerGuest": null,
+        "fbSource": null,
+        "fbDinnerPerGuest": null,
+        "fbBarPerGuest": null,
+        "welcomePizzaBudget60": null,
+        "drinksPerGuest": null,
+        "ceremonyFee": null,
+        "plannerQuoted": null,
+        "djQuoted": null,
+        "floralsMinQuoted": null,
+        "gratPct": null,
+        "roomPerPersonPerNight": null,
+        "dayVenue": true,
+        "touristTaxPerNight": null,
+        "rentalTotalHigh": 12000,
+        "rentalLow": 6000
+      },
+      "gallery": [
+        "assets/galleries/vignamaggio/01.jpg",
+        "assets/galleries/vignamaggio/02.jpg",
+        "assets/galleries/vignamaggio/03.jpg",
+        "assets/galleries/vignamaggio/04.jpg",
+        "assets/galleries/vignamaggio/05.jpg",
+        "assets/galleries/vignamaggio/06.jpg"
+      ],
+      "brochureUrl": ""
     }
   ]
 }
