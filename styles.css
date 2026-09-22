@@ -345,7 +345,7 @@ body {
 .card-media {
   position: relative;
   aspect-ratio: 4 / 3;
-  background: linear-gradient(145deg, #F8C6AF, #FF7560 45%, #F19940);
+  background: #F8C6AF;
   overflow: hidden;
 }
 
@@ -354,6 +354,11 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.card-media .monogram[hidden],
+.drawer-hero .monogram[hidden] {
+  display: none !important;
 }
 
 .card-media .monogram {
@@ -598,7 +603,7 @@ body {
 .drawer-hero {
   position: relative;
   aspect-ratio: 16 / 10;
-  background: linear-gradient(145deg, #F8C6AF, #FF7560 45%, #F19940);
+  background: #F8C6AF;
 }
 
 .drawer-hero img {
