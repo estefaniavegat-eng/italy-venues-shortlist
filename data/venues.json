@@ -1886,7 +1886,9 @@
         "rentalLow": null
       },
       "gallery": [
-        "assets/galleries/villa-poggio-bartoli/01.jpg"
+        "assets/galleries/villa-poggio-bartoli/01.jpg",
+        "assets/galleries/villa-poggio-bartoli/02.jpg",
+        "assets/galleries/villa-poggio-bartoli/03.jpg"
       ],
       "brochureUrl": "https://drive.google.com/file/d/1Rd4FVVDcd_xfatT-1fbamnJc86YWYM-S/view?usp=drive_link"
     },
